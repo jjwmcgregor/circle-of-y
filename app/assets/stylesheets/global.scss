@@ -1,0 +1,75 @@
+/* BOOTSTRAP OVERRIDES */
+
+* {
+  font-family: 'Raleway', sans-serif;
+  font-weight:200;
+}
+
+body {
+  padding-top:$navbar-height;
+}
+
+.navbar-brand {
+  padding-top:5px;
+  padding-bottom:5px;
+  width: 75px;
+}
+
+.jumbotron-fluid {
+  border-radius:0px !important;
+}
+
+.container-fluid {}
+
+body {
+  // background-image: url('/images/city_bg.jpeg');
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight:bold;
+  margin-top:30px;
+}
+
+h1 {
+  font-size: 4.0em;
+  margin-top:40px;
+  font-weight: 200;
+}
+
+.red {
+  background-color: $brand-primary;
+  color: $white !important;
+
+  h1,h2,h3,h4,h5 {
+    color: $white !important;
+  }
+
+  a {
+    color: $white !important;
+  }
+
+  .btn-primary {
+    background-color: $white;
+    color: $brand-primary !important;
+  }
+}
+
+.white {
+  background-color: $white;
+}
+
+.area {
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+
