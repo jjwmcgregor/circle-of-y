@@ -36,28 +36,6 @@ ActiveRecord::Schema.define(version: 2018_05_24_132329) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
-  create_table "ask_advocates", force: :cascade do |t|
-    t.string "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "user_id"
-    t.text "body"
-    t.integer "email_to"
-    t.index ["user_id"], name: "index_ask_advocates_on_user_id"
-  end
-
-  create_table "challenges", force: :cascade do |t|
-    t.string "emailaddress"
-    t.string "firstname"
-    t.string "lastname"
-    t.string "location"
-    t.string "organisation"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "user_id"
-    t.index ["user_id"], name: "index_challenges_on_user_id"
-  end
-
   create_table "chapters", force: :cascade do |t|
     t.string "name"
     t.string "city"
@@ -76,18 +54,6 @@ ActiveRecord::Schema.define(version: 2018_05_24_132329) do
     t.datetime "updated_at", null: false
     t.bigint "user_id"
     t.index ["user_id"], name: "index_my_resources_on_user_id"
-  end
-
-  create_table "news", force: :cascade do |t|
-    t.string "title"
-    t.text "story"
-    t.datetime "published"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "user_id"
-    t.bigint "chapter_id"
-    t.index ["chapter_id"], name: "index_news_on_chapter_id"
-    t.index ["user_id"], name: "index_news_on_user_id"
   end
 
   create_table "projects", force: :cascade do |t|
@@ -138,12 +104,8 @@ ActiveRecord::Schema.define(version: 2018_05_24_132329) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "ask_advocates", "users"
-  add_foreign_key "challenges", "users"
   add_foreign_key "chapters", "users"
   add_foreign_key "my_resources", "users"
-  add_foreign_key "news", "chapters"
-  add_foreign_key "news", "users"
   add_foreign_key "projects", "users"
   add_foreign_key "users", "chapters"
 end
