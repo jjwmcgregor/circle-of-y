@@ -740,3 +740,60 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 79ms (Views: 69.2ms | ActiveRecord: 2.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-06-27 16:17:04 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (5.1ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 4018ms (Views: 3937.4ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-27 16:18:04 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.9ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 164ms (Views: 157.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-27 16:18:30 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.9ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 145ms (Views: 139.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-27 16:18:36 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.8ms)
+  Rendered partials/_nav.html.erb (3.4ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 70ms (Views: 64.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-27 16:18:49 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.8ms)
+  Rendered partials/_nav.html.erb (1.8ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 53.9ms | ActiveRecord: 1.2ms)
+
+
