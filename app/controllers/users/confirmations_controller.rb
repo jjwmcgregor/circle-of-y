@@ -6,14 +6,10 @@ class Users::ConfirmationsController < Devise::ConfirmationsController
   #   super
   # end
 
-  POST /resource/confirmation
-  def create
-    # super
-    @user = User.new(user_params)
-    puts @user.confirmation_token
-   if @user.save
-     UserMailer.welcome_email(@user).deliver_now
-  end
+  # POST /resource/confirmation
+  # def create
+  #   super
+  # end
 
   # GET /resource/confirmation?confirmation_token=abcdef
   # def show

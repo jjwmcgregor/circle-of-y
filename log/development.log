@@ -1,81 +1,92 @@
-  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (9.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (241.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project-test1_development"[0m
+  [1m[35m (255.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project-test1_development"[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (203.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project-test1_test"[0m
+  [1m[35m (264.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project-test1_test"[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (541.7ms)[0m  [1m[35mCREATE DATABASE "project-test1_development" ENCODING = 'unicode'[0m
+  [1m[35m (614.6ms)[0m  [1m[35mCREATE DATABASE "project-test1_development" ENCODING = 'unicode'[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (772.4ms)[0m  [1m[35mCREATE DATABASE "project-test1_test" ENCODING = 'unicode'[0m
+  [1m[35m (1039.8ms)[0m  [1m[35mCREATE DATABASE "project-test1_test" ENCODING = 'unicode'[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (20.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (20.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (17.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (23.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6566088655313499270)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6566088655313499270)[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
 Migrating to DeviseCreateUsers (20180625153418)
-  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (25.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "first_name" character varying, "last_name" character varying, "organisation" character varying, "twitter_url" character varying, "country" character varying, "chapter" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (46.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "first_name" character varying, "last_name" character varying, "organisation" character varying, "twitter_url" character varying, "country" character varying, "chapter" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
   ↳ db/migrate/20180625153418_devise_create_users.rb:5
-  [1m[35m (3.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
   ↳ db/migrate/20180625153418_devise_create_users.rb:45
-  [1m[35m (3.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
   ↳ db/migrate/20180625153418_devise_create_users.rb:46
-  [1m[36mActiveRecord::SchemaMigration Create (2.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180625153418"]]
+  [1m[36mActiveRecord::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180625153418"]]
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+Migrating to CreateProjects (20180626222215)
+  [1m[35m (6.2ms)[0m  [1m[35mBEGIN[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (39.0ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "intro" text, "impact" text, "businesscase" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180626222215_create_projects.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180626222215"]]
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-06-27 09:35:15.210257"], ["updated_at", "2018-06-27 09:35:15.210257"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (1.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6566088655313499270)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-06-27 11:29:44.253538"], ["updated_at", "2018-06-27 11:29:44.253538"]]
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
-Started GET "/" for 127.0.0.1 at 2018-06-27 10:36:20 +0100
-  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6566088655313499270)[0m
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/bin/rake:22
+Started GET "/" for 127.0.0.1 at 2018-06-27 12:30:09 +0100
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
 Processing by StaticController#home as HTML
+  [1m[36mUser Load (18.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
   Rendering static/home.html.erb within layouts/application
-  Rendered static/home.html.erb within layouts/application (6.0ms)
-  Rendered partials/_nav.html.erb (8.3ms)
-  Rendered partials/_footer.html.erb (0.8ms)
-Completed 200 OK in 6366ms (Views: 6337.7ms | ActiveRecord: 0.0ms)
+  Rendered static/home.html.erb within layouts/application (9.3ms)
+  Rendered partials/_nav.html.erb (1.8ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 5919ms (Views: 5843.5ms | ActiveRecord: 31.0ms)
 
 
-Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-27 10:36:41 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-27 12:30:25 +0100
 Processing by Devise::RegistrationsController#new as HTML
   Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (3.3ms)
-  Rendered devise/registrations/new.html.erb within layouts/application (92.1ms)
-  Rendered partials/_nav.html.erb (3.6ms)
-  Rendered partials/_footer.html.erb (0.6ms)
-Completed 200 OK in 281ms (Views: 196.5ms | ActiveRecord: 38.3ms)
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (87.5ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 195ms (Views: 162.4ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-27 10:36:42 +0100
-  
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-27 12:30:25 +0100
+
 ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
-  
+
 actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
@@ -103,94 +114,94 @@ puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
 puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-Started POST "/users" for 127.0.0.1 at 2018-06-27 10:37:06 +0100
+Started POST "/users" for 127.0.0.1 at 2018-06-27 12:30:47 +0100
 Processing by Devise::RegistrationsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NfXdRo+M8IKdk3uuVWPkwMLmsXPb3+71Tgma7Fzm8kdnO9lOAIsobxoLk03fLeXXSv/hrgkI3m+v8E96YLUlgw==", "user"=>{"first_name"=>"jack", "last_name"=>"mcgregor", "organisation"=>"", "country"=>"", "chapter"=>"", "email"=>"jmcgregor@spartaglobal.com", "twitter_url"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wx2+NtLl21bWGN29pnmXeKYOB1AXBGuv/kQH158n+KiQa8WwFVSTQBeinH+MdslPao2gSCi2AUGeo4oBsnpCcw==", "user"=>{"first_name"=>"test", "last_name"=>"test", "organisation"=>"", "country"=>"", "chapter"=>"", "email"=>"jackjwmcgregor@gmail.com", "twitter_url"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
-  [1m[36mUser Exists (16.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jmcgregor@spartaglobal.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jackjwmcgregor@gmail.com"], ["LIMIT", 1]]
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
-  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "organisation", "twitter_url", "country", "chapter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["email", "jmcgregor@spartaglobal.com"], ["encrypted_password", "$2a$11$y0W39cOnFdnTTb8pYMv2LOUyutCZu2GS2t7DIKjBwk/EZMFSKkYGW"], ["confirmation_token", "JV53YmkL6Tyu_XMaLnzJ"], ["confirmation_sent_at", "2018-06-27 09:37:06.776148"], ["first_name", "jack"], ["last_name", "mcgregor"], ["organisation", ""], ["twitter_url", ""], ["country", ""], ["chapter", ""], ["created_at", "2018-06-27 09:37:06.775752"], ["updated_at", "2018-06-27 09:37:06.775752"]]
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "organisation", "twitter_url", "country", "chapter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["email", "jackjwmcgregor@gmail.com"], ["encrypted_password", "$2a$11$BBV/5AZIwqZT9ULkoyvRcedO8BtF3sly2GloAC1mEA0B.miintpWW"], ["confirmation_token", "Kx6zyxUpggs3AJvKV5x2"], ["confirmation_sent_at", "2018-06-27 11:30:47.532918"], ["first_name", "test"], ["last_name", "test"], ["organisation", ""], ["twitter_url", ""], ["country", ""], ["chapter", ""], ["created_at", "2018-06-27 11:30:47.532526"], ["updated_at", "2018-06-27 11:30:47.532526"]]
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
-  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
   Rendering devise/mailer/confirmation_instructions.html.erb
-  Rendered devise/mailer/confirmation_instructions.html.erb (1.8ms)
-Devise::Mailer#confirmation_instructions: processed outbound mail in 885.8ms
-Sent mail to jmcgregor@spartaglobal.com (1618.4ms)
-Date: Wed, 27 Jun 2018 10:37:08 +0100
-From: sendertestsparta@gmail.com
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.5ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 848.9ms
+Sent mail to jackjwmcgregor@gmail.com (1504.5ms)
+Date: Wed, 27 Jun 2018 12:30:48 +0100
+From: no-reply@example.com
 Reply-To: sendertestsparta@gmail.com
-To: jmcgregor@spartaglobal.com
-Message-ID: <5b335ac44f220_42c63fc306e6f560967e1@Tech-A22s-MacBook-Air.local.mail>
+To: jackjwmcgregor@gmail.com
+Message-ID: <5b337568db1bc_52523ff4d2ad6798256f5@Tech-A22s-MacBook-Air.local.mail>
 Subject: Confirmation instructions
 Mime-Version: 1.0
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
-<p>Welcome jmcgregor@spartaglobal.com!</p>
+<p>Welcome jackjwmcgregor@gmail.com!</p>
 
 <p>You can confirm your account email through the link below:</p>
 
 
-<p><a href="http://localhost:3000/users/confirmation?confirmation_token=JV53YmkL6Tyu_XMaLnzJ">Confirm my account</a></p>
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Kx6zyxUpggs3AJvKV5x2">Confirm my account</a></p>
 
 Redirected to http://localhost:3000/
-Completed 302 Found in 3383ms (ActiveRecord: 21.6ms)
+Completed 302 Found in 3059ms (ActiveRecord: 6.1ms)
 
 
-Started GET "/" for 127.0.0.1 at 2018-06-27 10:37:09 +0100
+Started GET "/" for 127.0.0.1 at 2018-06-27 12:30:50 +0100
 Processing by StaticController#home as HTML
   Rendering static/home.html.erb within layouts/application
-  Rendered static/home.html.erb within layouts/application (0.9ms)
-  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered static/home.html.erb within layouts/application (0.8ms)
+  Rendered partials/_nav.html.erb (1.4ms)
   Rendered partials/_footer.html.erb (0.5ms)
-Completed 200 OK in 63ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 59ms (Views: 56.4ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/users/confirmation?confirmation_token=JV53YmkL6Tyu_XMaLnzJ" for 127.0.0.1 at 2018-06-27 10:37:24 +0100
+Started GET "/users/confirmation?confirmation_token=Kx6zyxUpggs3AJvKV5x2" for 127.0.0.1 at 2018-06-27 12:31:56 +0100
 Processing by Devise::ConfirmationsController#show as HTML
-  Parameters: {"confirmation_token"=>"JV53YmkL6Tyu_XMaLnzJ"}
-  [1m[36mUser Load (28.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "JV53YmkL6Tyu_XMaLnzJ"], ["LIMIT", 1]]
+  Parameters: {"confirmation_token"=>"Kx6zyxUpggs3AJvKV5x2"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "Kx6zyxUpggs3AJvKV5x2"], ["LIMIT", 1]]
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
-  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
-  [1m[36mUser Update (44.8ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-06-27 09:37:24.310891"], ["updated_at", "2018-06-27 09:37:24.312745"], ["id", 1]]
+  [1m[36mUser Update (3.3ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-06-27 11:31:57.018752"], ["updated_at", "2018-06-27 11:31:57.069570"], ["id", 1]]
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
-  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (23.0ms)[0m  [1m[35mCOMMIT[0m
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
   Rendering user_mailer/welcome_email.html.erb within layouts/mailer
-  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.8ms)
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (4.6ms)
   Rendering user_mailer/welcome_email.text.erb within layouts/mailer
-  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.6ms)
-UserMailer#welcome_email: processed outbound mail in 149.1ms
-Sent mail to jmcgregor@spartaglobal.com (1547.7ms)
-Date: Wed, 27 Jun 2018 10:37:24 +0100
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (2.1ms)
+UserMailer#welcome_email: processed outbound mail in 127.2ms
+Sent mail to jackjwmcgregor@gmail.com (1040.8ms)
+Date: Wed, 27 Jun 2018 12:31:57 +0100
 From: sendertestsparta@gmail.com
-To: jmcgregor@spartaglobal.com
-Message-ID: <5b335ad48602b_42c63fc306e6f56096926@Tech-A22s-MacBook-Air.local.mail>
+To: jackjwmcgregor@gmail.com
+Message-ID: <5b3375ad3e202_52523ff4d2ad69002582a@Tech-A22s-MacBook-Air.local.mail>
 Subject: Welcome to COYI
 Mime-Version: 1.0
 Content-Type: multipart/alternative;
- boundary="--==_mimepart_5b335ad481168_42c63fc306e6f560968dc";
+ boundary="--==_mimepart_5b3375ad3bdb4_52523ff4d2ad69002571a";
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
 
-----==_mimepart_5b335ad481168_42c63fc306e6f560968dc
+----==_mimepart_5b3375ad3bdb4_52523ff4d2ad69002571a
 Content-Type: text/plain;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
-Welcome to example.com, jack
+Welcome to example.com, test
 ===============================================
 You have successfully signed up to example.com,
-your username is: jmcgregor@spartaglobal.com.
+your username is: jackjwmcgregor@gmail.com.
 Thanks for joining and have a great day!
 
 
-----==_mimepart_5b335ad481168_42c63fc306e6f560968dc
+----==_mimepart_5b3375ad3bdb4_52523ff4d2ad69002571a
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
@@ -206,49 +217,49 @@ Content-Transfer-Encoding: 7bit
 
   <body>
     Hi This is Yann confirming emails are working etc
-    <h1>Welcome to example.com, jack</h1>
+    <h1>Welcome to example.com, test</h1>
   <p>
     You have successfully signed up to example.com,
-    your username is: jmcgregor@spartaglobal.com.<br>
+    your username is: jackjwmcgregor@gmail.com.<br>
   </p>
 <p>Thanks for joining and have a great day!</p>
 
   </body>
 </html>
 
-----==_mimepart_5b335ad481168_42c63fc306e6f560968dc--
+----==_mimepart_5b3375ad3bdb4_52523ff4d2ad69002571a--
 
   Rendering user_mailer/chapter_email.html.erb within layouts/mailer
-  Rendered user_mailer/chapter_email.html.erb within layouts/mailer (0.7ms)
+  Rendered user_mailer/chapter_email.html.erb within layouts/mailer (0.8ms)
   Rendering user_mailer/chapter_email.text.erb within layouts/mailer
-  Rendered user_mailer/chapter_email.text.erb within layouts/mailer (0.4ms)
-UserMailer#chapter_email: processed outbound mail in 50.3ms
-Sent mail to ylangue@spartaglobal.com (1370.0ms)
-Date: Wed, 27 Jun 2018 10:37:26 +0100
+  Rendered user_mailer/chapter_email.text.erb within layouts/mailer (0.6ms)
+UserMailer#chapter_email: processed outbound mail in 59.1ms
+Sent mail to kly@spartaglobal.com (1044.6ms)
+Date: Wed, 27 Jun 2018 12:31:58 +0100
 From: sendertestsparta@gmail.com
-To: ylangue@spartaglobal.com
-Message-ID: <5b335ad623cb4_42c63fc306e6f56097166@Tech-A22s-MacBook-Air.local.mail>
+To: kly@spartaglobal.com
+Message-ID: <5b3375ae56a78_52523ff4d2ad69002605@Tech-A22s-MacBook-Air.local.mail>
 Subject: Welcome to COYI
 Mime-Version: 1.0
 Content-Type: multipart/alternative;
- boundary="--==_mimepart_5b335ad623020_42c63fc306e6f560970e7";
+ boundary="--==_mimepart_5b3375ae55773_52523ff4d2ad69002594f";
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
 
-----==_mimepart_5b335ad623020_42c63fc306e6f560970e7
+----==_mimepart_5b3375ae55773_52523ff4d2ad69002594f
 Content-Type: text/plain;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
-Welcome to example.com, jack
+Welcome to example.com, test
 ===============================================
 You have successfully signed up to example.com,
-your username is: jmcgregor@spartaglobal.com.
+your username is: jackjwmcgregor@gmail.com.
 Thanks for joining and have a great day!
 
 
-----==_mimepart_5b335ad623020_42c63fc306e6f560970e7
+----==_mimepart_5b3375ae55773_52523ff4d2ad69002594f
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
@@ -264,100 +275,55 @@ Content-Transfer-Encoding: 7bit
 
   <body>
     Hi This is Yann confirming emails are working etc
-    <h1>Welcome to example.com, jack</h1>
+    <h1>Welcome to example.com, test</h1>
   <p>
     You have successfully signed up to example.com,
-    your username is: jmcgregor@spartaglobal.com.<br>
+    your username is: jackjwmcgregor@gmail.com.<br>
   </p>
 <p>Thanks for joining and have a great day!</p>
 
   </body>
 </html>
 
-----==_mimepart_5b335ad623020_42c63fc306e6f560970e7--
+----==_mimepart_5b3375ae55773_52523ff4d2ad69002594f--
 
 Redirected to http://localhost:3000/users/sign_in
-Completed 302 Found in 3252ms (ActiveRecord: 85.3ms)
+Completed 302 Found in 2446ms (ActiveRecord: 31.2ms)
 
 
-Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-27 10:37:27 +0100
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-27 12:31:59 +0100
 Processing by Devise::SessionsController#new as HTML
   Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (1.7ms)
-  Rendered devise/sessions/new.html.erb within layouts/application (19.0ms)
-  Rendered partials/_nav.html.erb (1.7ms)
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.0ms)
+  Rendered partials/_nav.html.erb (2.8ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 189ms (Views: 186.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-27 12:32:34 +0100
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.0ms)
+  Rendered partials/_nav.html.erb (1.1ms)
   Rendered partials/_footer.html.erb (0.4ms)
-Completed 200 OK in 129ms (Views: 125.8ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 63ms (Views: 56.4ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/users/sign_in" for 127.0.0.1 at 2018-06-27 10:37:40 +0100
-Processing by Devise::SessionsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CozspjLNEltYqD1a7eJOHPNlXVbR0+4XTOvB6gvyCKlqTNHY3DH0nbkOv9osDNBazrTkfBZ4hIY8xvWqKTonTg==", "user"=>{"email"=>"jmcgregor@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
-  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "jmcgregor@gmail.com"], ["LIMIT", 1]]
-  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
-Completed 401 Unauthorized in 6ms (ActiveRecord: 1.1ms)
-
-
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-27 12:32:56 +0100
 Processing by Devise::SessionsController#new as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CozspjLNEltYqD1a7eJOHPNlXVbR0+4XTOvB6gvyCKlqTNHY3DH0nbkOv9osDNBazrTkfBZ4hIY8xvWqKTonTg==", "user"=>{"email"=>"jmcgregor@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
   Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (1.2ms)
-  Rendered devise/sessions/new.html.erb within layouts/application (5.9ms)
-  Rendered partials/_nav.html.erb (1.9ms)
-  Rendered partials/_footer.html.erb (0.6ms)
-Completed 200 OK in 213ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+  Rendered devise/shared/_links.html.erb (4.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.5ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 87ms (Views: 85.3ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/users/sign_in" for 127.0.0.1 at 2018-06-27 10:37:52 +0100
-Processing by Devise::SessionsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nqXzkRw8OpKmPUU5Yzr8+BhyV/bMSpvBWcl8LHcV0zL+Zc7v8sDcVEebx7mi1GK+JaPu3Avh8VAp5EhsVd381Q==", "user"=>{"email"=>"jmcgregor@spartaglobal.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
-  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "jmcgregor@spartaglobal.com"], ["LIMIT", 1]]
-  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
-  [1m[36mUser Update (5.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2018-06-27 09:37:52.246703"], ["last_sign_in_at", "2018-06-27 09:37:52.246703"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2018-06-27 09:37:52.247849"], ["id", 1]]
-  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
-  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
-  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
-Redirected to http://localhost:3000/
-Completed 302 Found in 186ms (ActiveRecord: 9.8ms)
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-27 12:32:56 +0100
 
-
-Started GET "/" for 127.0.0.1 at 2018-06-27 10:37:52 +0100
-Processing by StaticController#home as HTML
-  Rendering static/home.html.erb within layouts/application
-  Rendered static/home.html.erb within layouts/application (0.7ms)
-  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/views/partials/_nav.html.erb:25
-  Rendered partials/_nav.html.erb (3.5ms)
-  Rendered partials/_footer.html.erb (0.4ms)
-Completed 200 OK in 56ms (Views: 47.5ms | ActiveRecord: 0.7ms)
-
-
-Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-27 10:37:58 +0100
-Processing by Devise::SessionsController#new as HTML
-  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
-Redirected to http://localhost:3000/
-Filter chain halted as :require_no_authentication rendered or redirected
-Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
-
-
-Started GET "/" for 127.0.0.1 at 2018-06-27 10:37:58 +0100
-Processing by StaticController#home as HTML
-  Rendering static/home.html.erb within layouts/application
-  Rendered static/home.html.erb within layouts/application (1.1ms)
-  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/views/partials/_nav.html.erb:25
-  Rendered partials/_nav.html.erb (4.2ms)
-  Rendered partials/_footer.html.erb (0.6ms)
-Completed 200 OK in 68ms (Views: 64.1ms | ActiveRecord: 0.8ms)
-
-
-Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-27 10:37:58 +0100
-  
 ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
-  
+
 actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
@@ -385,21 +351,221 @@ puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
 puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-Started GET "/users/edit" for 127.0.0.1 at 2018-06-27 10:38:00 +0100
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-06-27 12:33:05 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wtMvwpGNYGoDO7DXAy1/gEPsyjX5h5wO2kp94t55D2ZLbWmC+QbL7r4kAyc0uMJuR/YgxKGjoB3QLhmL0MZhHA==", "user"=>{"email"=>"jackjwmcgregor@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "jackjwmcgregor@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2018-06-27 11:33:05.835866"], ["last_sign_in_at", "2018-06-27 11:33:05.835866"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2018-06-27 11:33:05.837665"], ["id", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 183ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-27 12:33:05 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.5ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 57.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1/projects" for 127.0.0.1 at 2018-06-27 12:33:13 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (4.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:17
+  Rendered projects/index.html.erb within layouts/application (11.6ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 104ms (Views: 51.7ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/users/1/images/logo_200.png" for 127.0.0.1 at 2018-06-27 12:33:13 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/1/images/logo_200.png"):
+
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/1/projects/new" for 127.0.0.1 at 2018-06-27 12:33:14 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (11.3ms)
+  Rendered projects/new.html.erb within layouts/application (16.0ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 89ms (Views: 67.4ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/users/1/projects" for 127.0.0.1 at 2018-06-27 12:33:20 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2kuM373SlVq0wDWFHWO5MsvsTu35l8P/cuiejYCmEYTMNAUDfJHtN8HTfCnuOG7BBfXsj+FR9MZhdi8cuEdiiQ==", "project"=>{"intro"=>"blah", "impact"=>"blah", "businesscase"=>"blah"}, "commit"=>"Create Project", "user_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (22.1ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "blah"], ["impact", "blah"], ["businesscase", "blah"], ["user_id", 1], ["created_at", "2018-06-27 11:33:20.439491"], ["updated_at", "2018-06-27 11:33:20.439491"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (0.7ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.5ms)
+UserMailer#project_pitch: processed outbound mail in 59.3ms
+Sent mail to jackjwmcgregor@gmail.com, akola-adeyemi@spartaglobal.com (1245.9ms)
+Date: Wed, 27 Jun 2018 12:33:20 +0100
+From: sendertestsparta@gmail.com
+To: jackjwmcgregor@gmail.com,
+ akola-adeyemi@spartaglobal.com
+Message-ID: <5b33760080cf8_52523ff4d2ad6a40262f2@Tech-A22s-MacBook-Air.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b3376007fab5_52523ff4d2ad6a402617d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b3376007fab5_52523ff4d2ad6a402617d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b3376007fab5_52523ff4d2ad6a402617d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    Hi This is Yann confirming emails are working etc
+    <h1>Welcome to COYI </h1>
+
+
+<div>
+  <h2>Business Idea</h2>
+  blah
+
+</div>
+<div>
+  <h2>Reason</h2>
+  blah
+</div>
+<div>
+  <h2>Generate</h2>
+
+  blah
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b3376007fab5_52523ff4d2ad6a402617d--
+
+Redirected to http://localhost:3000/users/1/projects
+Completed 302 Found in 1359ms (ActiveRecord: 26.1ms)
+
+
+Started GET "/users/1/projects" for 127.0.0.1 at 2018-06-27 12:33:21 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:17
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:18
+  Rendered projects/index.html.erb within layouts/application (19.2ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 83ms (Views: 74.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-27 12:43:08 +0100
+  [1m[35m (10.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (5.2ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 976ms (Views: 905.7ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-06-27 12:43:14 +0100
 Processing by Devise::RegistrationsController#edit as HTML
   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
   ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
   Rendering devise/registrations/edit.html.erb within layouts/application
-  Rendered devise/registrations/edit.html.erb within layouts/application (13.4ms)
-  Rendered partials/_nav.html.erb (4.4ms)
-  Rendered partials/_footer.html.erb (0.6ms)
-Completed 200 OK in 98ms (Views: 93.7ms | ActiveRecord: 0.7ms)
+  Rendered devise/registrations/edit.html.erb within layouts/application (63.8ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 130ms (Views: 122.8ms | ActiveRecord: 0.7ms)
 
 
-Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-27 10:38:01 +0100
-  
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-27 12:43:14 +0100
+
 ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
-  
+
 actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
@@ -427,6 +593,7 @@ puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
 puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 Started GET "/home" for 127.0.0.1 at 2018-06-06 13:50:03 +0100
@@ -493,10 +660,98 @@ To: test10@test.com
 Message-ID: <5b30afe0723d6_12cb73fe2fa7e9ed46067c@Tech-A22s-MacBook-Air.local.mail>
 Subject: Confirmation instructions
 Mime-Version: 1.0
+=======
+Started GET "/users/edit" for 127.0.0.1 at 2018-06-27 14:22:12 +0100
+  [1m[35m (8.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (74.2ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 1335ms (Views: 1254.0ms | ActiveRecord: 29.8ms)
+
+
+Started GET "/users/1/projects" for 127.0.0.1 at 2018-06-27 14:22:17 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:17
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:18
+  Rendered projects/index.html.erb within layouts/application (47.3ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 137ms (Views: 90.3ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/users/1/projects/new" for 127.0.0.1 at 2018-06-27 14:22:19 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (6.7ms)
+  Rendered projects/new.html.erb within layouts/application (14.9ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 84ms (Views: 73.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users/1/projects" for 127.0.0.1 at 2018-06-27 14:22:23 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+CSn4VqvCJioEejCDynxEEizTF76SY4sbOFzdNwI07LuWy49m+xw9d0CoW78cibjhqruPOKPuRV/f8Ll5Omgvw==", "project"=>{"intro"=>"ghj", "impact"=>"ghjk", "businesscase"=>"ghjk"}, "commit"=>"Create Project", "user_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (0.8ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "ghj"], ["impact", "ghjk"], ["businesscase", "ghjk"], ["user_id", 1], ["created_at", "2018-06-27 13:22:23.538989"], ["updated_at", "2018-06-27 13:22:23.538989"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (13.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (2.2ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.6ms)
+UserMailer#project_pitch: processed outbound mail in 153.9ms
+Sent mail to jackjwmcgregor@gmail.com, akola-adeyemi@spartaglobal.com (1287.1ms)
+Date: Wed, 27 Jun 2018 14:22:24 +0100
+From: sendertestsparta@gmail.com
+To: jackjwmcgregor@gmail.com, 
+ akola-adeyemi@spartaglobal.com
+Message-ID: <5b338f9039f10_66cb3fc4a22a49685932@Tech-A22s-MacBook-Air.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b338f9032398_66cb3fc4a22a4968592b0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b338f9032398_66cb3fc4a22a4968592b0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b338f9032398_66cb3fc4a22a4968592b0
+>>>>>>> 9f2d4edb67da94e04b75c1cd2dab587d6ff763fb
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
+<<<<<<< HEAD
 <p>Welcome test10@test.com!</p>
 
 <p>You can confirm your account email through the link below:</p>
@@ -1041,3 +1296,63 @@ Completed 200 OK in 124ms (Views: 115.7ms | ActiveRecord: 0.0ms)
 
 
 >>>>>>> master
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    Hi This is Yann confirming emails are working etc
+    <h1>Welcome to COYI </h1>
+
+
+<div>
+  <h2>Business Idea</h2>
+  ghj
+
+</div>
+<div>
+  <h2>Reason</h2>
+  ghjk
+</div>
+<div>
+  <h2>Generate</h2>
+
+  ghjk
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b338f9032398_66cb3fc4a22a4968592b0--
+
+Redirected to http://localhost:3000/users/1/projects
+Completed 302 Found in 1986ms (ActiveRecord: 16.1ms)
+
+
+Started GET "/users/1/projects" for 127.0.0.1 at 2018-06-27 14:22:25 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:17
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:18
+  Rendered projects/index.html.erb within layouts/application (8.8ms)
+  Rendered partials/_nav.html.erb (2.9ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 79ms (Views: 69.2ms | ActiveRecord: 2.3ms)
+
+
+>>>>>>> 9f2d4edb67da94e04b75c1cd2dab587d6ff763fb
