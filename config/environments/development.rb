@@ -31,7 +31,7 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = true
+  # config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.perform_caching = false
 
@@ -59,15 +59,26 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
-    # This is the admin email domain which is used to sent a reset password link to users
-    domain:               ENV['GMAIL_DOMAIN'],
-    user_name:            ENV['GMAIL_USERNAME'],
-    password:             ENV['GMAIL_PASSWORD'],
-    authentication:       'plain',
-    enable_starttls_auto: true  }
+
+# RAILS MAILER - COPIED CODE
+
+  config.action_mailer.delivery_method = :sendmail
+# Defaults to:
+# config.action_mailer.sendmail_settings = {
+#   location: '/usr/sbin/sendmail',
+#   arguments: '-i'
+# }
+config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = true
+config.action_mailer.default_options = {from: 'sendertestsparta@gmail.com'}
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+address:              'smtp.gmail.com',
+port:                 587,
+domain:               'example.com',
+user_name:            'sendertestsparta@gmail.com',
+password:             'Sparta10',
+authentication:       'plain',
+enable_starttls_auto: true  }
+
 end
