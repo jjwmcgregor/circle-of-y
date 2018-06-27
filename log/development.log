@@ -1,0 +1,140 @@
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-27 17:11:18 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (37.2ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 707ms (Views: 651.0ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-27 17:11:24 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.8ms)
+  Rendered partials/_nav.html.erb (1.0ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-27 17:11:25 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.2ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 93ms (Views: 89.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-27 17:11:27 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 97ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-27 17:11:29 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (8.5ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 81ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-27 17:11:31 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (7.6ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 81ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-27 17:11:39 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.2ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 99ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-06-27 17:11:44 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zmPgq2fSZslCgeLAn/clrj4BlDJf1P1nD0GdWXpGFUFChNt59Qgyka/eUtWZgvyRxE3JFq3bQzal+1NR2Il31g==", "user"=>{"email"=>"akola-adeyemi@spartaglobal.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "akola-adeyemi@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2018-06-27 16:11:44.296250"], ["sign_in_count", 2], ["updated_at", "2018-06-27 16:11:44.298469"], ["id", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 199ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-27 17:11:44 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.0ms)
+  Rendered partials/_nav.html.erb (1.7ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 67ms (Views: 59.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-06-27 17:11:47 +0100
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (5.7ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 76ms (Views: 69.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-27 17:11:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
