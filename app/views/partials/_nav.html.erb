@@ -1,0 +1,39 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="<%= root_path %>">
+        <%= image_tag '/images/logo_200.png', class: "img-responsive", id: 'coyi-logo', alt: 'Site Logo'%>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="nav-link"><%= link_to 'Project Hub', root_path %></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <%if user_signed_in? %>
+                <li>Logged in as <strong><%=current_user.first_name %></strong>
+                <li><%= link_to 'My profile', user_session_path %>
+                <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
+                <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+            <%else%>
+                <li><%= link_to 'Sign up', new_user_registration_path %>
+                <li><%= link_to 'Login', new_user_session_path %></li>
+            <%end%>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
