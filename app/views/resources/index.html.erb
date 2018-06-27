@@ -1,25 +1,33 @@
-<p id="notice"><%= notice %></p>
+<div class="row red-sections container-space hidden-sm hidden-xs">
+  <div class="container">
+    <div id="welcome" class="welcome jumbotron jumbotron-fluid red-sections">
+      <h1>
+        <span class="title">
+          Resources<br class="hide-for-small">
+        </span>
+      </h1>
+    </div>
+  </div>
+</div>
 
-<h1>Resources</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div id="video" class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <div class="embed-responsive embed-responsive-16by9 shadow-one">
+      <%= get_vimeo_iframe('https://vimeo.com/263504711', width="100%", height="auto") %>
+    </div>
+  </div>
+</div>
 
-  <tbody>
-    <% @resources.each do |resource| %>
-      <tr>
-        <td><%= link_to 'Show', resource %></td>
-        <td><%= link_to 'Edit', edit_resource_path(resource) %></td>
-        <td><%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
-
-<%= link_to 'New Resource', new_resource_path %>
+<div id="movement" class="row red-sections container-space">
+  <div class="container">
+    <div class="col-md-6 text-center">
+      <h2>Documents</h2>
+      <%= link_to "Doc1", root_url+"10.03.2018 - Circle Whitepaper OYW Version.pdf", { target: '_blank' } %>
+    </div>
+    <div class="col-md-6 text-center">
+      <h2>Podcasts</h2>
+    </div>
+  </div>
+</div>
