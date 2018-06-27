@@ -1,18 +1,20 @@
 <div class="container form-recon">
-<h2 class="form-signin-heading">Resend confirmation instructions</h2>
+  <h2 class="form-signin-heading mt-2">Resend confirmation instructions</h2>
 
-<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+  <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+    <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email, :class => "sr-only" %>
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), :class => "form-control", :placeholder => "Email address" %>
-  </div>
+    <div class="field">
+      <%= f.label :email, :class => "sr-only" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), :class => "form-control", :placeholder => "Email address" %>
+    </div>
 
-  <div class="actions">
-    <%= f.submit "Resend confirmation instructions", :class => "btn btn-lg btn-danger" %>
-  </div>
-<% end %>
+    <div class="actions text-center">
+      <%= f.submit "Resend confirmation instructions", :class => "btn btn-danger" %>
+    </div>
+  <% end %>
 
-<%= render "devise/shared/links" %>
+  <ul class="list-group devise-shared">
+    <%= render "devise/shared/links" %>
+  </ul>
 </div>
