@@ -1,34 +1,41 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row mt-2">
+    <div class="col-md-8 col-md-offset-2">
+      <p id="notice"><%= notice %></p>
 
-<h1>Projects</h1>
+      <h1 class="text-center">Projects</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Intro</th>
-      <th>Impact</th>
-      <th>Businesscase</th>
-      <th>User</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>User</th>
+            <th colspan="2">Links</th>
+          </tr>
+        </thead>
 
-  <tbody>
-    <% @projects.each do |project| %>
-      <% if project.user.id == @user.id %>
-        <tr>
-          <td><%= project.intro %></td>
-          <td><%= project.impact %></td>
-          <td><%= project.businesscase %></td>
-          <td><%= project.user_id %></td>
-          <td><%= link_to 'Show', user_project_path(@user,project) %></td>
-          <td><%= link_to 'Destroy', user_project_path(@user,project), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    <% end %>
-  </tbody>
-</table>
+        <tbody>
+          <% @projects.each do |project| %>
+            <% if project.user.id == @user.id %>
+              <tr>
+                <td>
+                  <%= link_to user_project_path(@user,project) do %>
+                    Project title
+                  <% end %>
+                </td>
+                <td><%= project.user.first_name %> <%= project.user.last_name %></td>
+                <td></td>
+                <td><%= link_to 'Destroy', user_project_path(@user,project), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              </tr>
+            <% end %>
+          <% end %>
+        </tbody>
+      </table>
 
-<br>
+      <br>
 
-<%= link_to 'New Project', new_user_project_path %>
+      <%= link_to 'New Project', new_user_project_path %>
+
+    </div>
+  </div>
+</div>
