@@ -10,6 +10,11 @@ body {
   padding-top: 50px;
 }
 
+.container-fluid {
+  padding-left:0;
+  padding-right:0;
+}
+
 // ========== NAV SECTION START ===========
 .navbar {
   background: #dc3545;
@@ -21,6 +26,11 @@ body {
     font-weight: bold !important;
   }
 }
+
+.transparent-bg {
+  background: transparent;
+}
+
 // styles for logo in NAV
 .navbar-brand {
   padding-top:5px;
@@ -82,9 +92,50 @@ body {
 }
 // ========== STORIES SECTION END ===========
 
+// ========== PARALLAX START ===========
+.city-lights {
+  background-image: url("/images/city_lights.jpeg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.city-bg {
+  background-image: url("/images/city_bg.jpeg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// ========== PARALLAX END ===========
+
+
 // ========== FOOTER SECTION START ===========
 footer {
   padding: 10px 0px;
   text-align: center;
 }
 // ========== FOOTER SECTION END ===========
+
+@media only screen and (max-width: 991.98px) {
+  .city-lights {
+    height: 350px;
+  }
+
+  .city-bg {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .city-lights {
+    height: 30vh;
+  }
+
+  .city-bg {
+    height: 30vh;
+  }
+}
