@@ -3270,3 +3270,2363 @@ Processing by ResourcesController#index as HTML
 Completed 200 OK in 680ms (Views: 630.7ms | ActiveRecord: 9.6ms)
 
 
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 15:56:47 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (281.4ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 642ms (Views: 590.6ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/users/confirmation?confirmation_token=s_YteQTfAshgxy6T9a9i" for 127.0.0.1 at 2018-06-27 16:12:11 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"s_YteQTfAshgxy6T9a9i"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "s_YteQTfAshgxy6T9a9i"], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "48501484d1ee9b01f10cf5f1a4b68dfc6f00e7aa7e276fec54443831007425e7"], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (12.2ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/partials/_nav.html.erb:19
+  Rendered partials/_nav.html.erb (7.7ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 389ms (Views: 102.1ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 16:39:30 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (316.2ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 427ms (Views: 416.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/Social_Intrapreneurship.png" for 127.0.0.1 at 2018-06-27 16:39:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/Social_Intrapreneurship.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 16:40:50 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (228.4ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 330ms (Views: 320.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 16:41:20 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:28: syntax error, unexpected '<'
+eeze;@output_buffer.append=( <img src="images/Social_Intrapr
+                              ^
+/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:28: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+trapreneurship.png"> link_to "Doc1", root_url+"10.03.2018 - 
+                              ^
+/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+neurship.png"> link_to "Doc1", root_url+"10.03.2018 - Circle
+                              ^
+/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+e Whitepaper OYW Version.pdf", { target: '_blank' } );@outpu
+                              ^):
+  
+app/views/resources/index.html.erb:28: syntax error, unexpected '<'
+app/views/resources/index.html.erb:28: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/resources/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/resources/index.html.erb:28: syntax error, unexpected ',', expecting ')'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 16:41:27 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (225.4ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 350ms (Views: 341.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 16:42:07 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (268.1ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 356ms (Views: 349.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 16:42:16 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (205.9ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 296ms (Views: 288.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 16:42:53 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (148.7ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 260ms (Views: 251.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 16:44:08 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (203.7ms)
+  Rendered partials/_nav.html.erb (2.9ms)
+  Rendered partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 320ms (Views: 312.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 16:50:03 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (146.6ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 243ms (Views: 233.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 16:50:46 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (140.0ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 237ms (Views: 228.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:07:53 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (275.3ms)
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 383ms (Views: 374.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:08:19 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (229.8ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 329ms (Views: 322.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:08:31 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (243.6ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 334ms (Views: 326.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:08:59 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (203.7ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 291ms (Views: 282.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:09:23 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (237.0ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 350ms (Views: 340.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:09:47 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (235.4ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 330ms (Views: 321.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:10:20 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (250.0ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 349ms (Views: 341.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:11:11 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (203.2ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 307ms (Views: 298.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:12:36 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (252.3ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 389ms (Views: 377.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:17:19 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (247.9ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 367ms (Views: 357.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:18:10 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (176.6ms)
+  Rendered partials/_nav.html.erb (1.8ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 269ms (Views: 261.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:18:38 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (145.3ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 246ms (Views: 238.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:19:19 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (144.0ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 238ms (Views: 229.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:19:47 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (127.7ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 229ms (Views: 221.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:20:07 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (218.8ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 303ms (Views: 295.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:21:11 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (293.9ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 405ms (Views: 397.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:27:53 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (246.5ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 355ms (Views: 344.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:29:50 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (136.7ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 251ms (Views: 239.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:30:24 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (163.7ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 271ms (Views: 262.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:30:53 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (128.7ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 238ms (Views: 227.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:32:15 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (137.8ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 236ms (Views: 227.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:32:42 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (135.2ms)
+  Rendered partials/_nav.html.erb (1.8ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 235ms (Views: 227.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:33:08 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (128.1ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 218ms (Views: 210.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:33:23 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (221.1ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 318ms (Views: 308.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:33:50 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (155.4ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 240ms (Views: 231.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:34:41 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (133.7ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 229ms (Views: 221.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:40:11 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (140.3ms)
+  Rendered partials/_nav.html.erb (1.8ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 252ms (Views: 241.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/images/resource_documents/Social_Intrapreneurship_Thumbnail.png" for 127.0.0.1 at 2018-06-27 17:40:12 +0100
+Started GET "/images/resource_documents/The_Intrapreneur_Thumbnail.png" for 127.0.0.1 at 2018-06-27 17:40:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/resource_documents/Social_Intrapreneurship_Thumbnail.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/images/Social_Intrapreneurship.png" for 127.0.0.1 at 2018-06-27 17:40:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/resource_documents/The_Intrapreneur_Thumbnail.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/images/Social_Intrapreneurship.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:40:50 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (137.0ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 231ms (Views: 220.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/images/Social_Intrapreneurship.png" for 127.0.0.1 at 2018-06-27 17:40:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/Social_Intrapreneurship.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:41:48 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (153.9ms)
+  Rendered partials/_nav.html.erb (1.7ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 263ms (Views: 253.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/images/resource_documents/RUPitch_Thumbnail.png" for 127.0.0.1 at 2018-06-27 17:41:49 +0100
+Started GET "/images/resource_documents/Our_Vision_Thumbnail.png" for 127.0.0.1 at 2018-06-27 17:41:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/resource_documents/RUPitch_Thumbnail.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/images/resource_documents/Our_Vision_Thumbnail.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:42:47 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (143.5ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 253ms (Views: 245.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:43:39 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (127.3ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 244ms (Views: 236.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:44:13 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (140.0ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 241ms (Views: 233.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:44:50 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (124.7ms)
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 230ms (Views: 221.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-27 17:45:07 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.8ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 96ms (Views: 86.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:46:42 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (11.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (151.4ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 294ms (Views: 262.7ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:46:50 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (144.6ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (1.4ms)
+Completed 200 OK in 278ms (Views: 269.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:47:46 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (134.7ms)
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 262ms (Views: 250.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:55:58 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (146.2ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 249ms (Views: 239.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:57:23 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (138.6ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 232ms (Views: 224.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:58:32 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (132.6ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 646ms (Views: 544.2ms | ActiveRecord: 27.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:59:30 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (214.6ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 331ms (Views: 323.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 17:59:46 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (147.6ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 241ms (Views: 232.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:01:02 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (139.9ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 228ms (Views: 220.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:01:19 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (313.5ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 417ms (Views: 399.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:01:27 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (138.8ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 235ms (Views: 226.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:01:36 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (125.4ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 242ms (Views: 232.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-27 18:02:48 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.2ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 88ms (Views: 80.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:04:20 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (144.4ms)
+  Rendered partials/_nav.html.erb (1.8ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 257ms (Views: 241.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:15:47 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (160.3ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 272ms (Views: 261.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:16:56 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (136.4ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 223ms (Views: 213.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:18:41 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (146.9ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 241ms (Views: 233.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:20:53 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (157.0ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 254ms (Views: 246.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:21:45 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (149.0ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 238ms (Views: 226.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:21:54 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (143.1ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 244ms (Views: 236.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:22:08 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (255.9ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 356ms (Views: 349.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:23:52 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (142.8ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 241ms (Views: 233.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:24:25 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (186.4ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 295ms (Views: 287.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:25:31 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (165.0ms)
+Completed 500 Internal Server Error in 198ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "http://localhost:3000/the-intrapreneur.pdf":String):
+    43: 
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to "", root_url+"the-intrapreneur.pdf", { target: '_blank' } do %>
+    47:             <img src="images/resource_documents/The_Intrapreneur_Thumbnail.png" height="300px" width="auto">
+    48:           <% end %>
+    49:         </div>
+  
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___3880890216399308612_70307638618740'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:27:56 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (141.2ms)
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (The asset "images/resource_documents/The_Intrapreneur_Thumbnail.png" is not present in the asset pipeline.):
+    43: 
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to image_tag("images/resource_documents/The_Intrapreneur_Thumbnail.png"), root_url+"the-intrapreneur.pdf", { target: '_blank' } %>
+    47:         </div>
+    48:         <div class="row">
+    49:           <h4>The Intrapreneur: Confessions of a Corporate Insurgent</h4>
+  
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___3880890216399308612_70307597829200'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:31:55 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:47: syntax error, unexpected ','
+end=( link_to image_tag(""), , { target: '_blank' } );@outpu
+                              ^):
+  
+app/views/resources/index.html.erb:47: syntax error, unexpected ','
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:32:04 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (162.1ms)
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (The asset "images/resource_documents/The_Intrapreneur_Thumbnail.png" is not present in the asset pipeline.):
+    43: 
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to(image_tag("images/resource_documents/The_Intrapreneur_Thumbnail.png", :alt => "logo", :title => root_url+"the-intrapreneur.pdf"), "/") %>
+    47:         </div>
+    48:         <div class="row">
+    49:           <h4>The Intrapreneur: Confessions of a Corporate Insurgent</h4>
+  
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___3880890216399308612_70307609646320'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:34:45 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (165.7ms)
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "http://localhost:3000/the-intrapreneur.pdf":String):
+    43: 
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to "", root_url+"the-intrapreneur.pdf" do %>
+    47:             <img src="images/resource_documents/The_Intrapreneur_Thumbnail.png" height="300px" width="auto">
+    48:           <% end %>
+    49:         </div>
+  
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___3880890216399308612_70307632517020'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:39:57 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  [1m[36mResource Load (1.1ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Resource Load (0.0ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Resource Load (0.0ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Resource Load (0.0ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Resource Load (0.0ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Resource Load (0.0ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Resource Load (0.0ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Resource Load (0.0ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered resources/index.html.erb within layouts/application (533.1ms)
+Completed 500 Internal Server Error in 554ms (ActiveRecord: 12.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `auto' for #<#<Class:0x007fe3865e4040>:0x007fe386e49b18>):
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to href: root_url+"the-intrapreneur.pdf" do %>
+    47:             <%= image_tag "images/resource_documents/The_Intrapreneur_Thumbnail.png", height: 300, width: auto %>
+    48:           <% end %>
+    49:         </div>
+    50:         <div class="row">
+  
+app/views/resources/index.html.erb:47:in `block in _app_views_resources_index_html_erb___3880890216399308612_70307598717980'
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___3880890216399308612_70307598717980'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:40:29 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (210.5ms)
+Completed 500 Internal Server Error in 232ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (The asset "images/resource_documents/The_Intrapreneur_Thumbnail.png" is not present in the asset pipeline.):
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to href: root_url+"the-intrapreneur.pdf" do %>
+    47:             <%= image_tag "images/resource_documents/The_Intrapreneur_Thumbnail.png", height: 300, width: 200 %>
+    48:           <% end %>
+    49:         </div>
+    50:         <div class="row">
+  
+app/views/resources/index.html.erb:47:in `block in _app_views_resources_index_html_erb___3880890216399308612_70307631299180'
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___3880890216399308612_70307631299180'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:41:31 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (130.5ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 215ms (Views: 208.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources?href=http%3A%2F%2Flocalhost%3A3000%2Fthe-intrapreneur.pdf" for 127.0.0.1 at 2018-06-27 18:41:35 +0100
+Processing by ResourcesController#index as HTML
+  Parameters: {"href"=>"http://localhost:3000/the-intrapreneur.pdf"}
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (139.6ms)
+  Rendered partials/_nav.html.erb (3.0ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 237ms (Views: 223.9ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/resources?href=http%3A%2F%2Flocalhost%3A3000%2Fthe-intrapreneur.pdf" for 127.0.0.1 at 2018-06-27 18:41:39 +0100
+Processing by ResourcesController#index as HTML
+  Parameters: {"href"=>"http://localhost:3000/the-intrapreneur.pdf"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (146.9ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 239ms (Views: 229.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/resources?href=http%3A%2F%2Flocalhost%3A3000%2Fthe-intrapreneur.pdf" for 127.0.0.1 at 2018-06-27 18:41:56 +0100
+Processing by ResourcesController#index as HTML
+  Parameters: {"href"=>"http://localhost:3000/the-intrapreneur.pdf"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (198.1ms)
+  Rendered partials/_nav.html.erb (13.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 363ms (Views: 346.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/resources?href=http%3A%2F%2Flocalhost%3A3000%2Fthe-intrapreneur.pdf" for 127.0.0.1 at 2018-06-27 18:43:04 +0100
+  [1m[35m (8.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ResourcesController#index as HTML
+  Parameters: {"href"=>"http://localhost:3000/the-intrapreneur.pdf"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (165.0ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 724ms (Views: 607.1ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/resources?href=http%3A%2F%2Flocalhost%3A3000%2Fthe-intrapreneur.pdf" for 127.0.0.1 at 2018-06-27 18:43:20 +0100
+Processing by ResourcesController#index as HTML
+  Parameters: {"href"=>"http://localhost:3000/the-intrapreneur.pdf"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  [1m[36mResource Load (0.7ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Resource Load (0.0ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Resource Load (0.0ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Resource Load (0.0ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Resource Load (0.0ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Resource Load (0.0ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Resource Load (0.0ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Resource Load (0.0ms)[0m  [1m[34mSELECT  "resources".* FROM "resources" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendered resources/index.html.erb within layouts/application (570.7ms)
+Completed 500 Internal Server Error in 592ms (ActiveRecord: 3.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `the' for #<#<Class:0x007f957519d630>:0x007f9571785dd0>):
+    43: 
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to href: root_url+the-intrapreneur.pdf do %>
+    47:             <img src="images/resource_documents/The_Intrapreneur_Thumbnail.png" height="300px" width="auto">
+    48:           <% end %>
+    49:         </div>
+  
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___3748812992483862548_70139957068600'
+Started GET "/resources?href=http%3A%2F%2Flocalhost%3A3000%2Fthe-intrapreneur.pdf" for 127.0.0.1 at 2018-06-27 18:44:12 +0100
+Processing by ResourcesController#index as HTML
+  Parameters: {"href"=>"http://localhost:3000/the-intrapreneur.pdf"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (155.3ms)
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 259ms (Views: 249.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources?href=http%3A%2F%2Flocalhost%3A3000%2Fthe-intrapreneur.pdf" for 127.0.0.1 at 2018-06-27 18:44:15 +0100
+Processing by ResourcesController#index as HTML
+  Parameters: {"href"=>"http://localhost:3000/the-intrapreneur.pdf"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (187.8ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 282ms (Views: 270.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:44:19 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (129.6ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 246ms (Views: 236.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:46:06 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (229.1ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 310ms (Views: 303.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/root_url+%22the-intrapreneur.pdf%22" for 127.0.0.1 at 2018-06-27 18:46:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/root_url+%22the-intrapreneur.pdf%22"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/root_url+%22the-intrapreneur.pdf%22" for 127.0.0.1 at 2018-06-27 18:47:58 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/root_url+%22the-intrapreneur.pdf%22"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/root_url+%22the-intrapreneur.pdf%22" for 127.0.0.1 at 2018-06-27 18:48:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/root_url+%22the-intrapreneur.pdf%22"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:48:06 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (143.3ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 239ms (Views: 226.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/public/the-intrapreneur.pdf" for 127.0.0.1 at 2018-06-27 18:48:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/public/the-intrapreneur.pdf"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/public/the-intrapreneur.pdf" for 127.0.0.1 at 2018-06-27 18:49:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/public/the-intrapreneur.pdf"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/public/the-intrapreneur.pdf" for 127.0.0.1 at 2018-06-27 18:49:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/public/the-intrapreneur.pdf"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:52:03 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (148.6ms)
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (The asset "images/resource_documents/The_Intrapreneur_Thumbnail.png" is not present in the asset pipeline.):
+    43: 
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to image_tag('images/resource_documents/The_Intrapreneur_Thumbnail.png'), the-intrapreneur.pdf, target: '_blank' %>
+    47:         </div>
+    48:         <div class="row">
+    49:           <h4>The Intrapreneur: Confessions of a Corporate Insurgent</h4>
+  
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___3748812992483862548_70139966157420'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:53:21 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (150.5ms)
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (The asset "public/images/resource_documents/The_Intrapreneur_Thumbnail.png" is not present in the asset pipeline.):
+    43: 
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to image_tag('public/images/resource_documents/The_Intrapreneur_Thumbnail.png'), the-intrapreneur.pdf, target: '_blank' %>
+    47:         </div>
+    48:         <div class="row">
+    49:           <h4>The Intrapreneur: Confessions of a Corporate Insurgent</h4>
+  
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___3748812992483862548_70139913096520'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:57:49 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (148.5ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 233ms (Views: 226.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:58:10 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:46: syntax error, unexpected '{', expecting ')'
+uffer.append=( link_to "jkk" { target: '_blank' } );@output_
+                              ^
+/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:46: syntax error, unexpected '}', expecting ')'
+_to "jkk" { target: '_blank' } );@output_buffer.safe_append=
+                              ^
+/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:48: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;           end 
+                       ^
+/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:84: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:86: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/resources/index.html.erb:46: syntax error, unexpected '{', expecting ')'
+app/views/resources/index.html.erb:46: syntax error, unexpected '}', expecting ')'
+app/views/resources/index.html.erb:48: syntax error, unexpected keyword_end, expecting ')'
+app/views/resources/index.html.erb:84: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/resources/index.html.erb:86: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/root_url+%22the-intrapreneur.pdf%22" for 127.0.0.1 at 2018-06-27 18:58:21 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/root_url+%22the-intrapreneur.pdf%22"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 18:58:26 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:84: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/resources/index.html.erb:84: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:03:28 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (179.9ms)
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (The asset "public/images/resource_documents/The_Intrapreneur_Thumbnail.png" is not present in the asset pipeline.):
+    43: 
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to image_tag('public/images/resource_documents/The_Intrapreneur_Thumbnail.png'), root_url+"the-intrapreneur.pdf", target: '_blank' %>
+    47:         </div>
+    48:         <div class="row">
+    49:           <h4>The Intrapreneur: Confessions of a Corporate Insurgent</h4>
+  
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___3748812992483862548_70139947239480'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:04:03 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (329.3ms)
+Completed 500 Internal Server Error in 398ms (ActiveRecord: 9.6ms)
+
+
+  
+ActionView::Template::Error (The asset "public/images/resource_documents/The_Intrapreneur_Thumbnail.png" is not present in the asset pipeline.):
+    43: 
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to image_tag('public/images/resource_documents/The_Intrapreneur_Thumbnail.png'), root_url+"the-intrapreneur.pdf", target: '_blank' %>
+    47:         </div>
+    48:         <div class="row">
+    49:           <h4>The Intrapreneur: Confessions of a Corporate Insurgent</h4>
+  
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___2039552045706203244_70220640600380'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:04:34 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:46: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+ur_Thumbnail.png'), root_url "the-intrapreneur.pdf", target:
+                              ^
+/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:46: syntax error, unexpected ',', expecting ')'
+ot_url "the-intrapreneur.pdf", target: '_blank' );@output_bu
+                              ^):
+  
+app/views/resources/index.html.erb:46: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/resources/index.html.erb:46: syntax error, unexpected ',', expecting ')'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:06:39 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:47: syntax error, unexpected ',', expecting ')'
+_Intrapreneur_Thumbnail.png'), target: '_blank' );@output_bu
+                              ^):
+  
+app/views/resources/index.html.erb:47: syntax error, unexpected ',', expecting ')'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:06:56 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.1ms)
+
+
+  
+SyntaxError (/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:47: syntax error, unexpected tLABEL, expecting ')'
+reneur_Thumbnail.png') target: '_blank' );@output_buffer.saf
+                              ^):
+  
+app/views/resources/index.html.erb:47: syntax error, unexpected tLABEL, expecting ')'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:07:13 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (151.7ms)
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (The asset "The_Intrapreneur_Thumbnail.png" is not present in the asset pipeline.):
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to root_url "the-intrapreneur.pdf" do %>
+    47:             <%= image_tag('The_Intrapreneur_Thumbnail.png') %>
+    48:           <% end %>
+    49:         </div>
+    50:         <div class="row">
+  
+app/views/resources/index.html.erb:47:in `block in _app_views_resources_index_html_erb___2039552045706203244_70220662870100'
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___2039552045706203244_70220662870100'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:08:41 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (135.6ms)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (The asset "public/images/The_Intrapreneur_Thumbnail.png" is not present in the asset pipeline.):
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to root_url "the-intrapreneur.pdf" do %>
+    47:             <%= image_tag('public/images/The_Intrapreneur_Thumbnail.png') %>
+    48:           <% end %>
+    49:         </div>
+    50:         <div class="row">
+  
+app/views/resources/index.html.erb:47:in `block in _app_views_resources_index_html_erb___2039552045706203244_70220662837460'
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___2039552045706203244_70220662837460'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:11:05 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (155.5ms)
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (The asset "The_Intrapreneur_Thumbnail.png" is not present in the asset pipeline.):
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to "the-intrapreneur.pdf", target: :_blank do %>
+    47:             <%= image_tag("The_Intrapreneur_Thumbnail.png") %>
+    48:           <% end %>
+    49:         </div>
+    50:         <div class="row">
+  
+app/views/resources/index.html.erb:47:in `block in _app_views_resources_index_html_erb___2039552045706203244_70220665559340'
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___2039552045706203244_70220665559340'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:13:54 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (139.8ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (The asset "The_Intrapreneur_Thumbnail.png" is not present in the asset pipeline.):
+    44:       <div class="row">
+    45:         <div class="row">
+    46:           <%= link_to "the-intrapreneur.pdf", target: :_blank do %>
+    47:             <%= image_tag("The_Intrapreneur_Thumbnail.png") %>
+    48:           <% end %>
+    49:         </div>
+    50:         <div class="row">
+  
+app/views/resources/index.html.erb:47:in `block in _app_views_resources_index_html_erb___2039552045706203244_70220662594520'
+app/views/resources/index.html.erb:46:in `_app_views_resources_index_html_erb___2039552045706203244_70220662594520'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:15:36 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (708.4ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 978ms (Views: 965.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/images/resource_documents/Social_Intrapreneurship_Thumbnail.png" for 127.0.0.1 at 2018-06-27 19:15:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/resource_documents/Social_Intrapreneurship_Thumbnail.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:19:22 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (154.9ms)
+  Rendered partials/_nav.html.erb (2.6ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 414ms (Views: 400.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/10.03.2018%20-%20Circle%20Whitepaper%20OYW%20Version.pdf" for 127.0.0.1 at 2018-06-27 19:19:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/10.03.2018%20-%20Circle%20Whitepaper%20OYW%20Version.pdf"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/10.03.2018%20-%20Circle%20Whitepaper%20OYW%20Version.pdf" for 127.0.0.1 at 2018-06-27 19:19:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/10.03.2018%20-%20Circle%20Whitepaper%20OYW%20Version.pdf"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:21:32 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (146.8ms)
+  Rendered partials/_nav.html.erb (2.8ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 419ms (Views: 406.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:23:13 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (742.5ms)
+  Rendered partials/_nav.html.erb (1.7ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 937ms (Views: 872.6ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:27:25 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (137.2ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 240ms (Views: 217.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:28:07 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (160.5ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 255ms (Views: 243.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:28:32 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/Tech-A34/Desktop/Sparta/Engineering-11/Core/serverSide/Ruby Framework/Project-Week/Project-Wed/circle-of-y/app/views/resources/index.html.erb:35: syntax error, unexpected tLABEL, expecting ')'
+urship_Thumbnail.png") height: 300, width: 200 );@output_buf
+                              ^):
+  
+app/views/resources/index.html.erb:35: syntax error, unexpected tLABEL, expecting ')'
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:29:30 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (178.5ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 276ms (Views: 266.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:30:52 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (160.5ms)
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 233ms (Views: 226.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:31:39 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (149.9ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 234ms (Views: 226.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:31:50 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (144.4ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 256ms (Views: 246.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:32:01 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (150.6ms)
+  Rendered partials/_nav.html.erb (2.6ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 247ms (Views: 235.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:32:16 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (147.6ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 237ms (Views: 230.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:32:28 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (137.5ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 223ms (Views: 214.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:33:02 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (141.5ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 229ms (Views: 219.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:33:30 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (140.4ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 219ms (Views: 210.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:33:59 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (148.4ms)
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 240ms (Views: 232.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:34:51 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (143.9ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 235ms (Views: 226.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:35:10 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (157.7ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 249ms (Views: 241.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:35:31 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (143.7ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 242ms (Views: 233.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:35:49 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (153.5ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 232ms (Views: 224.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:36:12 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (157.0ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 235ms (Views: 226.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:38:42 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (133.2ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 224ms (Views: 213.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:38:53 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (134.9ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 240ms (Views: 230.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:39:02 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (162.9ms)
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 259ms (Views: 246.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:39:12 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (140.1ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 232ms (Views: 222.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:39:23 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (141.4ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 223ms (Views: 216.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:40:25 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (171.5ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 252ms (Views: 242.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:40:40 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (138.2ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 239ms (Views: 230.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:40:51 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (135.6ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 233ms (Views: 224.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:41:04 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (160.9ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 235ms (Views: 227.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:41:14 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (159.0ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 256ms (Views: 247.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:41:31 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (158.6ms)
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 255ms (Views: 246.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:42:37 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (160.6ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 257ms (Views: 248.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:42:56 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (164.0ms)
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 247ms (Views: 238.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:44:13 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (147.3ms)
+  Rendered partials/_nav.html.erb (2.9ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 237ms (Views: 228.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:44:23 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (142.8ms)
+  Rendered partials/_nav.html.erb (2.9ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 232ms (Views: 225.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:44:42 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (154.1ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 269ms (Views: 260.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:46:13 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (167.2ms)
+  Rendered partials/_nav.html.erb (2.8ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 266ms (Views: 258.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:47:56 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (180.9ms)
+  Rendered partials/_nav.html.erb (2.6ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 265ms (Views: 255.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-27 19:48:46 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (162.0ms)
+  Rendered partials/_nav.html.erb (2.6ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 252ms (Views: 245.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-27 19:49:41 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.8ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 82ms (Views: 74.0ms | ActiveRecord: 0.7ms)
+
+

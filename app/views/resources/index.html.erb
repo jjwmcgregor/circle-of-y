@@ -5,6 +5,7 @@
         <span class="title">
           Resources<br class="hide-for-small">
         </span>
+        <p>Welcome to the resource page! Here you will find all the information you need on The Circle of Young Intrapreneurs. We want you to know every thing there is to know about us so if there is any thing you can’t find here, please do contact us for more information.</p>
       </h1>
     </div>
   </div>
@@ -22,12 +23,74 @@
 
 <div id="movement" class="row red-sections container-space">
   <div class="container">
-    <div class="col-md-6 text-center">
-      <h2>Documents</h2>
-      <%= link_to "Doc1", root_url+"10.03.2018 - Circle Whitepaper OYW Version.pdf", { target: '_blank' } %>
-    </div>
-    <div class="col-md-6 text-center">
-      <h2>Podcasts</h2>
+
+    <div class="col-md-12 text-center documents">
+      <div class="row">
+        <h2>Documents</h2>
+      </div>
+
+      <div class="row">
+        <div class="row">
+          <%= link_to "10.03.2018 - Circle Whitepaper OYW Version.pdf", target: :_blank do %>
+            <%= image_tag("Social_Intrapreneurship_Thumbnail.png", :width => "300") %>
+          <% end %>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <h4>Social Entrepreneurship White Paper</h4>
+            <p>A document that discusses the importance of social entrepreneurship and how to implement it in organisations. It also touches on the history of The Circle of Young Intrapreneurs and the driving factors behind setting up the charity.</p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="row">
+          <%= link_to "the-intrapreneur.pdf", target: :_blank do %>
+            <%= image_tag("The_Intrapreneur_Thumbnail.png", :width => "300") %>
+          <% end %>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <h4>The Intrapreneur: Confessions of a Corporate Insurgent</h4>
+            <p>Gib Bulloch is an award-winning social intrapreneur who consults, writes and speaks on topics relating to the role of business in society. Gib believes passionately in the power of business to change the world and in the power of the individual to change the world of business.</p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <%= link_to "RUPitch.jpeg", target: :_blank do %>
+          <%= image_tag("RUPitch_Thumbnail.jpeg", :width => "300") %>
+        <% end %>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <h4>Learn how to write a pitch with our example</h4>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <%= link_to "Circle Story.PDF", target: :_blank do %>
+          <%= image_tag("Our_Vision_Thumbnail.jpeg", :width => "300") %>
+        <% end %>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <h4>Our Vision</h4>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+
+<div class="text-center">
+  <h2>Podcasts</h2>
 </div>
