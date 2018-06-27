@@ -11,13 +11,34 @@ body {
 .form-signin {
   max-width: 330px;
   padding: 15px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-.form-recon {
+.form-recon{
   max-width: 484px;
   padding: 15px;
   margin: 0 auto;
+}
+
+.form-password,
+.form-signup,
+.form-recon,
+.form-signin {
+  ul {
+    list-style: none;
+    font-size: 15px;
+    li {
+      margin:0;
+
+      a {
+        &:hover {
+          background: none;
+          color:red;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
 .form-signin .form-signin-heading, .form-signin .checkbox {
