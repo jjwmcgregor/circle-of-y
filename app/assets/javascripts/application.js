@@ -16,3 +16,13 @@
 //= require_tree .
 //= require jquery3
 //= require bootstrap
+
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 100) {
+    $('.navbar').addClass("transparent-bg");
+  }
+  else {
+    $('.navbar').removeClass("transparent-bg");
+  }
+},false);
