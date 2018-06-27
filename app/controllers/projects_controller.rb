@@ -1,41 +1,41 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
-  # Only allows logged in users to access those methods
-  before_action :authenticate_user!, only: [:user_projects, :new, :edit, :create, :destroy]
+  before_action :authenticate_user!
 
   # GET /projects
   # GET /projects.json
   def index
-    @projects = Project.where(status: 0)
+    @projects = Project.all
+    @user = User.find(params[:user_id])
   end
 
   # GET /projects/1
   # GET /projects/1.json
   def show
+    @user = User.find(params[:user_id])
   end
 
   # GET /projects/new
   def new
     @project = Project.new
+    @user = User.find(params[:user_id])
   end
-
 
   # GET /projects/1/edit
   def edit
   end
 
-  def user_projects
-    @projects = Project.where(user_id: current_user.id)
-  end
-
   # POST /projects
   # POST /projects.json
   def create
-    @project = Project.create!(project_params)
-    @project.status = 0
+    @project = Project.new(project_params)
+    @project.user = current_user
+    @user = User.find(params[:user_id])
+
     respond_to do |format|
       if @project.save
-        format.html { redirect_to @project, notice: 'Project was successfully created.' }
+        UserMailer.project_pitch(@user,@project).deliver_now
+        format.html { redirect_to user_projects_url(@user), notice: 'Project was successfully created.' }
         format.json { render :show, status: :created, location: @project }
       else
         format.html { render :new }
@@ -61,13 +61,14 @@ class ProjectsController < ApplicationController
   # DELETE /projects/1
   # DELETE /projects/1.json
   def destroy
+    @user = User.find(params[:user_id])
+
     @project.destroy
     respond_to do |format|
-      format.html { redirect_to projects_url, notice: 'Project was successfully destroyed.' }
+      format.html { redirect_to user_projects_path(@user), notice: 'Project was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
-
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -77,6 +78,6 @@ class ProjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_params
-      params.require(:project).permit(:title, :description, :status, uploaded_files: []).merge(user_id: current_user.id)
+      params.require(:project).permit(:intro, :impact, :businesscase, :user_id)
     end
 end

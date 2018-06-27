@@ -1,2 +1,0 @@
-module PasswordControllerHelper
-end

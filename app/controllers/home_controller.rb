@@ -1,8 +1,4 @@
 class HomeController < ApplicationController
-
-  def home
-  end
-
-  def landing
+  def index
   end
 end

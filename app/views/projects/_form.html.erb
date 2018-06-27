@@ -1,4 +1,4 @@
-<%= form_with(model: project, local: true) do |form| %>
+<%= form_with(model: project, url:[@user, @project], local: true) do |form| %>
   <% if project.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
@@ -10,35 +10,24 @@
       </ul>
     </div>
   <% end %>
-  <div class="row">
-    <div class="col-md-4 offset-4 text-on-bk-red white-text" style="border-radius:10px; ">
 
-      <br>
-
-      <div class="col-md-3 offset-3 field">
-        <%= form.label :title %>
-        <%= form.text_field :title %>
-      </div>
-      <br>
-      <div class="col-md-3 offset-3 field">
-        <%= form.label :description %>
-        <%= form.text_field :description %>
-      </div>
-      <br>
-      <div class="col-md-3 offset-3">
-        <%= form.file_field :uploaded_files, multiple: true%>
-      </div>
-      <br>
-      <div class="col-md-3 offset-3 actions">
-        <%= form.submit %>
-      </div>
-      <br>
-      <div class="top-of-page">
-
-      </div>
-
-    </div>
-
+  <div class="field">
+    <%= form.label :intro %>
+    <%= form.text_area :intro %>
   </div>
 
+  <div class="field">
+    <%= form.label :impact %>
+    <%= form.text_area :impact %>
+  </div>
+
+  <div class="field">
+    <%= form.label :businesscase %>
+    <%= form.text_area :businesscase %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
 <% end %>

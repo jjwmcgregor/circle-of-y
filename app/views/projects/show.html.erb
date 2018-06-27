@@ -1,37 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <h1>  <%= @project.title %></h1>
+  <strong>Intro:</strong>
+  <%= @project.intro %>
 </p>
 
 <p>
-  <strong>Current Status:</strong>
-  <%= @project.status %>
+  <strong>Impact:</strong>
+  <%= @project.impact %>
 </p>
 
 <p>
-  <strong>Description:</strong>
-  <%= @project.description %>
+  <strong>Businesscase:</strong>
+  <%= @project.businesscase %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @project.user.username %>
+  <%= @project.user_id %>
 </p>
 
-<p>
-  <strong>Project Files:</strong>
-  <ul>
-
-
-</ul>
-<% @project.uploaded_files.each do |file| %>
-    <li>
-      <a href="<%= rails_blob_path(file, disposition: "attachment")%>"  download>Download Project File</a>
-    </li>
-  <% end %>
-</p>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Projects Index', projects_path %> |
-<%= link_to 'My Projects', user_projects_path %>
+<%= link_to 'Back', user_projects_path(@user) %>

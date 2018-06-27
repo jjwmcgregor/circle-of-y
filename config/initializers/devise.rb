@@ -8,7 +8,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-   config.secret_key = '7dd949d4a5e0fcba0873e84b7f4f24b84461fc997a05eae31b08423316233fa5c5a0c456b60cc44f0788778b9ccb1aefdc00e09fd7ea23c986ddb312fb0c52a3'
+  config.secret_key = '0120cf55aa2119240d3853d93873915cd5d32bc4b6f69a8d1f4f4cb2c173c47dd54fb60b349b6e0d65c62666d3b8f10858eaf8da715342fb657ddd6b7d5f1fb8'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -18,10 +18,11 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = ENV['GMAIL_USERNAME']
+  # config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'sendertestsparta@gmail.com'
 
   # Configure the class responsible to send e-mails.
-  # config.mailer = 'Devise::Mailer'
+  config.mailer = 'Devise::Mailer'
 
   # Configure the parent class responsible to send e-mails.
   # config.parent_mailer = 'ActionMailer::Base'
@@ -40,7 +41,7 @@ Devise.setup do |config|
   # session. If you need permissions, you should implement that in a before filter.
   # You can also supply a hash where the value is a boolean determining whether
   # or not authentication should be aborted when the value is not present.
-  config.authentication_keys = [:login]
+  # config.authentication_keys = [:email]
 
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
@@ -114,7 +115,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'b276bcf77b5ece46ea1b08c3f9e4644ec2c1f2b0bec8d4200f2b3734e958816e8b15e771ab9f542ea8842fd81b28396e7878b12901e86f7bc850fd1b97cc5115'
+  # config.pepper = 'f08d464df1b244787f1dd72c9b4aa8cfe662ee93d7bff09630c9db3529d8afd0d145f1b197af2385d5aaa2b9a55243bfa62fefbb7d22aefbc39217ba24456ab6'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -163,7 +164,7 @@ Devise.setup do |config|
 
   # ==> Configuration for :validatable
   # Range for password length.
-  config.password_length = 8..128
+  config.password_length = 6..128
 
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly
@@ -229,9 +230,7 @@ Devise.setup do |config|
   # Turn scoped views on. Before rendering "sessions/new", it will first check for
   # "users/sessions/new". It's turned off by default because it's slower if you
   # are using only default views.
-
-  config.scoped_views = true
-
+  # config.scoped_views = false
 
   # Configure the default scope given to Warden. By default it's the first
   # devise role declared in your routes (usually :user).

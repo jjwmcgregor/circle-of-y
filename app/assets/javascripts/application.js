@@ -12,9 +12,17 @@
 //
 //= require rails-ujs
 //= require activestorage
+//= require turbolinks
 //= require_tree .
 //= require jquery3
-//= require popper
 //= require bootstrap
-//= require map
-//= require FAQ
+
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 100) {
+    $('.navbar').addClass("transparent-bg");
+  }
+  else {
+    $('.navbar').removeClass("transparent-bg");
+  }
+},false);

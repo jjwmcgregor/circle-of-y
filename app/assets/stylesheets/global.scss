@@ -1,75 +1,95 @@
 /* BOOTSTRAP OVERRIDES */
 
+// Global styles for font
 * {
   font-family: 'Raleway', sans-serif;
   font-weight:200;
 }
-
+// Adds space so that 'yeild' content sits below NAV
 body {
-  padding-top:$navbar-height;
+  padding-top: 50px;
 }
 
+// ========== NAV SECTION START ===========
+.navbar {
+  background: #dc3545;
+  border-bottom: none;
+  padding-bottom: 5px;
+  // below makes NAV bar links white and bold
+  .nav-link a, .nav-link {
+    color: white !important;
+    font-weight: bold !important;
+  }
+}
+
+.transparent-bg {
+  background: transparent;
+}
+
+// styles for logo in NAV
 .navbar-brand {
   padding-top:5px;
   padding-bottom:5px;
   width: 75px;
 }
-
-.jumbotron-fluid {
-  border-radius:0px !important;
+// change collapsed nav icon bars colour
+.icon-bar {
+  background-color: white !important;
 }
+// ========== NAV SECTION END ===========
 
-.container-fluid {}
-
-body {
-  // background-image: url('/images/city_bg.jpeg');
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-
+// ========== ALL BUTTON STYLES START ===========
 .btn {
   text-transform: uppercase;
   font-weight:bold;
   margin-top:30px;
 }
+// ========== ALL BUTTON STYLES END ===========
 
-h1 {
-  font-size: 4.0em;
-  margin-top:40px;
-  font-weight: 200;
-}
-
-.red {
-  background-color: $brand-primary;
-  color: $white !important;
+// ========== ALL RED SECTIONS START ===========
+.red-sections   {
+  background-color: #dc3545;
+  color: #fff !important;
 
   h1,h2,h3,h4,h5 {
-    color: $white !important;
+    color: #fff !important;
   }
-
   a {
-    color: $white !important;
+    color: #fff !important;
   }
-
   .btn-primary {
-    background-color: $white;
-    color: $brand-primary !important;
+    background-color: #fff;
+    color: #dc3545 !important;
   }
 }
+// ========== ALL RED SECTIONS END ===========
 
-.white {
-  background-color: $white;
-}
-
-.area {
+// ========== CONTAINER SEPERATOR START ===========
+.container-space {
   padding-top:50px;
   padding-bottom:50px;
 }
+// ========== CONTAINER SEPERATOR END ===========
 
+// ========== STORIES SECTION START ===========
+.stories-header {
+  padding: 20px 0;
+  text-align: center;
+}
+.stories {
+  .stories_image {
+    width:100px;
+    height:100px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+  }
+}
+// ========== STORIES SECTION END ===========
 
+// ========== FOOTER SECTION START ===========
+footer {
+  padding: 10px 0px;
+  text-align: center;
+}
+// ========== FOOTER SECTION END ===========
