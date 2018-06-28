@@ -50,6 +50,12 @@ body {
   min-height: 560px;
 }
 
+.form-signin,
+.form-signup,
+.form-password {
+  height: 580px;
+}
+
 
 // ========== NAV SECTION START ===========
 .navbar {
@@ -61,12 +67,14 @@ body {
     color: white !important;
     font-weight: bold !important;
   }
+  li {
+    .fa {
+      font-size: 19px;
+      color: #D8E2DC;
+      padding-bottom: 0px !important;
+    }
+  }
 }
-
-.transparent-bg {
-  background: transparent;
-}
-
 // styles for logo in NAV
 .navbar-brand {
   padding-top:5px;
@@ -176,12 +184,21 @@ footer {
         display: inline-block;
         transition: all 0.5s ease;
 
+        a:hover {
+          background: none;
+          text-decoration: none;
+        }
+
         .fa {
           color: #D8E2DC;
           margin-top: 20px;
           transition: all 0.5s ease;
           line-height: 5px;
         }
+      }
+
+      li:hover {
+        border: 3px solid black;
       }
     }
   }
@@ -194,11 +211,10 @@ footer {
 
   .wrapper ul li:hover .fa-facebook {
     color: #3b5998;
-    text-shadow: 0 0 15px #3b5998;
+    text-shadow: 0 0 15px #3b5998 ;
     transition: all 0.5s ease;
   }
 
-  /*twitter*/
   .wrapper ul li:hover.twitter {
     border: 5px solid #00aced;
     box-shadow: 0 0 15px #00aced;
@@ -211,8 +227,7 @@ footer {
     transition: all 0.5s ease;
   }
 
-  /* instagram */
-  .wrapper ul li:hover.instagram {
+    .wrapper ul li:hover.instagram {
     border: 5px solid #bc2a8d;
     box-shadow: 0 0 15px #bc2a8d;
     transition: all 0.5s ease;
@@ -224,7 +239,6 @@ footer {
     transition: all 0.5s ease;
   }
 
-  /* google */
   .wrapper ul li:hover.youtube {
     border: 5px solid #dd4b39;
     box-shadow: 0 0 15px #dd4b39;
@@ -249,9 +263,8 @@ footer {
     transition: all 0.5s ease;
   }
 
-  .row {
 
-  }
+
 
 }
 
@@ -275,21 +288,22 @@ footer {
   .city-bg {
     height: 30vh;
   }
-  footer .wrapper ul {
-    li:first-child{
-      margin-left: -30px;
-    }
-    li {
-      font-size: 18px;
-      margin: 5px 1px;
-    }
-
-  }
 }
 
-@media only screen and (min-height: 640px) {
-  .form-signin {
-    min-height: 400px;
-  }
+@media only screen and (max-width: 450px) {
 
+  footer {
+    .copy-text {
+      font-size: 10px;
+    }
+    .wrapper ul {
+      li:first-child{
+        margin-left: -30px;
+      }
+      li {
+        margin: 5px 2px;
+      }
+
+    }
+  }
 }
