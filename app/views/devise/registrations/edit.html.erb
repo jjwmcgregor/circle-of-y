@@ -33,13 +33,8 @@
           </div>
 
           <div class="field form-group">
-            <%= f.label :country %>
-            <%= f.text_field :country, class: "form-control" %>
-          </div>
-
-          <div class="field form-group">
-            <%= f.label :chapter %>
-            <%= f.text_field :chapter, class: "form-control" %>
+            <%= f.label 'Moved chapter?' %> <br>
+            <%= grouped_collection_select(:user, :chapter_id, Country.all, :chapters, :name, :id, :city, prompt: 'Please choose a chapter') %>
           </div>
 
           <div class="field form-group">
