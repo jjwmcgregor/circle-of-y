@@ -20765,3 +20765,989 @@ Processing by RegistrationsController#edit as HTML
 Completed 200 OK in 237ms (Views: 216.4ms | ActiveRecord: 13.4ms)
 
 
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (206.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project-test1_development"[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (198.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project-test1_test"[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (510.8ms)[0m  [1m[35mCREATE DATABASE "project-test1_development" ENCODING = 'unicode'[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (443.5ms)[0m  [1m[35mCREATE DATABASE "project-test1_test" ENCODING = 'unicode'[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35mSQL (1.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_attachments" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (17.6ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_blobs" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (11.3ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "chapters" CASCADE[0m
+  ↳ db/schema.rb:39
+  [1m[35m (12.9ms)[0m  [1m[35mCREATE TABLE "chapters" ("id" bigserial primary key, "city" character varying, "country_id" integer, "lead" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:39
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "countries" CASCADE[0m
+  ↳ db/schema.rb:48
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:48
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "projects" CASCADE[0m
+  ↳ db/schema.rb:54
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "intro" text, "impact" text, "businesscase" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "resources" CASCADE[0m
+  ↳ db/schema.rb:63
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE TABLE "resources" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:63
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:68
+  [1m[35m (16.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "first_name" character varying, "last_name" character varying, "organisation" character varying, "twitter_url" character varying, "country" character varying, "chapter" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "chapter_id" integer, "image" character varying)[0m
+  ↳ db/schema.rb:68
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:68
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/schema.rb:68
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180628152323)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180626222215),
+(20180628100147),
+(20180628095957),
+(20180628143220),
+(20180627134232),
+(20180625153418),
+(20180628100246);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-06-28 15:40:44.959083"], ["updated_at", "2018-06-28 15:40:44.959083"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35mSQL (0.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_attachments" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (17.7ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (16.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_blobs" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/schema.rb:28
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "chapters" CASCADE[0m
+  ↳ db/schema.rb:39
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE TABLE "chapters" ("id" bigserial primary key, "city" character varying, "country_id" integer, "lead" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:39
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "countries" CASCADE[0m
+  ↳ db/schema.rb:48
+  [1m[35m (14.5ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:48
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "projects" CASCADE[0m
+  ↳ db/schema.rb:54
+  [1m[35m (15.3ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "intro" text, "impact" text, "businesscase" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "resources" CASCADE[0m
+  ↳ db/schema.rb:63
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "resources" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:63
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:68
+  [1m[35m (13.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "first_name" character varying, "last_name" character varying, "organisation" character varying, "twitter_url" character varying, "country" character varying, "chapter" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "chapter_id" integer, "image" character varying)[0m
+  ↳ db/schema.rb:68
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:68
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/schema.rb:68
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180628152323)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180626222215),
+(20180628100147),
+(20180628095957),
+(20180628143220),
+(20180627134232),
+(20180625153418),
+(20180628100246);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-06-28 15:40:45.238353"], ["updated_at", "2018-06-28 15:40:45.238353"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Update (0.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2018-06-28 15:40:45.247008"], ["key", "environment"]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mCountry Create (2.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "United Kingdom"], ["created_at", "2018-06-28 15:40:45.334318"], ["updated_at", "2018-06-28 15:40:45.334318"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Republic of Ireland"], ["created_at", "2018-06-28 15:40:45.342046"], ["updated_at", "2018-06-28 15:40:45.342046"]]
+  ↳ db/seeds.rb:2
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mCountry Create (0.8ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "United States of America"], ["created_at", "2018-06-28 15:40:45.347293"], ["updated_at", "2018-06-28 15:40:45.347293"]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mCountry Create (0.7ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "United Arab Emirates"], ["created_at", "2018-06-28 15:40:45.352623"], ["updated_at", "2018-06-28 15:40:45.352623"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "France"], ["created_at", "2018-06-28 15:40:45.357962"], ["updated_at", "2018-06-28 15:40:45.357962"]]
+  ↳ db/seeds.rb:5
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Monaco"], ["created_at", "2018-06-28 15:40:45.366060"], ["updated_at", "2018-06-28 15:40:45.366060"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mCountry Create (0.7ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Netherlands"], ["created_at", "2018-06-28 15:40:45.371618"], ["updated_at", "2018-06-28 15:40:45.371618"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCountry Create (0.7ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Morocco"], ["created_at", "2018-06-28 15:40:45.376533"], ["updated_at", "2018-06-28 15:40:45.376533"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "India"], ["created_at", "2018-06-28 15:40:45.381550"], ["updated_at", "2018-06-28 15:40:45.381550"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCountry Create (0.7ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Singapore"], ["created_at", "2018-06-28 15:40:45.386376"], ["updated_at", "2018-06-28 15:40:45.386376"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "South Africa"], ["created_at", "2018-06-28 15:40:45.391383"], ["updated_at", "2018-06-28 15:40:45.391383"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Australia"], ["created_at", "2018-06-28 15:40:45.396111"], ["updated_at", "2018-06-28 15:40:45.396111"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Canada"], ["created_at", "2018-06-28 15:40:45.400650"], ["updated_at", "2018-06-28 15:40:45.400650"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sweden"], ["created_at", "2018-06-28 15:40:45.405270"], ["updated_at", "2018-06-28 15:40:45.405270"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Chile"], ["created_at", "2018-06-28 15:40:45.409892"], ["updated_at", "2018-06-28 15:40:45.409892"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Belgium"], ["created_at", "2018-06-28 15:40:45.414621"], ["updated_at", "2018-06-28 15:40:45.414621"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United Kingdom"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mChapter Create (0.9ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "London"], ["country_id", 1], ["lead", "Tim Heard"], ["email", "tim@circleofyi.com"], ["created_at", "2018-06-28 15:40:45.447973"], ["updated_at", "2018-06-28 15:40:45.447973"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United States of America"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Los Angeles"], ["country_id", 3], ["lead", "Justin Deshaw"], ["email", "justin.deshaw@gmail.com"], ["created_at", "2018-06-28 15:40:45.454187"], ["updated_at", "2018-06-28 15:40:45.454187"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United States of America"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Washington DC"], ["country_id", 3], ["lead", "John Balkam"], ["email", "jrbalkam@gmail.com"], ["created_at", "2018-06-28 15:40:45.460127"], ["updated_at", "2018-06-28 15:40:45.460127"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United States of America"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Boston"], ["country_id", 3], ["lead", "Alejandra Grupp"], ["email", "alejandragrupp@gmail.com"], ["created_at", "2018-06-28 15:40:45.466148"], ["updated_at", "2018-06-28 15:40:45.466148"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United States of America"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "New York City"], ["country_id", 3], ["lead", "Hallie Stebbins"], ["email", "hallie.stebbins@gmail.com"], ["created_at", "2018-06-28 15:40:45.472332"], ["updated_at", "2018-06-28 15:40:45.472332"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United States of America"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Pittsburgh"], ["country_id", 3], ["lead", "Meg Trite"], ["email", "megtrite@gmail.com"], ["created_at", "2018-06-28 15:40:45.478569"], ["updated_at", "2018-06-28 15:40:45.478569"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United States of America"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Chicago"], ["country_id", 3], ["lead", "Jack Redding"], ["email", "megtrite@gmail.com"], ["created_at", "2018-06-28 15:40:45.484417"], ["updated_at", "2018-06-28 15:40:45.484417"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United States of America"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Dublin"], ["country_id", 3], ["lead", "Ciara Keane"], ["email", ""], ["created_at", "2018-06-28 15:40:45.490257"], ["updated_at", "2018-06-28 15:40:45.490257"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United Kingdom"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Birmingham"], ["country_id", 1], ["lead", "Sally Eaves"], ["email", "business@sallyeaves.co.uk"], ["created_at", "2018-06-28 15:40:45.496307"], ["updated_at", "2018-06-28 15:40:45.496307"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "France"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Paris"], ["country_id", 5], ["lead", "Anna Donna-Hie"], ["email", "annadonahie@gmail.com"], ["created_at", "2018-06-28 15:40:45.501089"], ["updated_at", "2018-06-28 15:40:45.501089"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "France"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Monaco"], ["country_id", 5], ["lead", "Dara Miller"], ["email", "miller.dara@gmail.com"], ["created_at", "2018-06-28 15:40:45.507074"], ["updated_at", "2018-06-28 15:40:45.507074"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Netherlands"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Amsterdam"], ["country_id", 7], ["lead", "Aouatif Tawfik"], ["email", "aouatif.tawfik@unilever.com"], ["created_at", "2018-06-28 15:40:45.511996"], ["updated_at", "2018-06-28 15:40:45.511996"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Morocco"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Casablanca"], ["country_id", 8], ["lead", "Guillaume Vigier"], ["email", "gvigier.mazars@gmail.com"], ["created_at", "2018-06-28 15:40:45.518035"], ["updated_at", "2018-06-28 15:40:45.518035"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "India"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "New Delhi"], ["country_id", 9], ["lead", "Ashutosh Kumar"], ["email", "helloashu.kumar@gmail.com"], ["created_at", "2018-06-28 15:40:45.524665"], ["updated_at", "2018-06-28 15:40:45.524665"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Singapore"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Singapore"], ["country_id", 10], ["lead", "David Nosibor"], ["email", "david.nosibor@mazars.com.sg"], ["created_at", "2018-06-28 15:40:45.530631"], ["updated_at", "2018-06-28 15:40:45.530631"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "South Africa"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Johannesburg"], ["country_id", 11], ["lead", "Fabio Henriquez"], ["email", ""], ["created_at", "2018-06-28 15:40:45.536747"], ["updated_at", "2018-06-28 15:40:45.536747"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Australia"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Sydney"], ["country_id", 12], ["lead", "Laurie Brown"], ["email", "laurie.s.brown@hotmail.com"], ["created_at", "2018-06-28 15:40:45.543137"], ["updated_at", "2018-06-28 15:40:45.543137"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United Arab Emirates"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Dubai"], ["country_id", 4], ["lead", "Mohamed Abdeljalil"], ["email", ""], ["created_at", "2018-06-28 15:40:45.549521"], ["updated_at", "2018-06-28 15:40:45.549521"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Canada"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Toronto"], ["country_id", 13], ["lead", "Nader Saif"], ["email", ""], ["created_at", "2018-06-28 15:40:45.555872"], ["updated_at", "2018-06-28 15:40:45.555872"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Sweden"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Stockholm"], ["country_id", 14], ["lead", "Jacob Larsson"], ["email", ""], ["created_at", "2018-06-28 15:40:45.562166"], ["updated_at", "2018-06-28 15:40:45.562166"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Chile"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:38
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Santiago"], ["country_id", 15], ["lead", "Cristian Guerrero"], ["email", ""], ["created_at", "2018-06-28 15:40:45.568604"], ["updated_at", "2018-06-28 15:40:45.568604"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Belgium"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Brussels"], ["country_id", 16], ["lead", "Jason Stamm"], ["email", ""], ["created_at", "2018-06-28 15:40:45.574615"], ["updated_at", "2018-06-28 15:40:45.574615"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+Started GET "/" for 127.0.0.1 at 2018-06-28 16:40:58 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (3.8ms)
+  Rendered partials/_nav.html.erb (2.7ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 585ms (Views: 539.3ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 16:41:00 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (136.9ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 292ms (Views: 225.0ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-28 16:41:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-06-28 16:41:18 +0100
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfjj00XmIRxN5WnVjVWBImt5dFZ7oqUHhzDoEZMvMMm99yqs2uMXQbRt0pOCPy02gOIl9T3PzAcCzfilDMc4Lw==", "user"=>{"first_name"=>"hdhd", "last_name"=>"fjjf", "organisation"=>"", "chapter_id"=>"1", "email"=>"sendertestsparta@gmail.com", "twitter_url"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sendertestsparta@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (5.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "organisation", "twitter_url", "created_at", "updated_at", "chapter_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["email", "sendertestsparta@gmail.com"], ["encrypted_password", "$2a$11$UZQ/64y6JbmwbpeNQdmz.OrtVaRDomojShnTZXpbi3x9/F2r50X.S"], ["confirmation_token", "RvSeWuEkxjrNBTWUttsn"], ["confirmation_sent_at", "2018-06-28 15:41:19.088425"], ["first_name", "hdhd"], ["last_name", "fjjf"], ["organisation", ""], ["twitter_url", ""], ["created_at", "2018-06-28 15:41:19.088208"], ["updated_at", "2018-06-28 15:41:19.088208"], ["chapter_id", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (2.0ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 127.4ms
+Sent mail to sendertestsparta@gmail.com (1746.4ms)
+Date: Thu, 28 Jun 2018 16:41:19 +0100
+From: no-reply@example.com
+Reply-To: sendertestsparta@gmail.com
+To: sendertestsparta@gmail.com
+Message-ID: <5b35019f51572_4fe23fd2f101a3d499934@Tech-A34s-MacBook-Air.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h3>Greetings, hdhd</h3>
+
+<p>
+  Welcome to The Circle of Young Intrapreneurs!
+  <p>Thank you for your interest in joining the Circle of Young Intrapreneurs. You can confirm your account email through the link below:</p>
+  <p><a href="http://localhost:3000/users/confirmation?confirmation_token=RvSeWuEkxjrNBTWUttsn">Confirm my account</a></p>
+  <br>Thanks for joining and have a great day!
+</p>
+
+<p>
+  <b>The Circle of Young Intrapreneurs</b>
+</p>
+
+Redirected to http://localhost:3000/wait
+Completed 302 Found in 2205ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/wait" for 127.0.0.1 at 2018-06-28 16:41:21 +0100
+Processing by WaitController#show as HTML
+  Rendering wait/wait.html.erb within layouts/application
+  Rendered wait/wait.html.erb within layouts/application (1.8ms)
+  Rendered partials/_nav.html.erb (3.1ms)
+  Rendered partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 116ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=RvSeWuEkxjrNBTWUttsn" for 127.0.0.1 at 2018-06-28 16:41:28 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"RvSeWuEkxjrNBTWUttsn"}
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "RvSeWuEkxjrNBTWUttsn"], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (11.9ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-06-28 15:41:28.467810"], ["updated_at", "2018-06-28 15:41:28.469353"], ["id", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.5ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.8ms)
+UserMailer#welcome_email: processed outbound mail in 99.7ms
+Sent mail to sendertestsparta@gmail.com (1622.0ms)
+Date: Thu, 28 Jun 2018 16:41:28 +0100
+From: sendertestsparta@gmail.com
+To: sendertestsparta@gmail.com
+Message-ID: <5b3501a8966a6_4fe23fd2f2815dbc1001c1@Tech-A34s-MacBook-Air.local.mail>
+Subject: Welcome to COYI
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b3501a893ebd_4fe23fd2f2815dbc10001a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b3501a893ebd_4fe23fd2f2815dbc10001a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, hdhd
+===============================================
+Welcome to The Circle of Young Intrapreneurs!
+You have successfully signed up to our site and your username is: sendertestsparta@gmail.com.<br>
+Thanks for joining and have a great day!
+
+The Circle of Young Intrapreneurs
+
+
+----==_mimepart_5b3501a893ebd_4fe23fd2f2815dbc10001a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>Dear, hdhd</h3>
+  <p>
+    Welcome to The Circle of Young Intrapreneurs!
+    You have successfully signed up to our site and your username is: sendertestsparta@gmail.com.<br>
+    <br>Thanks for joining and have a great day!
+  </p>
+<p>
+  <b>The Circle of Young Intrapreneurs</b>
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b3501a893ebd_4fe23fd2f2815dbc10001a--
+
+  Rendering user_mailer/chapter_email.html.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.html.erb within layouts/mailer (0.8ms)
+  Rendering user_mailer/chapter_email.text.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.text.erb within layouts/mailer (0.8ms)
+UserMailer#chapter_email: processed outbound mail in 85.8ms
+Sent mail to ylangue@spartaglobal.com (1306.3ms)
+Date: Thu, 28 Jun 2018 16:41:30 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b3501aa4f3d1_4fe23fd2f2815dbc100310@Tech-A34s-MacBook-Air.local.mail>
+Subject: New user: hdhd fjjf
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b3501aa4e4cc_4fe23fd2f2815dbc1002d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b3501aa4e4cc_4fe23fd2f2815dbc1002d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Chapter Lead,
+===============================================
+This is to notify of a confirmed sign up for your chapter:
+First Name: hdhd
+Last Name: fjjf
+
+Many Thanks,
+The Circle of Young Intrapreneurs
+
+
+----==_mimepart_5b3501aa4e4cc_4fe23fd2f2815dbc1002d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>Dear Chapter Lead</h3>
+  <p>
+    This is to notify of a confirmed sign up for your chapter:<br>
+    <ul>
+      <li>First name: <b>hdhd</b>
+      <li>Last name: <b>fjjf</b>
+    </ul>
+    <br>Many thanks,
+  </p>
+<p>
+  <b>The Circle of Young Intrapreneurs</b>
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b3501aa4e4cc_4fe23fd2f2815dbc1002d--
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 3178ms (ActiveRecord: 22.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-28 16:41:31 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.7ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 97ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-06-28 16:41:41 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"twp7WdQBVXv1fHFeobCq3QFTtE/EZT4NcDWUxNs7lkS4uVD3XfpFkUTj7DQstGAtcOvP7AsDFaltSYjnsYyOKQ==", "user"=>{"email"=>"sendertestsparta@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "sendertestsparta@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2018-06-28 15:41:41.785944"], ["last_sign_in_at", "2018-06-28 15:41:41.785944"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2018-06-28 15:41:41.787188"], ["id", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/resources
+Completed 302 Found in 184ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-28 16:41:41 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (250.5ms)
+  [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/partials/_nav.html.erb:28
+  Rendered partials/_nav.html.erb (99.2ms)
+Completed 500 Internal Server Error in 450ms (ActiveRecord: 7.0ms)
+
+
+  
+ActionView::Template::Error (Can't resolve image into URL: to_model delegated to attachment, but attachment is nil):
+    28:                 <% if (current_user.image = nil) %>
+    29:                   <%= image_tag 'profile-placeholder.jpg', class: "img-responsive img-circle" %>
+    30:                 <% else %>
+    31:                   <%= image_tag(current_user.image, :class => "img-responsive img-circle") %>
+    32:                 <% end %>
+    33:               <% end %>
+    34:             </li>
+  
+app/views/partials/_nav.html.erb:31:in `block in _app_views_partials__nav_html_erb__302616725656429972_70175244572920'
+app/views/partials/_nav.html.erb:27:in `_app_views_partials__nav_html_erb__302616725656429972_70175244572920'
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb__3475286072460357548_70175220940620'
+Started GET "/resources" for 127.0.0.1 at 2018-06-28 16:42:34 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (138.2ms)
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/partials/_nav.html.erb:28
+  Rendered partials/_nav.html.erb (23.2ms)
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 3.7ms)
+
+
+  
+ActionView::Template::Error (ActiveSupport::MessageVerifier::InvalidSignature):
+    25:             <li><span class="navbar-text">Logged in as <strong><%=current_user.first_name %></strong></span></li>
+    26:             <li>
+    27:               <%= link_to edit_user_registration_path do %>
+    28:                 <% if (current_user.image = '') %>
+    29:                   <%= image_tag 'profile-placeholder.jpg', class: "img-responsive img-circle" %>
+    30:                 <% else %>
+    31:                   <%= image_tag(current_user.image, :class => "img-responsive img-circle") %>
+  
+app/views/partials/_nav.html.erb:28:in `block in _app_views_partials__nav_html_erb__302616725656429972_70175245901700'
+app/views/partials/_nav.html.erb:27:in `_app_views_partials__nav_html_erb__302616725656429972_70175245901700'
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb__3475286072460357548_70175220986660'
+Started GET "/resources" for 127.0.0.1 at 2018-06-28 16:43:56 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (144.2ms)
+  Rendered partials/_nav.html.erb (18.0ms)
+Completed 500 Internal Server Error in 286ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `image=' for nil:NilClass):
+    25:             <li><span class="navbar-text">Logged in as <strong><%=current_user.first_name %></strong></span></li>
+    26:             <li>
+    27:               <%= link_to edit_user_registration_path do %>
+    28:                 <% if @current_user.image = nil %>
+    29:                   <%= image_tag 'profile-placeholder.jpg', class: "img-responsive img-circle" %>
+    30:                 <% else %>
+    31:                   <%= image_tag(current_user.image, :class => "img-responsive img-circle") %>
+  
+app/views/partials/_nav.html.erb:28:in `block in _app_views_partials__nav_html_erb__302616725656429972_70175217570040'
+app/views/partials/_nav.html.erb:27:in `_app_views_partials__nav_html_erb__302616725656429972_70175217570040'
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb__3475286072460357548_70175248073080'
+Started GET "/resources" for 127.0.0.1 at 2018-06-28 16:44:06 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (418.9ms)
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/partials/_nav.html.erb:28
+  Rendered partials/_nav.html.erb (23.1ms)
+Completed 500 Internal Server Error in 595ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (Can't resolve image into URL: to_model delegated to attachment, but attachment is nil):
+    28:                 <% if current_user.image = nil %>
+    29:                   <%= image_tag 'profile-placeholder.jpg', class: "img-responsive img-circle" %>
+    30:                 <% else %>
+    31:                   <%= image_tag(current_user.image, :class => "img-responsive img-circle") %>
+    32:                 <% end %>
+    33:               <% end %>
+    34:             </li>
+  
+app/views/partials/_nav.html.erb:31:in `block in _app_views_partials__nav_html_erb__302616725656429972_70175221640200'
+app/views/partials/_nav.html.erb:27:in `_app_views_partials__nav_html_erb__302616725656429972_70175221640200'
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb__3475286072460357548_70175245835660'
+Started GET "/resources" for 127.0.0.1 at 2018-06-28 16:44:51 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (154.8ms)
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/partials/_nav.html.erb:28
+  Rendered partials/_nav.html.erb (59.7ms)
+Completed 500 Internal Server Error in 382ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (Can't resolve image into URL: to_model delegated to attachment, but attachment is nil):
+    28:                 <% if current_user.image = nil %>
+    29:                   <%= image_tag 'profile-placeholder.jpg', class: "img-responsive img-circle" %>
+    30:                 <% elsif current_user.image != nil %>
+    31:                   <%= image_tag(current_user.image, :class => "img-responsive img-circle") %>
+    32:                 <% end %>
+    33:               <% end %>
+    34:             </li>
+  
+app/views/partials/_nav.html.erb:31:in `block in _app_views_partials__nav_html_erb__302616725656429972_70175242194460'
+app/views/partials/_nav.html.erb:27:in `_app_views_partials__nav_html_erb__302616725656429972_70175242194460'
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb__3475286072460357548_70175204900580'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-28 16:44:55 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (9.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/resources
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 16ms (ActiveRecord: 9.6ms)
+
+
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mChapter Load (0.7ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/resources" for 127.0.0.1 at 2018-06-28 16:46:36 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (481.6ms)
+  [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/partials/_nav.html.erb:31
+  Rendered partials/_nav.html.erb (46.4ms)
+Completed 500 Internal Server Error in 729ms (ActiveRecord: 28.3ms)
+
+
+  
+ActionView::Template::Error (Can't resolve image into URL: to_model delegated to attachment, but attachment is nil):
+    28:                 <% if current_user.image == nil %>
+    29:                   <%= image_tag 'profile-placeholder.jpg', class: "img-responsive img-circle" %>
+    30:                 <% else%>
+    31:                   <%= image_tag(current_user.image, :class => "img-responsive img-circle") %>
+    32:                 <% end %>
+    33:               <% end %>
+    34:             </li>
+  
+app/views/partials/_nav.html.erb:31:in `block in _app_views_partials__nav_html_erb__3937788318093147294_70208055441580'
+app/views/partials/_nav.html.erb:27:in `_app_views_partials__nav_html_erb__3937788318093147294_70208055441580'
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb__1966449072830879721_70208043431900'
+Started GET "/" for 127.0.0.1 at 2018-06-28 16:54:04 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Tech-A34/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.8ms)
+  [1m[36mActiveStorage::Attachment Load (3.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/partials/_nav.html.erb:28
+  Rendered partials/_nav.html.erb (103.0ms)
+Completed 500 Internal Server Error in 678ms (ActiveRecord: 27.2ms)
+
+
+  
+ActionView::Template::Error (Can't resolve image into URL: to_model delegated to attachment, but attachment is nil):
+    25:             <li><span class="navbar-text">Logged in as <strong><%=current_user.first_name %></strong></span></li>
+    26:             <li>
+    27:               <%= link_to edit_user_registration_path do %>
+    28:                 <%= image_tag(current_user.image, :class => "img-responsive img-circle") %>
+    29:               <% end %>
+    30:             </li>
+    31:             <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class:'nav-link' %></li>
+  
+app/views/partials/_nav.html.erb:28:in `block in _app_views_partials__nav_html_erb__2087078422313675887_70253723609600'
+app/views/partials/_nav.html.erb:27:in `_app_views_partials__nav_html_erb__2087078422313675887_70253723609600'
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb__1628668694688295469_70253714456140'
