@@ -46,10 +46,6 @@ body {
   padding-right:0;
 }
 
-.form-signin {
-  min-height: 600px;
-}
-
 .ft {
   min-height: 560px;
 }
@@ -279,4 +275,21 @@ footer {
   .city-bg {
     height: 30vh;
   }
+  footer .wrapper ul {
+    li:first-child{
+      margin-left: -30px;
+    }
+    li {
+      font-size: 18px;
+      margin: 5px 1px;
+    }
+
+  }
+}
+
+@media only screen and (min-height: 640px) {
+  .form-signin {
+    min-height: 400px;
+  }
+
 }
