@@ -18,6 +18,9 @@ body {
   max-width: 484px;
   padding: 15px;
   margin: 0 auto;
+  input[type="email"] {
+    width:100%;
+  }
 }
 
 .form-password,
