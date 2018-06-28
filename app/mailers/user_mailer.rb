@@ -5,7 +5,7 @@ class UserMailer < ApplicationMailer
   end
   def chapter_email(user)
     @user = user
-    mail(to: 'kly@spartaglobal.com', subject: 'Welcome to COYI')
+    mail(to: 'ylangue@spartaglobal.com', subject: "New user: #{@user.first_name} #{@user.last_name}")
   end
 
   def project_pitch(user,project)

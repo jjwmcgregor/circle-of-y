@@ -10371,3 +10371,1617 @@ Processing by ResourcesController#index as HTML
 Completed 200 OK in 326ms (Views: 309.2ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-06-28 10:46:23 +0100
+  [1m[35m (10.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE DATABASE "project-test1_development" ENCODING = 'unicode'[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE DATABASE "project-test1_test" ENCODING = 'unicode'[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (23.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35mSQL (17.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (41.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "projects" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (51.2ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "intro" text, "impact" text, "businesscase" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "resources" CASCADE[0m
+  ↳ db/schema.rb:27
+  [1m[35m (14.0ms)[0m  [1m[35mCREATE TABLE "resources" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:27
+  [1m[35m (10.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:32
+  [1m[35m (15.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "first_name" character varying, "last_name" character varying, "organisation" character varying, "twitter_url" character varying, "country" character varying, "chapter" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:32
+  [1m[35m (11.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:32
+  [1m[35m (10.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/schema.rb:32
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (4.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180627134232)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (3.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35mSQL (3.6ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (32.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "projects" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (42.3ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "intro" text, "impact" text, "businesscase" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "resources" CASCADE[0m
+  ↳ db/schema.rb:27
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE "resources" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:27
+  [1m[35m (13.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:32
+  [1m[35m (17.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "first_name" character varying, "last_name" character varying, "organisation" character varying, "twitter_url" character varying, "country" character varying, "chapter" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:32
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:32
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/schema.rb:32
+  [1m[35m (7.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180627134232)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (7.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Update (0.8ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "development"], ["updated_at", "2018-06-28 09:46:42.221707"], ["key", "environment"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2018-06-28 09:46:42.229966"], ["key", "environment"]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-06-28 10:46:48 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (2.1ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 7600ms (Views: 7548.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 10:47:04 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (111.7ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 360ms (Views: 272.8ms | ActiveRecord: 38.0ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-28 10:47:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-06-28 10:47:22 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WEwgbFZfPG0sIpIo6VGnigkayuX1Nlifeae+5s9Em9htjiz5zNnSA69w0PM0ipeKn2SXPKT/DijgFVbsfz5+RQ==", "user"=>{"first_name"=>"Yann", "last_name"=>"LL", "organisation"=>"", "country"=>"UK", "chapter"=>"", "email"=>"ylangue@spartaglobal.com", "twitter_url"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (2.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ylangue@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (2.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "organisation", "twitter_url", "country", "chapter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["email", "ylangue@spartaglobal.com"], ["encrypted_password", "$2a$11$cTXvnwkCVyM4h2O1kjl8DuunB0uWpbAuFmsZmF8VMJ9PP1JxuJ.7W"], ["confirmation_token", "KmnBzRNix5JyDZXdrQ6h"], ["confirmation_sent_at", "2018-06-28 09:47:22.733945"], ["first_name", "Yann"], ["last_name", "LL"], ["organisation", ""], ["twitter_url", ""], ["country", "UK"], ["chapter", ""], ["created_at", "2018-06-28 09:47:22.733714"], ["updated_at", "2018-06-28 09:47:22.733714"]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.3ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 1347.4ms
+Sent mail to ylangue@spartaglobal.com (2074.3ms)
+Date: Thu, 28 Jun 2018 10:47:24 +0100
+From: no-reply@example.com
+Reply-To: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34aeaca2eab_ccc3fc7738d0bd8316d2@MacBook-Air-3.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome ylangue@spartaglobal.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=KmnBzRNix5JyDZXdrQ6h">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 4216ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 10:47:26 +0100
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.7ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 82ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=KmnBzRNix5JyDZXdrQ6h" for 127.0.0.1 at 2018-06-28 10:52:19 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"KmnBzRNix5JyDZXdrQ6h"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "KmnBzRNix5JyDZXdrQ6h"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-06-28 09:52:20.255707"], ["updated_at", "2018-06-28 09:52:20.257756"], ["id", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (3.2ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.7ms)
+UserMailer#welcome_email: processed outbound mail in 229.3ms
+Sent mail to ylangue@spartaglobal.com (1709.7ms)
+Date: Thu, 28 Jun 2018 10:52:20 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34afd4af039_d713ffd5cb4e7d894912@MacBook-Air-3.local.mail>
+Subject: Welcome to COYI
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34afd4ad5bd_d713ffd5cb4e7d8948d9";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34afd4ad5bd_d713ffd5cb4e7d8948d9
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Yann
+===============================================
+You have successfully signed up to example.com,
+your username is: ylangue@spartaglobal.com.
+Thanks for joining and have a great day!
+
+
+----==_mimepart_5b34afd4ad5bd_d713ffd5cb4e7d8948d9
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    Hi This is Yann confirming emails are working etc
+    <h1>Welcome to example.com, Yann</h1>
+  <p>
+    You have successfully signed up to example.com,
+    your username is: ylangue@spartaglobal.com.<br>
+  </p>
+<p>Thanks for joining and have a great day!</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34afd4ad5bd_d713ffd5cb4e7d8948d9--
+
+  Rendering user_mailer/chapter_email.html.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.html.erb within layouts/mailer (0.6ms)
+  Rendering user_mailer/chapter_email.text.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.text.erb within layouts/mailer (0.9ms)
+UserMailer#chapter_email: processed outbound mail in 97.0ms
+Sent mail to ylangue@spartaglobal.com (2059.7ms)
+Date: Thu, 28 Jun 2018 10:52:22 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34afd67f853_d713ffd5cb4e7d8951a2@MacBook-Air-3.local.mail>
+Subject: Welcome to COYI
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34afd67ec01_d713ffd5cb4e7d8950b8";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34afd67ec01_d713ffd5cb4e7d8950b8
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Yann
+===============================================
+You have successfully signed up to example.com,
+your username is: ylangue@spartaglobal.com.
+Thanks for joining and have a great day!
+
+
+----==_mimepart_5b34afd67ec01_d713ffd5cb4e7d8950b8
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    Hi This is Yann confirming emails are working etc
+    <h1>Welcome to example.com, Yann</h1>
+  <p>
+    You have successfully signed up to example.com,
+    your username is: ylangue@spartaglobal.com.<br>
+  </p>
+<p>Thanks for joining and have a great day!</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34afd67ec01_d713ffd5cb4e7d8950b8--
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 4549ms (ActiveRecord: 55.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-28 10:52:24 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.4ms)
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 563ms (Views: 559.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (2.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 11:05:15 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.3ms)
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 153ms (Views: 119.0ms | ActiveRecord: 11.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-06-28 11:05:30 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AyFmjGjfpYMNfL21guQEXy9FebuVg5+8cr/WX+8Y2xA242oZ8llL7Y4u/25fPzRfuTskYsRKyQvrDT5VX2I+jQ==", "user"=>{"first_name"=>"Yann", "last_name"=>"Langue", "organisation"=>"", "country"=>"UK", "chapter"=>"", "email"=>"ylangue@spartaglobal.com", "twitter_url"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ylangue@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (5.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "organisation", "twitter_url", "country", "chapter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["email", "ylangue@spartaglobal.com"], ["encrypted_password", "$2a$11$t/UOIjDBSs7kv573IOB14eImPaR5vmhvjowIzTzjEc0I8oEH.hOhO"], ["confirmation_token", "EkNzhLBfVyP5JLSxMi1v"], ["confirmation_sent_at", "2018-06-28 10:05:30.202724"], ["first_name", "Yann"], ["last_name", "Langue"], ["organisation", ""], ["twitter_url", ""], ["country", "UK"], ["chapter", ""], ["created_at", "2018-06-28 10:05:30.202522"], ["updated_at", "2018-06-28 10:05:30.202522"]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.9ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 66.8ms
+Sent mail to ylangue@spartaglobal.com (1744.2ms)
+Date: Thu, 28 Jun 2018 11:05:30 +0100
+From: no-reply@example.com
+Reply-To: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b2ea47ad6_d713ffd5cb4e3a095232@MacBook-Air-3.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hi ylangue@spartaglobal.com!</p>
+
+<p>Thank you for your interest in joining the Circle of Young Intrapreneurs. You can confirm your account email through the link below:</p>
+
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=EkNzhLBfVyP5JLSxMi1v">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2031ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 11:05:32 +0100
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.8ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 69ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=EkNzhLBfVyP5JLSxMi1v" for 127.0.0.1 at 2018-06-28 11:05:41 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"EkNzhLBfVyP5JLSxMi1v"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "EkNzhLBfVyP5JLSxMi1v"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.3ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-06-28 10:05:41.420796"], ["updated_at", "2018-06-28 10:05:41.422368"], ["id", 2]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (5.2ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.6ms)
+UserMailer#welcome_email: processed outbound mail in 196.5ms
+Sent mail to ylangue@spartaglobal.com (1645.0ms)
+Date: Thu, 28 Jun 2018 11:05:41 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b2f59e3e4_d713ffd5cb4e3a0954d5@MacBook-Air-3.local.mail>
+Subject: Welcome to COYI
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34b2f59bb69_d713ffd5cb4e3a0953b3";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34b2f59bb69_d713ffd5cb4e3a0953b3
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Yann
+===============================================
+You have successfully signed up to example.com,
+your username is: ylangue@spartaglobal.com.
+Thanks for joining and have a great day!
+
+
+----==_mimepart_5b34b2f59bb69_d713ffd5cb4e3a0953b3
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    Hi This is Yann confirming emails are working etc
+    <h1>Welcome to example.com, Yann</h1>
+  <p>
+    You have successfully signed up to example.com,
+    your username is: ylangue@spartaglobal.com.<br>
+  </p>
+<p>Thanks for joining and have a great day!</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34b2f59bb69_d713ffd5cb4e3a0953b3--
+
+  Rendering user_mailer/chapter_email.html.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.html.erb within layouts/mailer (1.2ms)
+  Rendering user_mailer/chapter_email.text.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.text.erb within layouts/mailer (0.5ms)
+UserMailer#chapter_email: processed outbound mail in 78.7ms
+Sent mail to ylangue@spartaglobal.com (1751.3ms)
+Date: Thu, 28 Jun 2018 11:05:43 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b2f75bb71_d713ffd5cb4e3a0956b@MacBook-Air-3.local.mail>
+Subject: New user: #<User:0x007ffaba22c3a8>
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34b2f7593f9_d713ffd5cb4e3a095537";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34b2f7593f9_d713ffd5cb4e3a095537
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Yann
+===============================================
+You have successfully signed up to example.com,
+your username is: ylangue@spartaglobal.com.
+Thanks for joining and have a great day!
+
+
+----==_mimepart_5b34b2f7593f9_d713ffd5cb4e3a095537
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    Hi This is Yann confirming emails are working etc
+    <h1>Welcome to example.com, Yann</h1>
+  <p>
+    You have successfully signed up to example.com,
+    your username is: ylangue@spartaglobal.com.<br>
+  </p>
+<p>Thanks for joining and have a great day!</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34b2f7593f9_d713ffd5cb4e3a095537--
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 3712ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-28 11:05:45 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.6ms)
+  Rendered partials/_nav.html.erb (2.6ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 116ms (Views: 113.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 11:16:45 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.6ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 126ms (Views: 91.1ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-28 11:16:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-06-28 11:17:01 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pR5iSfobinaqOh2N0sV0+YjNp6+a01ecNjIHq/zU3a+Q3G7cYJ1kGCloX1YPHkT5HrP6dssaASuvgO+hTK44Mg==", "user"=>{"first_name"=>"Yann", "last_name"=>"LL", "organisation"=>"", "country"=>"UK", "chapter"=>"", "email"=>"ylangue@spartaglobal.com", "twitter_url"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ylangue@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "organisation", "twitter_url", "country", "chapter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["email", "ylangue@spartaglobal.com"], ["encrypted_password", "$2a$11$1iZwJnMFguZmwARtQRwkjurzwo.RwMZC5e/XiKbqXUbB6FzIfcNKS"], ["confirmation_token", "8razLFFva1GT-26ayxV8"], ["confirmation_sent_at", "2018-06-28 10:17:01.828760"], ["first_name", "Yann"], ["last_name", "LL"], ["organisation", ""], ["twitter_url", ""], ["country", "UK"], ["chapter", ""], ["created_at", "2018-06-28 10:17:01.828529"], ["updated_at", "2018-06-28 10:17:01.828529"]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.9ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 73.1ms
+Sent mail to ylangue@spartaglobal.com (2176.1ms)
+Date: Thu, 28 Jun 2018 11:17:01 +0100
+From: no-reply@example.com
+Reply-To: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b59de049e_d713ffd5cb4e67095761@MacBook-Air-3.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hi ylangue@spartaglobal.com!</p>
+
+<p>Thank you for your interest in joining the Circle of Young Intrapreneurs. You can confirm your account email through the link below:</p>
+
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=8razLFFva1GT-26ayxV8">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 2455ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 11:17:04 +0100
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.9ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 88ms (Views: 83.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/users/confirmation?confirmation_token=8razLFFva1GT-26ayxV8" for 127.0.0.1 at 2018-06-28 11:20:27 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"8razLFFva1GT-26ayxV8"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "8razLFFva1GT-26ayxV8"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-06-28 10:20:27.528295"], ["updated_at", "2018-06-28 10:20:27.533102"], ["id", 3]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.7ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (1.0ms)
+UserMailer#welcome_email: processed outbound mail in 165.9ms
+Sent mail to ylangue@spartaglobal.com (1834.6ms)
+Date: Thu, 28 Jun 2018 11:20:27 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b66bb06cc_d713ffd5cb4e42c9595b@MacBook-Air-3.local.mail>
+Subject: Welcome to COYI
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34b66baf307_d713ffd5cb4e42c95895";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34b66baf307_d713ffd5cb4e42c95895
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Yann
+===============================================
+You have successfully signed up to example.com,
+your username is: ylangue@spartaglobal.com.
+Thanks for joining and have a great day!
+
+
+----==_mimepart_5b34b66baf307_d713ffd5cb4e42c95895
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to example.com, Yann</h1>
+  <p>
+    You have successfully signed up to example.com,
+    your username is: ylangue@spartaglobal.com.<br>
+  </p>
+<p>Thanks for joining and have a great day!</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34b66baf307_d713ffd5cb4e42c95895--
+
+  Rendering user_mailer/chapter_email.html.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.html.erb within layouts/mailer (0.5ms)
+  Rendering user_mailer/chapter_email.text.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.text.erb within layouts/mailer (0.5ms)
+UserMailer#chapter_email: processed outbound mail in 70.0ms
+Sent mail to ylangue@spartaglobal.com (1658.0ms)
+Date: Thu, 28 Jun 2018 11:20:29 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b66d99b9c_d713ffd5cb4e42c96150@MacBook-Air-3.local.mail>
+Subject: New user: Yann
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34b66d988bf_d713ffd5cb4e42c960d5";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34b66d988bf_d713ffd5cb4e42c960d5
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Yann
+===============================================
+You have successfully signed up to example.com,
+your username is: ylangue@spartaglobal.com.
+Thanks for joining and have a great day!
+
+
+----==_mimepart_5b34b66d988bf_d713ffd5cb4e42c960d5
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to example.com, Yann</h1>
+  <p>
+    You have successfully signed up to example.com,
+    your username is: ylangue@spartaglobal.com.<br>
+  </p>
+<p>Thanks for joining and have a great day!</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34b66d988bf_d713ffd5cb4e42c960d5--
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 3767ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-28 11:20:31 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.7ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 89ms (Views: 88.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-06-28 11:20:39 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sP7+EUcGsGXbpNyN4jaHvRuM++5Q2X/zCtSxHDVEL7shFvFRmIbBHGzBvZqFdad2GYOzeOJ7KT6ziYl0lqVspA==", "user"=>{"email"=>"ylangue@spartaglobal.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "ylangue@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (3.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2018-06-28 10:20:39.844897"], ["last_sign_in_at", "2018-06-28 10:20:39.844897"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2018-06-28 10:20:39.846011"], ["id", 3]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 183ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 11:20:39 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.8ms)
+  Rendered partials/_nav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 111ms (Views: 104.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-06-28 11:20:42 +0100
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.1ms)
+  Rendered partials/_nav.html.erb (3.7ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 103ms (Views: 97.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-28 11:20:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (1.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/users/edit" for 127.0.0.1 at 2018-06-28 11:25:24 +0100
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 12ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-28 11:25:24 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.1ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 106ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 11:25:26 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.9ms)
+  Rendered partials/_nav.html.erb (2.8ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 108ms (Views: 105.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 11:25:26 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.6ms)
+  Rendered partials/_nav.html.erb (2.7ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 144ms (Views: 141.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-06-28 11:25:44 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tLYIUjZ+mkPoQiM09o4+/nPYm8oDm8eLV0ATFKWf1HK8XsP9X0ng46X5jsq2A6KYz8IJXQlGnMq+H+7+ZBKzKA==", "user"=>{"first_name"=>"Yann", "last_name"=>"Langue", "organisation"=>"", "country"=>"", "chapter"=>"", "email"=>"ylangue@spartaglobal.com", "twitter_url"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ylangue@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "organisation", "twitter_url", "country", "chapter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["email", "ylangue@spartaglobal.com"], ["encrypted_password", "$2a$11$5vxDCSxFRNuccZWiV8b/H.C2HOs8mXbY7trXhlGSD4GAuskwLnpaa"], ["confirmation_token", "bscPybappi5Rh-SFPpkd"], ["confirmation_sent_at", "2018-06-28 10:25:44.366099"], ["first_name", "Yann"], ["last_name", "Langue"], ["organisation", ""], ["twitter_url", ""], ["country", ""], ["chapter", ""], ["created_at", "2018-06-28 10:25:44.365730"], ["updated_at", "2018-06-28 10:25:44.365730"]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.8ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 68.6ms
+Sent mail to ylangue@spartaglobal.com (1098.3ms)
+Date: Thu, 28 Jun 2018 11:25:44 +0100
+From: no-reply@example.com
+Reply-To: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b7a86da09_d713ffd5cb4e670962ed@MacBook-Air-3.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hi ylangue@spartaglobal.com!</p>
+
+<p>Thank you for your interest in joining the Circle of Young Intrapreneurs. You can confirm your account email through the link below:</p>
+
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=bscPybappi5Rh-SFPpkd">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1362ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 11:25:45 +0100
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.8ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 82ms (Views: 75.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=bscPybappi5Rh-SFPpkd" for 127.0.0.1 at 2018-06-28 11:26:33 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"bscPybappi5Rh-SFPpkd"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "bscPybappi5Rh-SFPpkd"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-06-28 10:26:33.703843"], ["updated_at", "2018-06-28 10:26:33.706622"], ["id", 4]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 7.3ms)
+
+
+  
+SyntaxError (/Users/tech-a08/Desktop/Sparta/Engineering-11/Core/server-side/ruby-frameworks/rails/circle-of-y/app/mailers/user_mailer.rb:8: syntax error, unexpected tSTRING_DEND, expecting &. or :: or '[' or '.'
+r.first_name, @user.last_name}")
+                              ^
+/Users/tech-a08/Desktop/Sparta/Engineering-11/Core/server-side/ruby-frameworks/rails/circle-of-y/app/mailers/user_mailer.rb:13: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+    @user2 = "akola-adeyemi@spartaglobal.com"
+                   ^
+/Users/tech-a08/Desktop/Sparta/Engineering-11/Core/server-side/ruby-frameworks/rails/circle-of-y/app/mailers/user_mailer.rb:13: syntax error, unexpected tIVAR, expecting keyword_do or '{' or '('
+ = "akola-adeyemi@spartaglobal.com"
+                              ^
+/Users/tech-a08/Desktop/Sparta/Engineering-11/Core/server-side/ruby-frameworks/rails/circle-of-y/app/mailers/user_mailer.rb:13: unterminated string meets end of file
+/Users/tech-a08/Desktop/Sparta/Engineering-11/Core/server-side/ruby-frameworks/rails/circle-of-y/app/mailers/user_mailer.rb:13: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  
+app/mailers/user_mailer.rb:8: syntax error, unexpected tSTRING_DEND, expecting &. or :: or '[' or '.'
+app/mailers/user_mailer.rb:13: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+app/mailers/user_mailer.rb:13: syntax error, unexpected tIVAR, expecting keyword_do or '{' or '('
+app/mailers/user_mailer.rb:13: unterminated string meets end of file
+app/mailers/user_mailer.rb:13: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+app/models/user.rb:10:in `welcome_email'
+app/models/user.rb:15:in `after_confirmation'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 11:27:04 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.1ms)
+  Rendered partials/_nav.html.erb (3.1ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 111ms (Views: 82.1ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-28 11:27:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-06-28 11:27:21 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wd5ssro+rT1GUVvTNXqhainNi7yFhTqs+HKAiGt2nNbJNqcd0wnXnQvq9i119z0MldcZK49YYe0RLX1iqvv7jA==", "user"=>{"first_name"=>"Yann", "last_name"=>"Langue", "organisation"=>"", "country"=>"UK", "chapter"=>"", "email"=>"ylangue@spartaglobal.com", "twitter_url"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ylangue@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "organisation", "twitter_url", "country", "chapter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["email", "ylangue@spartaglobal.com"], ["encrypted_password", "$2a$11$p890qCRzyCvto9/KRSiP0.o4wEBi2zd1HA07XWFHptt9FqPaL6pmO"], ["confirmation_token", "TDgaYz69b4XJnRKn6nGE"], ["confirmation_sent_at", "2018-06-28 10:27:21.302861"], ["first_name", "Yann"], ["last_name", "Langue"], ["organisation", ""], ["twitter_url", ""], ["country", "UK"], ["chapter", ""], ["created_at", "2018-06-28 10:27:21.302712"], ["updated_at", "2018-06-28 10:27:21.302712"]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.8ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 68.4ms
+Sent mail to ylangue@spartaglobal.com (1201.9ms)
+Date: Thu, 28 Jun 2018 11:27:21 +0100
+From: no-reply@example.com
+Reply-To: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b8095d5f4_d713ffd5cb4e7d896383@MacBook-Air-3.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hi ylangue@spartaglobal.com!</p>
+
+<p>Thank you for your interest in joining the Circle of Young Intrapreneurs. You can confirm your account email through the link below:</p>
+
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=TDgaYz69b4XJnRKn6nGE">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1460ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 11:27:22 +0100
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.0ms)
+  Rendered partials/_nav.html.erb (5.5ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 104ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=TDgaYz69b4XJnRKn6nGE" for 127.0.0.1 at 2018-06-28 11:27:34 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"TDgaYz69b4XJnRKn6nGE"}
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "TDgaYz69b4XJnRKn6nGE"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.6ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-06-28 10:27:34.484355"], ["updated_at", "2018-06-28 10:27:34.488078"], ["id", 5]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (10.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (3.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (1.2ms)
+UserMailer#welcome_email: processed outbound mail in 199.5ms
+Sent mail to ylangue@spartaglobal.com (1048.2ms)
+Date: Thu, 28 Jun 2018 11:27:34 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b816b4d42_d713ffd5cb4e3a096561@MacBook-Air-3.local.mail>
+Subject: Welcome to COYI
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34b816b1f17_d713ffd5cb4e3a09642c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34b816b1f17_d713ffd5cb4e3a09642c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Yann
+===============================================
+You have successfully signed up to example.com,
+your username is: ylangue@spartaglobal.com.
+Thanks for joining and have a great day!
+
+
+----==_mimepart_5b34b816b1f17_d713ffd5cb4e3a09642c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to example.com, Yann</h1>
+  <p>
+    You have successfully signed up to example.com,
+    your username is: ylangue@spartaglobal.com.<br>
+  </p>
+<p>Thanks for joining and have a great day!</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34b816b1f17_d713ffd5cb4e3a09642c--
+
+UserMailer#chapter_email: processed outbound mail in 1.7ms
+Completed 500 Internal Server Error in 1318ms (ActiveRecord: 18.4ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/mailers/user_mailer.rb:8:in `chapter_email'
+app/models/user.rb:13:in `chapter_email'
+app/models/user.rb:16:in `after_confirmation'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2018-06-28 11:29:51 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (2.4ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 459ms (Views: 434.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 11:29:59 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.5ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 141ms (Views: 103.4ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-28 11:29:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-06-28 11:30:16 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6PPq8hN4EyG1C6FMT/ZUX0K9/chX+U4UmwseKQm0/h7gGyFdek9pgfiwDLIPe8g5/qdvX10kFVVyVOPDyDmZRA==", "user"=>{"first_name"=>"Yann", "last_name"=>"Langue", "organisation"=>"", "country"=>"UK", "chapter"=>"", "email"=>"ylangue@spartaglobal.com", "twitter_url"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ylangue@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (3.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "organisation", "twitter_url", "country", "chapter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["email", "ylangue@spartaglobal.com"], ["encrypted_password", "$2a$11$Qi0DzsF63MPguUX/6jl0e.LcswaM2U5zxMWkW9w1D0.jiwR5LL9IC"], ["confirmation_token", "uEy9YEmskzc3RswBNSny"], ["confirmation_sent_at", "2018-06-28 10:30:16.523595"], ["first_name", "Yann"], ["last_name", "Langue"], ["organisation", ""], ["twitter_url", ""], ["country", "UK"], ["chapter", ""], ["created_at", "2018-06-28 10:30:16.523408"], ["updated_at", "2018-06-28 10:30:16.523408"]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.2ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 120.7ms
+Sent mail to ylangue@spartaglobal.com (978.9ms)
+Date: Thu, 28 Jun 2018 11:30:16 +0100
+From: no-reply@example.com
+Reply-To: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b8b8b1cc5_10973ffdcf5ce1a057054@MacBook-Air-3.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hi ylangue@spartaglobal.com!</p>
+
+<p>Thank you for your interest in joining the Circle of Young Intrapreneurs. You can confirm your account email through the link below:</p>
+
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=uEy9YEmskzc3RswBNSny">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1384ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 11:30:17 +0100
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.2ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 98ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=uEy9YEmskzc3RswBNSny" for 127.0.0.1 at 2018-06-28 11:30:28 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"uEy9YEmskzc3RswBNSny"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "uEy9YEmskzc3RswBNSny"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-06-28 10:30:28.245313"], ["updated_at", "2018-06-28 10:30:28.250776"], ["id", 6]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.8ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.8ms)
+UserMailer#welcome_email: processed outbound mail in 186.1ms
+Sent mail to ylangue@spartaglobal.com (1104.1ms)
+Date: Thu, 28 Jun 2018 11:30:28 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b8c471bb6_10973ffdcf5ce844572d6@MacBook-Air-3.local.mail>
+Subject: Welcome to COYI
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34b8c46fa6c_10973ffdcf5ce84457119";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34b8c46fa6c_10973ffdcf5ce84457119
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Yann
+===============================================
+You have successfully signed up to example.com,
+your username is: ylangue@spartaglobal.com.
+Thanks for joining and have a great day!
+
+
+----==_mimepart_5b34b8c46fa6c_10973ffdcf5ce84457119
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to example.com, Yann</h1>
+  <p>
+    You have successfully signed up to example.com,
+    your username is: ylangue@spartaglobal.com.<br>
+  </p>
+<p>Thanks for joining and have a great day!</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34b8c46fa6c_10973ffdcf5ce84457119--
+
+  Rendering user_mailer/chapter_email.html.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.html.erb within layouts/mailer (0.7ms)
+  Rendering user_mailer/chapter_email.text.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.text.erb within layouts/mailer (0.5ms)
+UserMailer#chapter_email: processed outbound mail in 84.3ms
+Sent mail to ylangue@spartaglobal.com (992.6ms)
+Date: Thu, 28 Jun 2018 11:30:29 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b8c59fd9b_10973ffdcf5ce844574b6@MacBook-Air-3.local.mail>
+Subject: New user: YannLangue
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34b8c59ed56_10973ffdcf5ce84457399";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34b8c59ed56_10973ffdcf5ce84457399
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Yann
+===============================================
+You have successfully signed up to example.com,
+your username is: ylangue@spartaglobal.com.
+Thanks for joining and have a great day!
+
+
+----==_mimepart_5b34b8c59ed56_10973ffdcf5ce84457399
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to example.com, Yann</h1>
+  <p>
+    You have successfully signed up to example.com,
+    your username is: ylangue@spartaglobal.com.<br>
+  </p>
+<p>Thanks for joining and have a great day!</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34b8c59ed56_10973ffdcf5ce84457399--
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 2418ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-28 11:30:30 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.7ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 137ms (Views: 135.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 11:32:12 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.4ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 144ms (Views: 107.4ms | ActiveRecord: 7.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-06-28 11:32:28 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8apdS7s6/vzvIJMkvQo+v3SFxPvoa5EQ9rDhpeElVPf5Qpbk0g2EXKKbPtr9h6LZyJ9WbOK2ylEf7xxPIKgzrQ==", "user"=>{"first_name"=>"Yann", "last_name"=>"Langue", "organisation"=>"", "country"=>"UK", "chapter"=>"", "email"=>"ylangue@spartaglobal.com", "twitter_url"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ylangue@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "organisation", "twitter_url", "country", "chapter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["email", "ylangue@spartaglobal.com"], ["encrypted_password", "$2a$11$Phr1G.Ewk9F/23VTHLj9puHW5FLRrQD/3yv05J45hduqbIos1h1D6"], ["confirmation_token", "XGaJ3NyCf-mgGn4rnuxK"], ["confirmation_sent_at", "2018-06-28 10:32:29.101203"], ["first_name", "Yann"], ["last_name", "Langue"], ["organisation", ""], ["twitter_url", ""], ["country", "UK"], ["chapter", ""], ["created_at", "2018-06-28 10:32:29.101046"], ["updated_at", "2018-06-28 10:32:29.101046"]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.2ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 71.9ms
+Sent mail to ylangue@spartaglobal.com (1098.5ms)
+Date: Thu, 28 Jun 2018 11:32:29 +0100
+From: no-reply@example.com
+Reply-To: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b93d2d2de_10973ffdcf5ceec0575ef@MacBook-Air-3.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hi ylangue@spartaglobal.com!</p>
+
+<p>Thank you for your interest in joining the Circle of Young Intrapreneurs. You can confirm your account email through the link below:</p>
+
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=XGaJ3NyCf-mgGn4rnuxK">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1365ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 11:32:30 +0100
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (2.2ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 97ms (Views: 91.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=XGaJ3NyCf-mgGn4rnuxK" for 127.0.0.1 at 2018-06-28 11:32:40 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"XGaJ3NyCf-mgGn4rnuxK"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "XGaJ3NyCf-mgGn4rnuxK"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-06-28 10:32:40.394645"], ["updated_at", "2018-06-28 10:32:40.398216"], ["id", 7]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (3.3ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.7ms)
+UserMailer#welcome_email: processed outbound mail in 159.3ms
+Sent mail to ylangue@spartaglobal.com (1025.9ms)
+Date: Thu, 28 Jun 2018 11:32:40 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b9488edee_10973ffdcf5ceb8c57739@MacBook-Air-3.local.mail>
+Subject: Welcome to COYI
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34b9488d4e4_10973ffdcf5ceb8c576e5";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34b9488d4e4_10973ffdcf5ceb8c576e5
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Yann
+===============================================
+You have successfully signed up to example.com,
+your username is: ylangue@spartaglobal.com.
+Thanks for joining and have a great day!
+
+
+----==_mimepart_5b34b9488d4e4_10973ffdcf5ceb8c576e5
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to example.com, Yann</h1>
+  <p>
+    You have successfully signed up to example.com,
+    your username is: ylangue@spartaglobal.com.<br>
+  </p>
+<p>Thanks for joining and have a great day!</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34b9488d4e4_10973ffdcf5ceb8c576e5--
+
+  Rendering user_mailer/chapter_email.html.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.html.erb within layouts/mailer (0.6ms)
+  Rendering user_mailer/chapter_email.text.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.text.erb within layouts/mailer (0.5ms)
+UserMailer#chapter_email: processed outbound mail in 67.2ms
+Sent mail to ylangue@spartaglobal.com (988.5ms)
+Date: Thu, 28 Jun 2018 11:32:41 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34b949a6120_10973ffdcf5ceb8c57961@MacBook-Air-3.local.mail>
+Subject: New user: Yann  Langue
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34b949a5623_10973ffdcf5ceb8c578f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34b949a5623_10973ffdcf5ceb8c578f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Yann
+===============================================
+You have successfully signed up to example.com,
+your username is: ylangue@spartaglobal.com.
+Thanks for joining and have a great day!
+
+
+----==_mimepart_5b34b949a5623_10973ffdcf5ceb8c578f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to example.com, Yann</h1>
+  <p>
+    You have successfully signed up to example.com,
+    your username is: ylangue@spartaglobal.com.<br>
+  </p>
+<p>Thanks for joining and have a great day!</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34b949a5623_10973ffdcf5ceb8c578f--
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 2282ms (ActiveRecord: 12.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-28 11:32:42 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 95ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
