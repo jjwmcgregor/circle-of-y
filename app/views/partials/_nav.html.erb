@@ -11,15 +11,25 @@
       <a class="navbar-brand" href="<%= root_path %>">
         <%= image_tag '/images/logo_200.png', class: "img-responsive", id: 'coyi-logo', alt: 'Site Logo'%>
       </a>
-    </div>
+
+        <ul class="collapse nav navbar-collapse navbar-nav">
+          <li><a href="https://www.facebook.com/groups/CircleofYoungIntrapreneurs/"><i class="fa fa-facebook fa-2x"></i></a></li>
+          <li><a href="https://twitter.com/circleofyi?lang=en"><i class="fa fa-twitter fa-2x"></i></a></li>
+          <li><a href="https://www.instagram.com/thecircleofyi/?hl=en"><i class="fa fa-instagram fa-2x"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCtM8zWux6MF5CGAXcNqLuwg/videos"><i class="fa fa-youtube fa-2x"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/circle-of-young-intrapreneurs"><i class="fa fa-linkedin fa-2x"></i></a></li>
+        </ul>
+      </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <% if user_signed_in? %>
         <li class="nav-link"><%= link_to 'Project Hub', user_projects_path(current_user) %></li>
+        <li class="nav-link"><%= link_to 'Resources', resources_path(current_user) %></li>
         <%end%>
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
         <%if user_signed_in? %>
             <li><span class="navbar-text">Logged in as <strong><%=current_user.first_name %></strong></span></li>
@@ -34,6 +44,7 @@
             <li><%= link_to 'Login', new_user_session_path, class:'nav-link' %></li>
         <%end%>
       </ul>
+
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
