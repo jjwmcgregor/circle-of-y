@@ -1,3 +1,18 @@
 // Place all the styles related to the Resources controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// ==== RESPOSIVENESS ====
+// RESOURCE PAGE
+// MOBILE: when <= 767px, font size is 1.5 * root font-size (root = 14px)
+@media screen and (max-width: 767px) {
+  .p-responsive {
+    font-size: 1.5rem !important;
+  }
+}
+// TABLET: when > 768px and <= 991px, font size is 1.8 * root font-size (root = 14px)
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .p-responsive {
+    font-size: 1.8rem !important;
+  }
+}
