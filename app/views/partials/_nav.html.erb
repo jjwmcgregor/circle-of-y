@@ -39,7 +39,7 @@
               <% end %>
             </li>
             <li>
-              <%= link_to "My Profile", user_path(@user)  %>
+              <%= link_to "My Profile", user_path(current_user)  %>
             </li>
             <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class:'nav-link' %></li>
         <%else%>
