@@ -15,24 +15,19 @@
         </ul>
 
 
-        <h1>Project Proposal <small>by <%= @project.user.first_name %></small></h1>
-        <p class="col-md-8 col-md-offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab modi maiores, repellat alias beatae tempora, totam provident pariatur, consectetur excepturi porro eos quibusdam commodi nam laborum ratione optio autem voluptatum.</p>
+        <h1><%= @project.title %> <small>by <%= @project.user.first_name %> <%= @project.user.last_name %></small></h1>
+        <p class="col-md-8 col-md-offset-2"><%= @project.intro %></p>
       </div>
 
       <br>
-      <br>
-      <br>
 
-      <div class="page-header">
-        <h1><small>Project intro</small></h1>
-        <p><%= @project.intro %></p>
-      </div>
       <div class="page-header">
         <h1><small>Project Impact</small></h1>
         <p><%= @project.impact %></p>
       </div>
+
       <div class="page-header">
-        <h1><small>Project businesscase</small></h1>
+        <h1><small>Business Case</small></h1>
         <p><%= @project.businesscase %></p>
       </div>
 

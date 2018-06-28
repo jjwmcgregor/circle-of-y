@@ -20,12 +20,17 @@
               <tr>
                 <td>
                   <%= link_to user_project_path(@user,project) do %>
-                    Project title
+                  <%= project.title %>
                   <% end %>
                 </td>
-                <td><%= project.user.first_name %> <%= project.user.last_name %></td>
-                <td></td>
-                <td><%= link_to 'Destroy', user_project_path(@user,project), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td><%= link_to edit_user_registration_path do %>
+                  <%= project.user.first_name %> <%= project.user.last_name %></td>
+                <td>
+                  <%= link_to user_project_path(@user,project), method: :delete, data: { confirm: 'Are you sure?' } do %>
+                    <i class="fas fa-trash"></i>
+                    <% end %>
+                  <% end %>
+                </td>
               </tr>
             <% end %>
           <% end %>
@@ -34,7 +39,7 @@
 
       <br>
 
-      <%= link_to 'New Project', new_user_project_path %>
+      <%= link_to 'New Project', new_user_project_path, class: "btn btn-danger"%>
 
     </div>
   </div>
