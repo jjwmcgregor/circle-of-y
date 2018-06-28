@@ -1,75 +1,270 @@
 /* BOOTSTRAP OVERRIDES */
 
+// Global styles for font
 * {
   font-family: 'Raleway', sans-serif;
   font-weight:200;
 }
 
-body {
-  padding-top:$navbar-height;
+.mt-1 {
+  margin-top: 1em;
 }
 
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mt-3 {
+  margin-top: 3em;
+}
+
+.mt-4 {
+  margin-top: 4em;
+}
+
+.pager li > a,
+.pager li > span {
+  background: #fff;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  transition: .2s;
+
+  &:hover {
+    background: #dc3545;
+    color: #fff;
+    border: 1px solid #fff;
+
+  }
+}
+// Adds space so that 'yeild' content sits below NAV
+body {
+  padding-top: 50px;
+}
+
+.container-fluid {
+  padding-left:0;
+  padding-right:0;
+}
+
+.ft {
+  min-height: 560px;
+}
+
+.form-signin,
+.form-signup,
+.form-password {
+  height: 580px;
+}
+
+
+// ========== NAV SECTION START ===========
+.navbar {
+  background: #dc3545;
+  border-bottom: none;
+  padding-bottom: 5px;
+  // below makes NAV bar links white and bold
+  .nav-link a, .nav-link {
+    color: white !important;
+    font-weight: bold !important;
+  }
+  li {
+    .fa {
+      font-size: 19px;
+      color: #D8E2DC;
+      padding-bottom: 0px !important;
+    }
+  }
+}
+// styles for logo in NAV
 .navbar-brand {
   padding-top:5px;
   padding-bottom:5px;
   width: 75px;
 }
-
-.jumbotron-fluid {
-  border-radius:0px !important;
+// change collapsed nav icon bars colour
+.icon-bar {
+  background-color: white !important;
 }
+// ========== NAV SECTION END ===========
 
-.container-fluid {}
-
-body {
-  // background-image: url('/images/city_bg.jpeg');
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-
+// ========== ALL BUTTON STYLES START ===========
 .btn {
   text-transform: uppercase;
   font-weight:bold;
   margin-top:30px;
 }
+// ========== ALL BUTTON STYLES END ===========
 
-h1 {
-  font-size: 4.0em;
-  margin-top:40px;
-  font-weight: 200;
-}
-
-.red {
-  background-color: $brand-primary;
-  color: $white !important;
+// ========== ALL RED SECTIONS START ===========
+.red-sections   {
+  background-color: #dc3545;
+  color: #fff !important;
 
   h1,h2,h3,h4,h5 {
-    color: $white !important;
+    color: #fff !important;
   }
-
   a {
-    color: $white !important;
+    color: #fff !important;
   }
-
   .btn-primary {
-    background-color: $white;
-    color: $brand-primary !important;
+    background-color: #fff;
+    color: #dc3545 !important;
   }
 }
+// ========== ALL RED SECTIONS END ===========
 
-.white {
-  background-color: $white;
-}
-
-.area {
+// ========== CONTAINER SEPERATOR START ===========
+.container-space {
   padding-top:50px;
   padding-bottom:50px;
 }
+// ========== CONTAINER SEPERATOR END ===========
+
+// ========== STORIES SECTION START ===========
+.stories-header {
+  padding: 20px 0;
+  text-align: center;
+}
+.stories {
+  .stories_image {
+    width:100px;
+    height:100px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+  }
+}
+// ========== STORIES SECTION END ===========
+
+// ========== PARALLAX START ===========
+.city-lights {
+  background-image: url("/images/city_lights.jpeg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.city-bg {
+  background-image: url("/images/city_bg.jpeg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// ========== PARALLAX END ===========
 
 
+// ========== FOOTER SECTION START ===========
+footer {
+  padding: 10px 0px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+
+  .wrapper {
+    height: 60px;
+    ul {
+      list-style: none;
+      width: auto;
+      margin-top: 7px;
+
+      li:first-child {
+        margin-left: -20px;
+      }
+      li {
+        width: 50px;
+        height: 50px;
+        margin: 5px 14px;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 5px solid #D8E2DC;
+        display: inline-block;
+        transition: all 0.5s ease;
+
+        a:hover {
+          background: none;
+          text-decoration: none;
+        }
+
+        .fa {
+          color: #D8E2DC;
+          margin-top: 20px;
+          transition: all 0.5s ease;
+          line-height: 5px;
+        }
+      }
+    }
+  }
+
+  .wrapper ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998 ;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper ul li:hover .fa-youtube {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper ul li:hover .fa-linkedin {
+    color: #0077B5;
+    text-shadow: 0 0 15px #0077B5;
+    transition: all 0.5s ease;
+  }
+}
+
+// ========== FOOTER SECTION END ===========
+
+@media only screen and (max-width: 991.98px) {
+  .city-lights {
+    height: 350px;
+  }
+
+  .city-bg {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .city-lights {
+    height: 30vh;
+  }
+
+  .city-bg {
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  footer {
+    .copy-text {
+      font-size: 10px;
+    }
+    .wrapper ul {
+      li:first-child{
+        margin-left: -30px;
+      }
+      li {
+        margin: 5px 2px;
+      }
+    }
+  }
+}

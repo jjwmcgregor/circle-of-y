@@ -1,35 +1,46 @@
-<p id="notice"><%= notice %></p>
-<h1>Projects</h1>
-<div style="margin:30px;" class="white-text text-on-bk-red pad">
+<div class="container">
+  <div class="row mt-2 ft">
+    <div class="col-md-8 col-md-offset-2">
+      <p id="notice"><%= notice %></p>
 
+      <h1 class="text-center">Projects</h1>
 
-  <div class="news-all">
-      <% @projects.each do |project| %>
-      <div class="news-band-white">
-        <div class="no-margin row">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>User</th>
+            <th colspan="2"></th>
+          </tr>
+        </thead>
 
-          <div class="col-md-6 news-title"><%= project.title %></div>
-          <div class="col-md-6 news-title"><%= project.created_at %></div>
-        </div>
-        <div class="no-margin row news-body" style="color:black"  >
-          <div class="col-md-9 offset-md-1 news-story"><%= project.description %></div>
-          <div class="">
-            <%= link_to 'Read More', project %><br/>
-            <%= link_to 'Edit', edit_project_path(project) %><br/>
-            <%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %>
-          </div>
-        </div>
-        <div>
-          <ul class="admin-list">
+        <tbody>
+          <% @projects.each do |project| %>
+            <% if project.user.id == @user.id %>
+              <tr>
+                <td>
+                  <%= link_to user_project_path(@user,project) do %>
+                  <%= project.title %>
+                  <% end %>
+                </td>
+                <td><%= link_to edit_user_registration_path do %>
+                  <%= project.user.first_name %> <%= project.user.last_name %></td>
+                <td>
+                  <%= link_to user_project_path(@user,project), method: :delete, data: { confirm: 'Are you sure?' } do %>
+                    <i class="fas fa-trash"></i>
+                    <% end %>
+                  <% end %>
+                </td>
+              </tr>
+            <% end %>
+          <% end %>
+        </tbody>
+      </table>
 
-          </ul>
-        </div>
-        <div class="no-margin row"style="color:black">
-          <div class="col-md-4 offset-md-2 news-author">Published by: <%= project.user.first_name + " " + project.user.second_name %></div>
-        </div>
-      </div>
-      <% end %>
+      <br>
 
+      <%= link_to 'New Project', new_user_project_path, class: "btn btn-danger"%>
+
+    </div>
   </div>
-
 </div>

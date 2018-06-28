@@ -1,0 +1,12 @@
+<h3>Greetings, <%= @user.first_name %></h3>
+
+<p>
+  Welcome to The Circle of Young Intrapreneurs!
+  <p>Thank you for your interest in joining the Circle of Young Intrapreneurs. You can confirm your account email through the link below:</p>
+  <p><%= link_to 'Confirm my account', confirmation_url(@user, confirmation_token: @token) %></p>
+  <br>Thanks for joining and have a great day!
+</p>
+
+<p>
+  <b>The Circle of Young Intrapreneurs</b>
+</p>

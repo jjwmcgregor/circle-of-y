@@ -1,0 +1,29 @@
+<h1>Project proposal submitted</h1>
+
+<div>
+  <p>
+    <b>User:</b> <%= "#{@user.first_name} #{@user.last_name}" %><br>
+    <b>Chapter Lead:</b> <%= "#{@user.chapter.lead} "%><br>
+  </p>
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  <%= @project.intro %>
+
+</div>
+<div>
+  <h2>Reason</h2>
+  <%= @project.impact %>
+</div>
+<div>
+  <h2>Generate</h2>
+
+  <%= @project.businesscase %>
+</div>
+
+<div>
+  <p>
+    <b>The Circle of Young Intrapreneurs</b>
+  </p>
+</div>

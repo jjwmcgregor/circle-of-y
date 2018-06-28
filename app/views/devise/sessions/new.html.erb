@@ -1,0 +1,28 @@
+<div class="container form-signin ">
+  <h2 class="form-signin-heading mt-2">Log in</h2>
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="field">
+      <%= f.label :email, :class => "sr-only" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => "form-control", :placeholder => "Email address", :style => "margin-bottom: 0;" %>
+      <br>
+      <%= f.label :password, :class => "sr-only" %>
+      <%= f.password_field :password, autocomplete: "off", :class => "form-control", :placeholder => "Password", :style => "margin-top: 0;" %>
+    </div>
+
+    <% if devise_mapping.rememberable? -%>
+      <div class="field checkbox">
+        <%= f.check_box :remember_me, :style => "margin-left: 0px" %>
+        <%= f.label :remember_me %>
+      </div>
+    <% end -%>
+
+    <div class="actions">
+      <%= f.submit "Log in", :class => "btn btn-lg btn-danger", :style => "margin-top: 0" %>
+    </div>
+  <% end %>
+
+  <ul class="list-group devise-shared">
+    <%= render "devise/shared/links" %>
+  </ul>
+</div>
