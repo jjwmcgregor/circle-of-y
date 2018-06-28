@@ -12984,3 +12984,1357 @@ puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 >>>>>>> 74d427678a67ba155e8f496caff62775449f524b
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (197.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project-test1_development"[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (181.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "project-test1_test"[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (436.2ms)[0m  [1m[35mCREATE DATABASE "project-test1_development" ENCODING = 'unicode'[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (416.3ms)[0m  [1m[35mCREATE DATABASE "project-test1_test" ENCODING = 'unicode'[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35mSQL (0.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "chapters" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (20.7ms)[0m  [1m[35mCREATE TABLE "chapters" ("id" bigserial primary key, "city" character varying, "country_id" integer, "lead" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "countries" CASCADE[0m
+  ↳ db/schema.rb:27
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:27
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "projects" CASCADE[0m
+  ↳ db/schema.rb:33
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "intro" text, "impact" text, "businesscase" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:33
+  [1m[35m (11.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "resources" CASCADE[0m
+  ↳ db/schema.rb:42
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "resources" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:42
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:47
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "first_name" character varying, "last_name" character varying, "organisation" character varying, "twitter_url" character varying, "country" character varying, "chapter" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "chapter_id" integer)[0m
+  ↳ db/schema.rb:47
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:47
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/schema.rb:47
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180628100246)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180626222215),
+(20180628100147),
+(20180628095957),
+(20180627134232),
+(20180625153418);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-06-28 10:39:00.532748"], ["updated_at", "2018-06-28 10:39:00.532748"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35mSQL (0.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "chapters" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (17.0ms)[0m  [1m[35mCREATE TABLE "chapters" ("id" bigserial primary key, "city" character varying, "country_id" integer, "lead" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "countries" CASCADE[0m
+  ↳ db/schema.rb:27
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:27
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "projects" CASCADE[0m
+  ↳ db/schema.rb:33
+  [1m[35m (11.3ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "intro" text, "impact" text, "businesscase" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:33
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "resources" CASCADE[0m
+  ↳ db/schema.rb:42
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "resources" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:42
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:47
+  [1m[35m (11.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "first_name" character varying, "last_name" character varying, "organisation" character varying, "twitter_url" character varying, "country" character varying, "chapter" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "chapter_id" integer)[0m
+  ↳ db/schema.rb:47
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:47
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/schema.rb:47
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180628100246)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180626222215),
+(20180628100147),
+(20180628095957),
+(20180627134232),
+(20180625153418);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-06-28 10:39:00.699498"], ["updated_at", "2018-06-28 10:39:00.699498"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2018-06-28 10:39:00.706215"], ["key", "environment"]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mCountry Create (1.1ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "United Kingdom"], ["created_at", "2018-06-28 10:39:00.764330"], ["updated_at", "2018-06-28 10:39:00.764330"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Republic of Ireland"], ["created_at", "2018-06-28 10:39:00.768933"], ["updated_at", "2018-06-28 10:39:00.768933"]]
+  ↳ db/seeds.rb:2
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "United States of America"], ["created_at", "2018-06-28 10:39:00.772477"], ["updated_at", "2018-06-28 10:39:00.772477"]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "United Arab Emirates"], ["created_at", "2018-06-28 10:39:00.775786"], ["updated_at", "2018-06-28 10:39:00.775786"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "France"], ["created_at", "2018-06-28 10:39:00.779588"], ["updated_at", "2018-06-28 10:39:00.779588"]]
+  ↳ db/seeds.rb:5
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Monaco"], ["created_at", "2018-06-28 10:39:00.783778"], ["updated_at", "2018-06-28 10:39:00.783778"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Netherlands"], ["created_at", "2018-06-28 10:39:00.788513"], ["updated_at", "2018-06-28 10:39:00.788513"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Morocco"], ["created_at", "2018-06-28 10:39:00.793112"], ["updated_at", "2018-06-28 10:39:00.793112"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "India"], ["created_at", "2018-06-28 10:39:00.797539"], ["updated_at", "2018-06-28 10:39:00.797539"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Singapore"], ["created_at", "2018-06-28 10:39:00.802190"], ["updated_at", "2018-06-28 10:39:00.802190"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "South Africa"], ["created_at", "2018-06-28 10:39:00.806235"], ["updated_at", "2018-06-28 10:39:00.806235"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Australia"], ["created_at", "2018-06-28 10:39:00.809808"], ["updated_at", "2018-06-28 10:39:00.809808"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Canada"], ["created_at", "2018-06-28 10:39:00.814048"], ["updated_at", "2018-06-28 10:39:00.814048"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mCountry Create (0.5ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sweden"], ["created_at", "2018-06-28 10:39:00.818651"], ["updated_at", "2018-06-28 10:39:00.818651"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Chile"], ["created_at", "2018-06-28 10:39:00.823886"], ["updated_at", "2018-06-28 10:39:00.823886"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCountry Create (0.7ms)[0m  [1m[32mINSERT INTO "countries" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Belgium"], ["created_at", "2018-06-28 10:39:00.828650"], ["updated_at", "2018-06-28 10:39:00.828650"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCountry Load (0.6ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United Kingdom"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCountry Load (0.9ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mChapter Create (1.0ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "London"], ["country_id", 1], ["lead", "Tim Heard"], ["email", "tim@circleofyi.com"], ["created_at", "2018-06-28 10:39:00.882802"], ["updated_at", "2018-06-28 10:39:00.882802"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United States of America"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mChapter Create (0.7ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Los Angeles"], ["country_id", 3], ["lead", "Justin Deshaw"], ["email", "justin.deshaw@gmail.com"], ["created_at", "2018-06-28 10:39:00.892811"], ["updated_at", "2018-06-28 10:39:00.892811"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United States of America"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mChapter Create (0.6ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Washington DC"], ["country_id", 3], ["lead", "John Balkam"], ["email", "jrbalkam@gmail.com"], ["created_at", "2018-06-28 10:39:00.901814"], ["updated_at", "2018-06-28 10:39:00.901814"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United States of America"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Boston"], ["country_id", 3], ["lead", "Alejandra Grupp"], ["email", "alejandragrupp@gmail.com"], ["created_at", "2018-06-28 10:39:00.909344"], ["updated_at", "2018-06-28 10:39:00.909344"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United States of America"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mChapter Create (0.6ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "New York City"], ["country_id", 3], ["lead", "Hallie Stebbins"], ["email", "hallie.stebbins@gmail.com"], ["created_at", "2018-06-28 10:39:00.920520"], ["updated_at", "2018-06-28 10:39:00.920520"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United States of America"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mChapter Create (0.7ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Pittsburgh"], ["country_id", 3], ["lead", "Meg Trite"], ["email", "megtrite@gmail.com"], ["created_at", "2018-06-28 10:39:00.930026"], ["updated_at", "2018-06-28 10:39:00.930026"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United States of America"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mChapter Create (0.6ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Chicago"], ["country_id", 3], ["lead", "Jack Redding"], ["email", "megtrite@gmail.com"], ["created_at", "2018-06-28 10:39:00.938317"], ["updated_at", "2018-06-28 10:39:00.938317"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United States of America"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mChapter Create (0.7ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Dublin"], ["country_id", 3], ["lead", "Ciara Keane"], ["email", ""], ["created_at", "2018-06-28 10:39:00.946433"], ["updated_at", "2018-06-28 10:39:00.946433"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United Kingdom"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Birmingham"], ["country_id", 1], ["lead", "Sally Eaves"], ["email", "business@sallyeaves.co.uk"], ["created_at", "2018-06-28 10:39:00.955109"], ["updated_at", "2018-06-28 10:39:00.955109"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "France"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Paris"], ["country_id", 5], ["lead", "Anna Donna-Hie"], ["email", "annadonahie@gmail.com"], ["created_at", "2018-06-28 10:39:00.960528"], ["updated_at", "2018-06-28 10:39:00.960528"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "France"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Monaco"], ["country_id", 5], ["lead", "Dara Miller"], ["email", "miller.dara@gmail.com"], ["created_at", "2018-06-28 10:39:00.966111"], ["updated_at", "2018-06-28 10:39:00.966111"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Netherlands"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Amsterdam"], ["country_id", 7], ["lead", "Aouatif Tawfik"], ["email", "aouatif.tawfik@unilever.com"], ["created_at", "2018-06-28 10:39:00.972454"], ["updated_at", "2018-06-28 10:39:00.972454"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Morocco"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Casablanca"], ["country_id", 8], ["lead", "Guillaume Vigier"], ["email", "gvigier.mazars@gmail.com"], ["created_at", "2018-06-28 10:39:00.978014"], ["updated_at", "2018-06-28 10:39:00.978014"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "India"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mChapter Create (1.0ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "New Delhi"], ["country_id", 9], ["lead", "Ashutosh Kumar"], ["email", "helloashu.kumar@gmail.com"], ["created_at", "2018-06-28 10:39:00.984957"], ["updated_at", "2018-06-28 10:39:00.984957"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Singapore"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Singapore"], ["country_id", 10], ["lead", "David Nosibor"], ["email", "david.nosibor@mazars.com.sg"], ["created_at", "2018-06-28 10:39:00.993014"], ["updated_at", "2018-06-28 10:39:00.993014"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "South Africa"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mChapter Create (0.6ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Johannesburg"], ["country_id", 11], ["lead", "Fabio Henriquez"], ["email", ""], ["created_at", "2018-06-28 10:39:01.000131"], ["updated_at", "2018-06-28 10:39:01.000131"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Australia"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Sydney"], ["country_id", 12], ["lead", "Laurie Brown"], ["email", "laurie.s.brown@hotmail.com"], ["created_at", "2018-06-28 10:39:01.007363"], ["updated_at", "2018-06-28 10:39:01.007363"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "United Arab Emirates"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mChapter Create (0.5ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Dubai"], ["country_id", 4], ["lead", "Mohamed Abdeljalil"], ["email", ""], ["created_at", "2018-06-28 10:39:01.014483"], ["updated_at", "2018-06-28 10:39:01.014483"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Canada"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Toronto"], ["country_id", 13], ["lead", "Nader Saif"], ["email", ""], ["created_at", "2018-06-28 10:39:01.022670"], ["updated_at", "2018-06-28 10:39:01.022670"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Sweden"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Stockholm"], ["country_id", 14], ["lead", "Jacob Larsson"], ["email", ""], ["created_at", "2018-06-28 10:39:01.029575"], ["updated_at", "2018-06-28 10:39:01.029575"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Chile"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:38
+  [1m[36mChapter Create (0.6ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Santiago"], ["country_id", 15], ["lead", "Cristian Guerrero"], ["email", ""], ["created_at", "2018-06-28 10:39:01.037215"], ["updated_at", "2018-06-28 10:39:01.037215"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."name" = $1 LIMIT $2[0m  [["name", "Belgium"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mChapter Create (0.4ms)[0m  [1m[32mINSERT INTO "chapters" ("city", "country_id", "lead", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["city", "Brussels"], ["country_id", 16], ["lead", "Jason Stamm"], ["email", ""], ["created_at", "2018-06-28 10:39:01.044251"], ["updated_at", "2018-06-28 10:39:01.044251"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:40:04 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (49.8ms)
+  Rendered partials/_nav.html.erb (8.6ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 5664ms (Views: 5605.8ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 11:40:15 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  Rendered devise/shared/_links.html.erb (2.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (146.5ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 301ms (Views: 272.2ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:42:52 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (9.8ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 107ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:42:53 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.2ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 95ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:42:55 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (8.4ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 97ms (Views: 87.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:42:56 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (7.5ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 96ms (Views: 84.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:42:57 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (8.7ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 88ms (Views: 76.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:43:02 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.2ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 86ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:43:06 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (8.3ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 110ms (Views: 95.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:43:11 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.8ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 86ms (Views: 74.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:43:14 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (7.5ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 91ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:43:18 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (7.5ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 113ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:43:20 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (7.2ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 105ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:43:22 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.8ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 94ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:43:23 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (7.1ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 100ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:48:44 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (15.1ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 138ms (Views: 125.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:50:35 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (6.3ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 106ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:51:54 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (6.6ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 89ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:51:55 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.1ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 80ms (Views: 73.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:54:15 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (7.4ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 75ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:54:16 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (6.1ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:55:14 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (7.5ms)
+  Rendered partials/_nav.html.erb (1.7ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 83ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:55:15 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.8ms)
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 102ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:55:16 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (6.3ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 117ms (Views: 110.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:55:16 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:55:16 +0100
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (16.0ms)
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (25.3ms)
+  Rendered partials/_nav.html.erb (26.6ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 312ms (Views: 294.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 202ms (Views: 190.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:56:09 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (6.7ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 78ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:56:10 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.5ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 113ms (Views: 103.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:56:13 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (9.2ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 85ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:56:14 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.3ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 90ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:56:15 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (6.4ms)
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 109ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:56:16 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.5ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 87ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:56:16 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (8.1ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 87ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:56:17 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.2ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 107ms (Views: 95.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:56:18 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (7.5ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:56:19 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.2ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 98ms (Views: 88.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:56:25 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (6.5ms)
+  Rendered partials/_nav.html.erb (1.8ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 95ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:56:27 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.6ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 117ms (Views: 103.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:56:37 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (7.6ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 107ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:56:39 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (8.5ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 127ms (Views: 115.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-28 11:56:43 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.2ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 91ms (Views: 89.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 11:56:45 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  [1m[36mCountry Load (0.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (39.7ms)
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 128ms (Views: 118.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 11:56:54 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (6.4ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 90ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 11:56:55 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (7.0ms)
+  Rendered partials/_nav.html.erb (1.7ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 113ms (Views: 101.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 11:57:41 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.2ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (35.0ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 101ms (Views: 93.5ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 12:01:17 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.4ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 78ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 12:01:20 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (15.3ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 155ms (Views: 144.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 12:01:23 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (6.6ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 12:01:33 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (6.3ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 79ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 12:02:03 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.1ms)
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 12:02:05 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (10.2ms)
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 12:02:05 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (23.4ms)
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 12:02:06 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (18.2ms)
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 12:02:08 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  [1m[36mCountry Load (54.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (8.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (59.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (5.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (1.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (1.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (9.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (1.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (1.0ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.9ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (12.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (25.0ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (6.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (585.5ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 6729ms (Views: 6723.9ms | ActiveRecord: 0.0ms)
+
+
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 12:02:10 +0100
+Completed 200 OK in 2189ms (Views: 1964.6ms | ActiveRecord: 223.0ms)
+
+
+Processing by Devise::RegistrationsController#new as HTML
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 12:02:10 +0100
+  Rendering devise/registrations/new.html.erb within layouts/application
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  [1m[36mCountry Load (46.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mCountry Load (2.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  [1m[36mChapter Load (11.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (5.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (1.9ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (2.9ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (2.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (2.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (89.1ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (122.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  [1m[36mChapter Load (101.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (1.1ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  [1m[36mChapter Load (57.0ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (13.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (11.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  [1m[36mChapter Load (1.1ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (2.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  [1m[36mChapter Load (3.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (11.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (1.2ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  [1m[36mChapter Load (4.9ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (8.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  [1m[36mChapter Load (0.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (2.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  [1m[36mChapter Load (7.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (58.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (5.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (24.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  [1m[36mChapter Load (21.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (1.1ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  [1m[36mChapter Load (17.1ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  ↳ app/views/devise/registrations/new.html.erb:27
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (1536.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (1728.8ms)
+  Rendered partials/_nav.html.erb (1.8ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 2677ms (Views: 2467.6ms | ActiveRecord: 207.9ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 12:02:13 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  [1m[36mCountry Load (4.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (5.9ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  Rendered partials/_nav.html.erb (1.9ms)
+  [1m[36mChapter Load (10.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  Rendered partials/_footer.html.erb (0.7ms)
+  [1m[36mChapter Load (5.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+Completed 200 OK in 3038ms (Views: 2597.4ms | ActiveRecord: 439.6ms)
+
+
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (2.9ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (14.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (9.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (9.0ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (5.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (6.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (5.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (1.1ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (8.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (446.1ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 809ms (Views: 714.6ms | ActiveRecord: 92.3ms)
+
+
+  Rendered partials/_nav.html.erb (2.6ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 9031ms (Views: 9022.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 9319ms (Views: 9308.9ms | ActiveRecord: 0.0ms)
+
+
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 8991ms (Views: 8938.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 12:02:54 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (6.8ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 92ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 12:03:23 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (14.1ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 168ms (Views: 158.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 12:05:31 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.1ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 86ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-06-28 12:05:33 +0100
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (6.7ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 12:05:49 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.3ms)
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 87ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 12:06:33 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.6ms)
+  Rendered partials/_nav.html.erb (2.7ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 2714ms (Views: 2707.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 12:06:54 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (7.0ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 83ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 12:08:44 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (7.4ms)
+  Rendered partials/_nav.html.erb (2.6ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 84ms (Views: 79.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-06-28 12:11:40 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.1ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 89ms (Views: 81.9ms | ActiveRecord: 0.0ms)
+
+
