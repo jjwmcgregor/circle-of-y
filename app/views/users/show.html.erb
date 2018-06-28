@@ -1,0 +1,92 @@
+<div class="container">
+  <div class="row mt-2">
+    <div class="col-md-8 col-md-offset-2">
+
+      <h1 class="text-center">Show profile page</h1>
+
+      <div class="text-center">
+        <img src="/images/no_profile.jpg" alt="Your Profile Picture" class="img-circle profile-picture">
+      </div>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Full Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= @user.full_name %></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Organisation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= @user.organisation %></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Chapter Lead</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= @user.chapter.lead %></td>
+            <td><%= @user.chapter.email %></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Chapter City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= @user.chapter.city %></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= @user.email %></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Twitter</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= @user.twitter_url %></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
