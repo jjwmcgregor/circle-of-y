@@ -4,88 +4,40 @@
 
       <h1 class="text-center">Show profile page</h1>
 
-      <div class="text-center">
-        <img src="/images/no_profile.jpg" alt="Your Profile Picture" class="img-circle profile-picture">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="/images/no_profile.jpg" alt="Your Profile Picture" class="img-circle profile-picture">
+          </div>
+          <div class="text-info col-md-6">
+            <p><strong>Full Name: </strong> <%= @user.full_name %></p>
+            <br>
+            <p><strong>Email: </strong> <%= @user.email %></p>
+            <br>
+            <p><strong>Organisation: </strong> <%= @user.organisation %></p>
+            <br>
+            <a href="#"><strong>Twitter URL: </strong> <%= @user.twitter_url %></a>
+            <br>
+          </div>
+<hr>
+          <div class="col-md-6 text-center">
+            <img src="/images/no_profile.jpg" alt="Your Profile Picture" class="img-circle profile-picture">
+          </div>
+          <div class="col-md-6 text-info">
+            <p><strong>Chapter Lead: </strong> <%= @user.chapter.lead %></p>
+            <br>
+            <p><strong>Chapter Lead Email: </strong> <%= @user.chapter.email %></p>
+            <br>
+            <p><strong>Chapter Lead City: </strong> <%= @user.chapter.city %></p>
+            <br>
+          </div>
+        </div>
       </div>
 
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Full Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><%= @user.full_name %></td>
-          </tr>
-        </tbody>
-      </table>
 
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Organisation</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><%= @user.organisation %></td>
-          </tr>
-        </tbody>
-      </table>
 
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Chapter Lead</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><%= @user.chapter.lead %></td>
-            <td><%= @user.chapter.email %></td>
-          </tr>
-        </tbody>
-      </table>
+<hr>
 
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Chapter City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><%= @user.chapter.city %></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><%= @user.email %></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Twitter</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><%= @user.twitter_url %></td>
-          </tr>
-        </tbody>
-      </table>
 
     </div>
   </div>
