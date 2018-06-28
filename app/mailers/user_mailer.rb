@@ -10,7 +10,7 @@ class UserMailer < ApplicationMailer
 
   def project_pitch(user,project)
     @user = user
-    @user2 = "akola-adeyemi@spartaglobal.com"
+    @user2 = "ylangue@spartaglobal.com"
     @project = project
     mail(to:[@user.email,@user2],subject: 'Project')
   end

@@ -16596,3 +16596,3124 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-06-28 12:47:50 +0100
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (2.0ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 407ms (Views: 381.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 12:47:53 +0100
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (2.3ms)
+  Rendered partials/_nav.html.erb (1.7ms)
+  Rendered partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 127ms (Views: 121.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 12:47:54 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  [1m[36mCountry Load (1.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  Rendered devise/shared/_links.html.erb (2.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (133.6ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 296ms (Views: 215.6ms | ActiveRecord: 52.5ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-28 12:47:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-06-28 12:48:12 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JGASR4Y7L51h1Y3d2GzpUPnl/jr6ULAjd7YL01veAzdSbyP0mxYqFXaq5wCS+2TS/etCSPrlI63lhqcXknk2yQ==", "user"=>{"first_name"=>"Yann", "last_name"=>"Langue", "organisation"=>"", "chapter_id"=>"9", "email"=>"ylangue@spartaglobal.com", "twitter_url"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (3.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ylangue@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "organisation", "twitter_url", "created_at", "updated_at", "chapter_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["email", "ylangue@spartaglobal.com"], ["encrypted_password", "$2a$11$9vpHAPBvMTBlKxoW5M4lNO7CJUKJsi6/GY3oJAJ4N5MyTXBXkctLG"], ["confirmation_token", "Xgn356hiiKK1S3PT8cWy"], ["confirmation_sent_at", "2018-06-28 11:48:12.648812"], ["first_name", "Yann"], ["last_name", "Langue"], ["organisation", ""], ["twitter_url", ""], ["created_at", "2018-06-28 11:48:12.648473"], ["updated_at", "2018-06-28 11:48:12.648473"], ["chapter_id", 9]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (2.2ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 118.6ms
+Sent mail to ylangue@spartaglobal.com (1576.5ms)
+Date: Thu, 28 Jun 2018 12:48:12 +0100
+From: no-reply@example.com
+Reply-To: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34cafcd1a18_17cd3fcc6286a36c73946@MacBook-Air-3.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h3>Greetings, Yann</h3>
+
+<p>
+  Welcome to The Circle of Young Intrapreneurs!
+  <p>Thank you for your interest in joining the Circle of Young Intrapreneurs. You can confirm your account email through the link below:</p>
+  <p><a href="http://localhost:3000/users/confirmation?confirmation_token=Xgn356hiiKK1S3PT8cWy">Confirm my account</a></p>
+  <br>Thanks for joining and have a great day!
+</p>
+
+<p>
+  <b>The Circle of Young Intrapreneurs</b>
+</p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1995ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 12:48:14 +0100
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.9ms)
+  Rendered partials/_nav.html.erb (2.8ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 154ms (Views: 140.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=Xgn356hiiKK1S3PT8cWy" for 127.0.0.1 at 2018-06-28 12:48:22 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"Xgn356hiiKK1S3PT8cWy"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "Xgn356hiiKK1S3PT8cWy"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-06-28 11:48:22.312584"], ["updated_at", "2018-06-28 11:48:22.314432"], ["id", 9]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (9.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.9ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.5ms)
+UserMailer#welcome_email: processed outbound mail in 107.5ms
+Sent mail to ylangue@spartaglobal.com (1508.3ms)
+Date: Thu, 28 Jun 2018 12:48:22 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34cb066f55e_17cd3fcc6286bd487416f@MacBook-Air-3.local.mail>
+Subject: Welcome to COYI
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34cb066d947_17cd3fcc6286bd48740f1";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34cb066d947_17cd3fcc6286bd48740f1
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Yann
+===============================================
+You have successfully signed up to example.com,
+your username is: ylangue@spartaglobal.com.
+Thanks for joining and have a great day!
+
+
+----==_mimepart_5b34cb066d947_17cd3fcc6286bd48740f1
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>Dear, Yann</h3>
+  <p>
+    Welcome to The Circle of Young Intrapreneurs!
+    You have successfully signed up to our site and your username is: ylangue@spartaglobal.com.<br>
+    <br>Thanks for joining and have a great day!
+  </p>
+<p>
+  <b>The Circle of Young Intrapreneurs</b>
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34cb066d947_17cd3fcc6286bd48740f1--
+
+  Rendering user_mailer/chapter_email.html.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.html.erb within layouts/mailer (0.6ms)
+  Rendering user_mailer/chapter_email.text.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.text.erb within layouts/mailer (0.6ms)
+UserMailer#chapter_email: processed outbound mail in 93.1ms
+Sent mail to ylangue@spartaglobal.com (1446.0ms)
+Date: Thu, 28 Jun 2018 12:48:24 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34cb08e0be_17cd3fcc6286bd4874337@MacBook-Air-3.local.mail>
+Subject: New user: Yann Langue
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34cb08bf57_17cd3fcc6286bd48742bd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34cb08bf57_17cd3fcc6286bd48742bd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Chapter Lead,
+===============================================
+This is to notify of a confirmed sign up for your chapter:
+First Name: Yann
+Last Name: Langue
+
+Many Thanks,
+The Circle of Young Intrapreneurs
+
+
+----==_mimepart_5b34cb08bf57_17cd3fcc6286bd48742bd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>Dear Chapter Lead</h3>
+  <p>
+    This is to notify of a confirmed sign up for your chapter:<br>
+    <ul>
+      <li>First name: <b>Yann</b>
+      <li>Last name: <b>Langue</b>
+    </ul>
+    <br>Many thanks,
+  </p>
+<p>
+  <b>The Circle of Young Intrapreneurs</b>
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34cb08bf57_17cd3fcc6286bd48742bd--
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 3198ms (ActiveRecord: 11.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-28 12:48:25 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.4ms)
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 133ms (Views: 129.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 12:54:18 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  [1m[36mCountry Load (1.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (1.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (1.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/new.html.erb:27
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (63.3ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 150ms (Views: 137.9ms | ActiveRecord: 10.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-06-28 12:56:25 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6NTHW5TdF45LTcnq43kWOsajl3KQWSXaDBuWnlI8x8Ge2/boifASBlwyozep7pu4wq0rAJDstlSeKzpam5vyPw==", "user"=>{"first_name"=>"Mimi", "last_name"=>"Osei", "organisation"=>"Mimi Osei LTD", "chapter_id"=>"1", "email"=>"mmanly-osei@spartaglobal.com", "twitter_url"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mmanly-osei@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "organisation", "twitter_url", "created_at", "updated_at", "chapter_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["email", "mmanly-osei@spartaglobal.com"], ["encrypted_password", "$2a$11$4sYKecDCpFYdNgWTl9I7K.izAeQ8sUaO9bqeXHxoo0adkq5Azb2hO"], ["confirmation_token", "rnsfHpC3H6ANv7hJyhKs"], ["confirmation_sent_at", "2018-06-28 11:56:25.294779"], ["first_name", "Mimi"], ["last_name", "Osei"], ["organisation", "Mimi Osei LTD"], ["twitter_url", ""], ["created_at", "2018-06-28 11:56:25.294643"], ["updated_at", "2018-06-28 11:56:25.294643"], ["chapter_id", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.1ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 71.3ms
+Sent mail to mmanly-osei@spartaglobal.com (1304.6ms)
+Date: Thu, 28 Jun 2018 12:56:25 +0100
+From: no-reply@example.com
+Reply-To: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com
+Message-ID: <5b34cce95ba65_17cd3fcc6286a4c0744c9@MacBook-Air-3.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h3>Greetings, Mimi</h3>
+
+<p>
+  Welcome to The Circle of Young Intrapreneurs!
+  <p>Thank you for your interest in joining the Circle of Young Intrapreneurs. You can confirm your account email through the link below:</p>
+  <p><a href="http://localhost:3000/users/confirmation?confirmation_token=rnsfHpC3H6ANv7hJyhKs">Confirm my account</a></p>
+  <br>Thanks for joining and have a great day!
+</p>
+
+<p>
+  <b>The Circle of Young Intrapreneurs</b>
+</p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1573ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 12:56:26 +0100
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.1ms)
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 83ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=rnsfHpC3H6ANv7hJyhKs" for 127.0.0.1 at 2018-06-28 12:58:03 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"rnsfHpC3H6ANv7hJyhKs"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "rnsfHpC3H6ANv7hJyhKs"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (3.5ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-06-28 11:58:03.093058"], ["updated_at", "2018-06-28 11:58:03.094749"], ["id", 10]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (20.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.6ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.5ms)
+UserMailer#welcome_email: processed outbound mail in 101.9ms
+Sent mail to mmanly-osei@spartaglobal.com (1115.9ms)
+Date: Thu, 28 Jun 2018 12:58:03 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com
+Message-ID: <5b34cd4b376d6_17cd3fcc6286a36c74670@MacBook-Air-3.local.mail>
+Subject: Welcome to COYI
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34cd4b369af_17cd3fcc6286a36c74587";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34cd4b369af_17cd3fcc6286a36c74587
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Mimi
+===============================================
+You have successfully signed up to example.com,
+your username is: mmanly-osei@spartaglobal.com.
+Thanks for joining and have a great day!
+
+
+----==_mimepart_5b34cd4b369af_17cd3fcc6286a36c74587
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>Dear, Mimi</h3>
+  <p>
+    Welcome to The Circle of Young Intrapreneurs!
+    You have successfully signed up to our site and your username is: mmanly-osei@spartaglobal.com.<br>
+    <br>Thanks for joining and have a great day!
+  </p>
+<p>
+  <b>The Circle of Young Intrapreneurs</b>
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34cd4b369af_17cd3fcc6286a36c74587--
+
+  Rendering user_mailer/chapter_email.html.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.html.erb within layouts/mailer (0.6ms)
+  Rendering user_mailer/chapter_email.text.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.text.erb within layouts/mailer (0.5ms)
+UserMailer#chapter_email: processed outbound mail in 75.5ms
+Sent mail to ylangue@spartaglobal.com (965.2ms)
+Date: Thu, 28 Jun 2018 12:58:04 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b34cd4c6692d_17cd3fcc6286a36c74878@MacBook-Air-3.local.mail>
+Subject: New user: Mimi Osei
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34cd4c65be7_17cd3fcc6286a36c7472";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34cd4c65be7_17cd3fcc6286a36c7472
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Chapter Lead,
+===============================================
+This is to notify of a confirmed sign up for your chapter:
+First Name: Mimi
+Last Name: Osei
+
+Many Thanks,
+The Circle of Young Intrapreneurs
+
+
+----==_mimepart_5b34cd4c65be7_17cd3fcc6286a36c7472
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>Dear Chapter Lead</h3>
+  <p>
+    This is to notify of a confirmed sign up for your chapter:<br>
+    <ul>
+      <li>First name: <b>Mimi</b>
+      <li>Last name: <b>Osei</b>
+    </ul>
+    <br>Many thanks,
+  </p>
+<p>
+  <b>The Circle of Young Intrapreneurs</b>
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b34cd4c65be7_17cd3fcc6286a36c7472--
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 2302ms (ActiveRecord: 28.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-28 12:58:05 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.7ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 173ms (Views: 171.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-06-28 12:58:18 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Th+8vW1DvGXUCt4m8BnKifQaT46zCPqGM7ug172PcorPoIfKy8wT8kA7hc+Rzq4gNmUGh3eRDbtSMmPlvRE2sQ==", "user"=>{"email"=>"mmanly-osei@spartaglobal.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "mmanly-osei@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2018-06-28 11:58:18.627839"], ["last_sign_in_at", "2018-06-28 11:58:18.627839"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2018-06-28 11:58:18.629128"], ["id", 10]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/users/1/projects
+Completed 302 Found in 181ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/users/1/projects" for 127.0.0.1 at 2018-06-28 12:58:18 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+Completed 404 Not Found in 16ms (ActiveRecord: 1.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/projects_controller.rb:9:in `index'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-28 12:58:50 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=rnsfHpC3H6ANv7hJyhKs" for 127.0.0.1 at 2018-06-28 12:58:55 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"rnsfHpC3H6ANv7hJyhKs"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "rnsfHpC3H6ANv7hJyhKs"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (13.7ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/partials/_nav.html.erb:19
+  Rendered partials/_nav.html.erb (7.7ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 181ms (Views: 173.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 12:59:00 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 12:59:00 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.8ms)
+  Rendered partials/_nav.html.erb (3.6ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 93ms (Views: 81.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-28 12:59:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-06-28 12:59:01 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AEY+MgvRL71aC2PjKbTVm6ZWL2bdLX0vS4noIrFdtDmJeCJnUG4yNXGuB8MIH+MSQdqPq5t+FXF8fgaEq5BbXw=="}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 42ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 12:59:01 +0100
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.9ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 101ms (Views: 97.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-28 12:59:03 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.6ms)
+  Rendered partials/_nav.html.erb (2.6ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 98ms (Views: 96.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-28 12:59:03 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-06-28 12:59:36 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bA7fZVncCuLAR4YFFOfL/1UvIZnSrKWgBUtB7BA6TFJEGDsgU8nOdMt2zFW4wMTaZoc77dUdd+1YRWWw+Pxn/g==", "user"=>{"email"=>"mmanly-osei@spartaglobal.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "mmanly-osei@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2018-06-28 11:59:36.704840"], ["sign_in_count", 2], ["updated_at", "2018-06-28 11:59:36.706732"], ["id", 10]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 187ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 12:59:36 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.8ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 72ms (Views: 65.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-28 13:31:00 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 47ms (ActiveRecord: 18.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 13:31:00 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.9ms)
+  Rendered partials/_nav.html.erb (11.3ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 85ms (Views: 78.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-28 13:31:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:31:08 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  Rendered projects/index.html.erb within layouts/application (6.3ms)
+  Rendered partials/_nav.html.erb (3.7ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 100ms (Views: 72.7ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/users/10/images/logo_200.png" for 127.0.0.1 at 2018-06-28 13:31:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/10/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/10/projects/new" for 127.0.0.1 at 2018-06-28 13:31:10 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (9.9ms)
+  Rendered projects/new.html.erb within layouts/application (18.4ms)
+  Rendered partials/_nav.html.erb (3.8ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 154ms (Views: 115.4ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:31:16 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0zDmxpI9pPq9wagysqCA1e3KMgxMle0NuR/8TwOZhElXw2gTW0c1VMUA2FVH4oJCRz5n7XMC4YXh5dPnchwfhg==", "project"=>{"intro"=>"kd.guheigh", "impact"=>".kyeimfj", "businesscase"=>",juygur\r\n"}, "commit"=>"Create Project", "user_id"=>"10"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (1.2ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "kd.guheigh"], ["impact", ".kyeimfj"], ["businesscase", ",juygur\r\n"], ["user_id", 10], ["created_at", "2018-06-28 12:31:16.750716"], ["updated_at", "2018-06-28 12:31:16.750716"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (0.6ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (1.2ms)
+UserMailer#project_pitch: processed outbound mail in 172.7ms
+Sent mail to mmanly-osei@spartaglobal.com, ylangue@spartaglobal.com (1318.7ms)
+Date: Thu, 28 Jun 2018 13:31:16 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com, 
+ ylangue@spartaglobal.com
+Message-ID: <5b34d514e6d80_17cd3fcc60e5d78075052@MacBook-Air-3.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34d514e5bf2_17cd3fcc60e5d7807498e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34d514e5bf2_17cd3fcc60e5d7807498e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34d514e5bf2_17cd3fcc60e5d7807498e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to COYI </h1>
+
+
+<div>
+  <h2>Business Idea</h2>
+  kd.guheigh
+
+</div>
+<div>
+  <h2>Reason</h2>
+  .kyeimfj
+</div>
+<div>
+  <h2>Generate</h2>
+
+  ,juygur
+
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b34d514e5bf2_17cd3fcc60e5d7807498e--
+
+Redirected to http://localhost:3000/users/10/projects
+Completed 302 Found in 1523ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:31:18 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (6.0ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 75ms (Views: 65.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/10/projects/new" for 127.0.0.1 at 2018-06-28 13:35:32 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (2.8ms)
+  Rendered projects/new.html.erb within layouts/application (7.5ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 117ms (Views: 101.0ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:35:38 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aCxYtxUCiveDkIVng3xf1OngKwH8UeAcdsor8UODcPPs39Zi3HgbWftR9QB2Pl1DQxR+4MPG7JQuMARZMgbrPA==", "project"=>{"intro"=>"hi", "impact"=>"hi", "businesscase"=>"hi"}, "commit"=>"Create Project", "user_id"=>"10"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (2.3ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "hi"], ["impact", "hi"], ["businesscase", "hi"], ["user_id", 10], ["created_at", "2018-06-28 12:35:38.299128"], ["updated_at", "2018-06-28 12:35:38.299128"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (0.5ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.3ms)
+UserMailer#project_pitch: processed outbound mail in 69.9ms
+Sent mail to mmanly-osei@spartaglobal.com, ylangue@spartaglobal.com (1059.3ms)
+Date: Thu, 28 Jun 2018 13:35:38 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com, 
+ ylangue@spartaglobal.com
+Message-ID: <5b34d61a5c52e_17cd3fcc6286bd48752b9@MacBook-Air-3.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34d61a5b986_17cd3fcc6286bd487513b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34d61a5b986_17cd3fcc6286bd487513b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34d61a5b986_17cd3fcc6286bd487513b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h2>Project Submitted</h2>
+
+<div>
+  <h2>User</h2>
+  Mimi
+
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  hi
+
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  hi
+
+</div>
+<div>
+  <h2>Reason</h2>
+  hi
+</div>
+<div>
+  <h2>Generate</h2>
+
+  hi
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b34d61a5b986_17cd3fcc6286bd487513b--
+
+Redirected to http://localhost:3000/users/10/projects
+Completed 302 Found in 1150ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:35:39 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (8.3ms)
+  Rendered partials/_nav.html.erb (5.3ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 101ms (Views: 92.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/10/projects/new" for 127.0.0.1 at 2018-06-28 13:37:12 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (1.9ms)
+  Rendered projects/new.html.erb within layouts/application (5.8ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 86ms (Views: 71.3ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:37:18 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kP1RgbxhyP3mFUVh2Hlce5oDOQ4pnn7fCXlRyEe0ocIUDt9UdRtZU57UNQYtO17sMPds7xYJcldRg35gNjE6DQ==", "project"=>{"intro"=>"wf", "impact"=>"gdsb", "businesscase"=>"sdsds"}, "commit"=>"Create Project", "user_id"=>"10"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (3.1ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "wf"], ["impact", "gdsb"], ["businesscase", "sdsds"], ["user_id", 10], ["created_at", "2018-06-28 12:37:18.709500"], ["updated_at", "2018-06-28 12:37:18.709500"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/user_mailer/project_pitch.html.erb:6
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (46.8ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.3ms)
+UserMailer#project_pitch: processed outbound mail in 116.5ms
+Sent mail to mmanly-osei@spartaglobal.com, ylangue@spartaglobal.com (1288.3ms)
+Date: Thu, 28 Jun 2018 13:37:18 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com, 
+ ylangue@spartaglobal.com
+Message-ID: <5b34d67ecbf5b_17cd3fcc60e5d780754a8@MacBook-Air-3.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34d67ecb04b_17cd3fcc60e5d78075360";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34d67ecb04b_17cd3fcc60e5d78075360
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34d67ecb04b_17cd3fcc60e5d78075360
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h2>Project Submitted</h2>
+
+<div>
+<p>
+  User: Mimi Osei<br>
+  Chapter: #&lt;Chapter:0x007f98c74430b0&gt;
+
+
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  wf
+
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  wf
+
+</div>
+<div>
+  <h2>Reason</h2>
+  gdsb
+</div>
+<div>
+  <h2>Generate</h2>
+
+  sdsds
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b34d67ecb04b_17cd3fcc60e5d78075360--
+
+Redirected to http://localhost:3000/users/10/projects
+Completed 302 Found in 1423ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:37:20 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (9.5ms)
+  Rendered partials/_nav.html.erb (6.3ms)
+  Rendered partials/_footer.html.erb (1.4ms)
+Completed 200 OK in 142ms (Views: 126.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/10/projects/new" for 127.0.0.1 at 2018-06-28 13:38:32 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (2.0ms)
+  Rendered projects/new.html.erb within layouts/application (5.9ms)
+  Rendered partials/_nav.html.erb (3.8ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 150ms (Views: 132.3ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:38:36 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DLk9jFwI3CrE1fuKkvgois9VF+euU50w0XvAzrJcL8qISrNZlXJNhLwUi+1nuiodZaFCBpHEkbiJge9mw9m0BQ==", "project"=>{"intro"=>"k", "impact"=>"ug", "businesscase"=>"uykg"}, "commit"=>"Create Project", "user_id"=>"10"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (3.6ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "k"], ["impact", "ug"], ["businesscase", "uykg"], ["user_id", 10], ["created_at", "2018-06-28 12:38:36.649846"], ["updated_at", "2018-06-28 12:38:36.649846"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/user_mailer/project_pitch.html.erb:6
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (2.7ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.6ms)
+UserMailer#project_pitch: processed outbound mail in 77.7ms
+Sent mail to mmanly-osei@spartaglobal.com, ylangue@spartaglobal.com (1269.8ms)
+Date: Thu, 28 Jun 2018 13:38:36 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com, 
+ ylangue@spartaglobal.com
+Message-ID: <5b34d6ccb42cb_17cd3fcc6286bd487562a@MacBook-Air-3.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34d6ccb3106_17cd3fcc6286bd48755e1";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34d6ccb3106_17cd3fcc6286bd48755e1
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34d6ccb3106_17cd3fcc6286bd48755e1
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h2>Project Submitted</h2>
+
+<div>
+<p>
+  User: New user: Mimi Osei<br>
+  Chapter: #&lt;Chapter:0x007f98c7ea7e98&gt;
+
+
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  k
+
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  k
+
+</div>
+<div>
+  <h2>Reason</h2>
+  ug
+</div>
+<div>
+  <h2>Generate</h2>
+
+  uykg
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b34d6ccb3106_17cd3fcc6286bd48755e1--
+
+Redirected to http://localhost:3000/users/10/projects
+Completed 302 Found in 1367ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:38:38 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (12.4ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 82ms (Views: 73.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/10/projects/new" for 127.0.0.1 at 2018-06-28 13:39:50 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (1.9ms)
+  Rendered projects/new.html.erb within layouts/application (5.9ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 83ms (Views: 67.4ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:39:56 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BaCmW6tT9fsywrmQyJRHvkbYCn0qlVvGyvey1SIMtMCBUyiOYilkVUoDyfc91kUp7CxfnBUCV06SDZ19U4kvDw==", "project"=>{"intro"=>"a", "impact"=>"bfd", "businesscase"=>"iu"}, "commit"=>"Create Project", "user_id"=>"10"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "a"], ["impact", "bfd"], ["businesscase", "iu"], ["user_id", 10], ["created_at", "2018-06-28 12:39:56.232770"], ["updated_at", "2018-06-28 12:39:56.232770"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/user_mailer/project_pitch.html.erb:6
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (2.6ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.4ms)
+UserMailer#project_pitch: processed outbound mail in 76.1ms
+Sent mail to mmanly-osei@spartaglobal.com, ylangue@spartaglobal.com (1134.2ms)
+Date: Thu, 28 Jun 2018 13:39:56 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com, 
+ ylangue@spartaglobal.com
+Message-ID: <5b34d71c4cd8b_17cd3fcc60e5d7807588e@MacBook-Air-3.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34d71c4c0ae_17cd3fcc60e5d780757ad";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34d71c4c0ae_17cd3fcc60e5d780757ad
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34d71c4c0ae_17cd3fcc60e5d780757ad
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h2>Project Submitted</h2>
+
+<div>
+<p>
+  User: Mimi Osei<br>
+  Chapter: #&lt;Chapter:0x007f98c2a36fd0&gt;
+
+
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  a
+
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  a
+
+</div>
+<div>
+  <h2>Reason</h2>
+  bfd
+</div>
+<div>
+  <h2>Generate</h2>
+
+  iu
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b34d71c4c0ae_17cd3fcc60e5d780757ad--
+
+Redirected to http://localhost:3000/users/10/projects
+Completed 302 Found in 1230ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:39:57 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (11.8ms)
+  Rendered partials/_nav.html.erb (3.3ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 89ms (Views: 80.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-28 13:44:17 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 13:44:17 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.9ms)
+  Rendered partials/_nav.html.erb (3.8ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 98ms (Views: 91.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-28 13:44:17 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:44:19 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (12.2ms)
+  Rendered partials/_nav.html.erb (5.4ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 121ms (Views: 103.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/10/images/logo_200.png" for 127.0.0.1 at 2018-06-28 13:44:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/10/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/10/projects/new" for 127.0.0.1 at 2018-06-28 13:44:21 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (1.9ms)
+  Rendered projects/new.html.erb within layouts/application (7.0ms)
+  Rendered partials/_nav.html.erb (5.1ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 103ms (Views: 89.5ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:44:26 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hmSGJMHMLLxbv8QM8YlVtozlpDJzpTfqfGjSCdFlKVEClwjxCLa9EiN+tGsEy1chJhHx00wyO2Ikkv2hoOCyng==", "project"=>{"intro"=>"rthr", "impact"=>"dgev", "businesscase"=>"edgegv"}, "commit"=>"Create Project", "user_id"=>"10"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (1.2ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "rthr"], ["impact", "dgev"], ["businesscase", "edgegv"], ["user_id", 10], ["created_at", "2018-06-28 12:44:26.201730"], ["updated_at", "2018-06-28 12:44:26.201730"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (0.6ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.3ms)
+UserMailer#project_pitch: processed outbound mail in 77.1ms
+Sent mail to mmanly-osei@spartaglobal.com, ylangue@spartaglobal.com (1297.0ms)
+Date: Thu, 28 Jun 2018 13:44:26 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com, 
+ ylangue@spartaglobal.com
+Message-ID: <5b34d82a46918_17cd3fcc6286a1c87607c@MacBook-Air-3.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34d82a45228_17cd3fcc6286a1c8759c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34d82a45228_17cd3fcc6286a1c8759c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34d82a45228_17cd3fcc6286a1c8759c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h2>Project Submitted</h2>
+
+<div>
+<p>
+<b>User: Mimi Osei<br>
+</p>
+
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  rthr
+
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  rthr
+
+</div>
+<div>
+  <h2>Reason</h2>
+  dgev
+</div>
+<div>
+  <h2>Generate</h2>
+
+  edgegv
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b34d82a45228_17cd3fcc6286a1c8759c--
+
+Redirected to http://localhost:3000/users/10/projects
+Completed 302 Found in 1395ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:44:27 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (11.0ms)
+  Rendered partials/_nav.html.erb (3.3ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 108ms (Views: 99.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:45:10 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (12.9ms)
+  Rendered partials/_nav.html.erb (2.8ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 95ms (Views: 80.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-28 13:45:12 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (0.8ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 97ms (Views: 84.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-06-28 13:45:14 +0100
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (1.0ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  Rendered devise/registrations/edit.html.erb within layouts/application (80.7ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 160ms (Views: 140.2ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-28 13:45:14 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/edit" for 127.0.0.1 at 2018-06-28 13:45:20 +0100
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-28 13:45:20 +0100
+  [1m[36mCountry Load (1.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.7ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  
+  ↳ app/views/devise/registrations/edit.html.erb:37
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/edit.html.erb:37
+  Rendered devise/registrations/edit.html.erb within layouts/application (56.9ms)
+  Rendered partials/_nav.html.erb (4.9ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 184ms (Views: 166.9ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:49:37 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (13.5ms)
+  Rendered partials/_nav.html.erb (3.7ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 132ms (Views: 98.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/users/10/projects/new" for 127.0.0.1 at 2018-06-28 13:49:40 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (2.0ms)
+  Rendered projects/new.html.erb within layouts/application (6.0ms)
+  Rendered partials/_nav.html.erb (4.1ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 100ms (Views: 84.5ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:49:43 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"noQV1y9xT7KrF7XVbhhMbnLZyNRnlNDASLj8C+R9JJgad5sC5gveHNPWxbKbWk752C2dNVgD3EgQQtOjlfi/Vw==", "project"=>{"intro"=>"er", "impact"=>"h", "businesscase"=>"h"}, "commit"=>"Create Project", "user_id"=>"10"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (1.1ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "er"], ["impact", "h"], ["businesscase", "h"], ["user_id", 10], ["created_at", "2018-06-28 12:49:43.633630"], ["updated_at", "2018-06-28 12:49:43.633630"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/user_mailer/project_pitch.html.erb:6
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (4.8ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.4ms)
+UserMailer#project_pitch: processed outbound mail in 84.9ms
+Sent mail to mmanly-osei@spartaglobal.com, ylangue@spartaglobal.com (1161.4ms)
+Date: Thu, 28 Jun 2018 13:49:43 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com, 
+ ylangue@spartaglobal.com
+Message-ID: <5b34d967b17d7_17cd3fcc6286a4c076246@MacBook-Air-3.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34d967b04a8_17cd3fcc6286a4c076187";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34d967b04a8_17cd3fcc6286a4c076187
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34d967b04a8_17cd3fcc6286a4c076187
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h2>Project Submitted</h2>
+
+<div>
+  <p>
+    <b>User:</b> Mimi Osei<br>
+    <b>Chapter Lead:</b> Tim Heard <br>
+  </p>
+
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  er
+
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  er
+
+</div>
+<div>
+  <h2>Reason</h2>
+  h
+</div>
+<div>
+  <h2>Generate</h2>
+
+  h
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b34d967b04a8_17cd3fcc6286a4c076187--
+
+Redirected to http://localhost:3000/users/10/projects
+Completed 302 Found in 1268ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:49:44 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (18.4ms)
+  Rendered partials/_nav.html.erb (4.8ms)
+  Rendered partials/_footer.html.erb (1.1ms)
+Completed 200 OK in 145ms (Views: 134.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/10/projects/new" for 127.0.0.1 at 2018-06-28 13:52:34 +0100
+  [1m[35m (8.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (49.6ms)
+  Rendered projects/new.html.erb within layouts/application (61.0ms)
+  Rendered partials/_nav.html.erb (3.5ms)
+  Rendered partials/_footer.html.erb (11.8ms)
+Completed 200 OK in 610ms (Views: 482.4ms | ActiveRecord: 17.2ms)
+
+
+Started POST "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:52:42 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g+weukdajaEzwvDy4RBcgAQhcSHvXG1riPeqCSi9uJTpSOeNLiODaluucb8F9rUjuvx7tpWw4C3sKFuXqqyeCw==", "project"=>{"intro"=>"dv", "impact"=>"dfb", "businesscase"=>" bcb "}, "commit"=>"Create Project", "user_id"=>"10"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (7.8ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "dv"], ["impact", "dfb"], ["businesscase", " bcb "], ["user_id", 10], ["created_at", "2018-06-28 12:52:42.216925"], ["updated_at", "2018-06-28 12:52:42.216925"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/user_mailer/project_pitch.html.erb:6
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (41.4ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.5ms)
+UserMailer#project_pitch: processed outbound mail in 232.6ms
+Sent mail to mmanly-osei@spartaglobal.com, ylangue@spartaglobal.com (1345.0ms)
+Date: Thu, 28 Jun 2018 13:52:42 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com, 
+ ylangue@spartaglobal.com
+Message-ID: <5b34da1aeaae4_1b073ff6df94f2e480367@MacBook-Air-3.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34da1ae6e49_1b073ff6df94f2e48025c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34da1ae6e49_1b073ff6df94f2e48025c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34da1ae6e49_1b073ff6df94f2e48025c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h2>Project Submitted</h2>
+
+<div>
+  <p>
+    <b>User:</b> Mimi Osei<br>
+    <b>Chapter Lead:</b> Tim Heard <br>
+  </p>
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  dv
+
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  dv
+
+</div>
+<div>
+  <h2>Reason</h2>
+  dfb
+</div>
+<div>
+  <h2>Generate</h2>
+
+   bcb 
+</div>
+
+<b>The Circle of Young Intrapreneurs</b>
+
+  </body>
+</html>
+
+----==_mimepart_5b34da1ae6e49_1b073ff6df94f2e48025c--
+
+Redirected to http://localhost:3000/users/10/projects
+Completed 302 Found in 2113ms (ActiveRecord: 34.1ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:52:44 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (34.0ms)
+  Rendered partials/_nav.html.erb (5.6ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 204ms (Views: 182.2ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/users/10/projects/new" for 127.0.0.1 at 2018-06-28 13:53:13 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (5.0ms)
+  Rendered projects/new.html.erb within layouts/application (15.3ms)
+  Rendered partials/_nav.html.erb (3.3ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 133ms (Views: 117.6ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:53:18 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yMcLSwchTHIrVUNQUCkk5RCQjnBggBQK/Vhcayj6QudMNIWezlvd3FOUMzelayZyumTbkV8XGIKlonPDWX/ZKA==", "project"=>{"intro"=>"kuby", "impact"=>"iuyobub", "businesscase"=>"ilhyo9n"}, "commit"=>"Create Project", "user_id"=>"10"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (7.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (1.1ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "kuby"], ["impact", "iuyobub"], ["businesscase", "ilhyo9n"], ["user_id", 10], ["created_at", "2018-06-28 12:53:18.428746"], ["updated_at", "2018-06-28 12:53:18.428746"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/user_mailer/project_pitch.html.erb:6
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (3.3ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.3ms)
+UserMailer#project_pitch: processed outbound mail in 101.9ms
+Sent mail to mmanly-osei@spartaglobal.com, ylangue@spartaglobal.com (1186.9ms)
+Date: Thu, 28 Jun 2018 13:53:18 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com, 
+ ylangue@spartaglobal.com
+Message-ID: <5b34da3e8648b_1b073ff6df94f62c80535@MacBook-Air-3.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34da3e83db5_1b073ff6df94f62c804da";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34da3e83db5_1b073ff6df94f62c804da
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34da3e83db5_1b073ff6df94f62c804da
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h2>Project Submitted</h2>
+
+<div>
+  <p>
+    <b>User:</b> Mimi Osei<br>
+    <b>Chapter Lead:</b> Tim Heard <br>
+  </p>
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  kuby
+
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  kuby
+
+</div>
+<div>
+  <h2>Reason</h2>
+  iuyobub
+</div>
+<div>
+  <h2>Generate</h2>
+
+  ilhyo9n
+</div>
+
+<div>
+  <b>The Circle of Young Intrapreneurs</b>
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b34da3e83db5_1b073ff6df94f62c804da--
+
+Redirected to http://localhost:3000/users/10/projects
+Completed 302 Found in 1326ms (ActiveRecord: 19.6ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:53:19 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (3.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (42.3ms)
+  Rendered partials/_nav.html.erb (3.4ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 205ms (Views: 186.8ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/users/10/projects/new" for 127.0.0.1 at 2018-06-28 13:54:36 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.0ms)
+  Rendered projects/new.html.erb within layouts/application (9.9ms)
+  Rendered partials/_nav.html.erb (2.8ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 124ms (Views: 108.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:54:44 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QOe9KceGZV4oWHR5Qzoeroh0gA/w6KhQ0VyyUYKrBuzEFDP8Dvz08FCZBB62eBw5IoDV7s9/pNiJpp358y6dIw==", "project"=>{"intro"=>"kg ug ", "impact"=>"Kuybguybg", "businesscase"=>"l uhlu"}, "commit"=>"Create Project", "user_id"=>"10"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "kg ug "], ["impact", "Kuybguybg"], ["businesscase", "l uhlu"], ["user_id", 10], ["created_at", "2018-06-28 12:54:44.056169"], ["updated_at", "2018-06-28 12:54:44.056169"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/user_mailer/project_pitch.html.erb:6
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (2.5ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.4ms)
+UserMailer#project_pitch: processed outbound mail in 108.5ms
+Sent mail to mmanly-osei@spartaglobal.com, ylangue@spartaglobal.com (1420.5ms)
+Date: Thu, 28 Jun 2018 13:54:44 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com, 
+ ylangue@spartaglobal.com
+Message-ID: <5b34da942bb8b_1b073ff6df94f2e480797@MacBook-Air-3.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34da942a192_1b073ff6df94f2e48067";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34da942a192_1b073ff6df94f2e48067
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34da942a192_1b073ff6df94f2e48067
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h2>Project Submitted</h2>
+
+<div>
+  <p>
+    <b>User:</b> Mimi Osei<br>
+    <b>Chapter Lead:</b> Tim Heard <br>
+  </p>
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  kg ug 
+
+</div>
+<div>
+  <h2>Reason</h2>
+  Kuybguybg
+</div>
+<div>
+  <h2>Generate</h2>
+
+  l uhlu
+</div>
+
+<div>
+  <b>The Circle of Young Intrapreneurs</b>
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b34da942a192_1b073ff6df94f2e48067--
+
+Redirected to http://localhost:3000/users/10/projects
+Completed 302 Found in 1551ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:54:45 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (29.5ms)
+  Rendered partials/_nav.html.erb (5.4ms)
+  Rendered partials/_footer.html.erb (1.7ms)
+Completed 200 OK in 146ms (Views: 131.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/10/projects/new" for 127.0.0.1 at 2018-06-28 13:55:13 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (7.0ms)
+  Rendered projects/new.html.erb within layouts/application (14.8ms)
+  Rendered partials/_nav.html.erb (3.5ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 132ms (Views: 115.1ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:55:17 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dGuPPADdA7XpOzLRhtVLUkvMHTow4q3OJ2Dx0amiHObwmAHpyaeSG5H6QrZzl0nF4ThI2w91oUZ/mt552CeHKQ==", "project"=>{"intro"=>"smvjh", "impact"=>"iyboih", "businesscase"=>"liuyni"}, "commit"=>"Create Project", "user_id"=>"10"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (0.9ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "smvjh"], ["impact", "iyboih"], ["businesscase", "liuyni"], ["user_id", 10], ["created_at", "2018-06-28 12:55:17.472422"], ["updated_at", "2018-06-28 12:55:17.472422"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  [1m[36mChapter Load (1.0ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/user_mailer/project_pitch.html.erb:6
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (3.4ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.3ms)
+UserMailer#project_pitch: processed outbound mail in 113.7ms
+Sent mail to mmanly-osei@spartaglobal.com, ylangue@spartaglobal.com (1358.8ms)
+Date: Thu, 28 Jun 2018 13:55:17 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com, 
+ ylangue@spartaglobal.com
+Message-ID: <5b34dab5910fd_1b073ff6df94f53c809c6@MacBook-Air-3.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34dab590024_1b073ff6df94f53c80874";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34dab590024_1b073ff6df94f53c80874
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34dab590024_1b073ff6df94f53c80874
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h2>Project Submitted</h2>
+
+<div>
+  <p>
+    <b>User:</b> Mimi Osei<br>
+    <b>Chapter Lead:</b> Tim Heard <br>
+  </p>
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  smvjh
+
+</div>
+<div>
+  <h2>Reason</h2>
+  iyboih
+</div>
+<div>
+  <h2>Generate</h2>
+
+  liuyni
+</div>
+
+<div>
+  <p>
+    <b>The Circle of Young Intrapreneurs</b>
+  </p>
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b34dab590024_1b073ff6df94f53c80874--
+
+Redirected to http://localhost:3000/users/10/projects
+Completed 302 Found in 1494ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:55:18 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (36.5ms)
+  Rendered partials/_nav.html.erb (3.0ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 174ms (Views: 161.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users/10/projects/new" for 127.0.0.1 at 2018-06-28 13:58:51 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (12.2ms)
+  Rendered projects/new.html.erb within layouts/application (18.9ms)
+  Rendered partials/_nav.html.erb (3.6ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 553ms (Views: 437.2ms | ActiveRecord: 19.7ms)
+
+
+Started POST "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:58:57 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E7FXdtbTbOW4KfMYoXnbiYMP0ICgxsQk8IXWkNH5JKB5Fa5Bv6piLtBFclVFnzIqPdLaF9oqSWKUWicOU+gCPw==", "project"=>{"intro"=>"jy", "impact"=>"nliuyn", "businesscase"=>";oku"}, "commit"=>"Create Project", "user_id"=>"10"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (10.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (9.9ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "jy"], ["impact", "nliuyn"], ["businesscase", ";oku"], ["user_id", 10], ["created_at", "2018-06-28 12:58:57.549092"], ["updated_at", "2018-06-28 12:58:57.549092"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  [1m[36mChapter Load (0.8ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/user_mailer/project_pitch.html.erb:6
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (34.7ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.7ms)
+UserMailer#project_pitch: processed outbound mail in 181.1ms
+Sent mail to mmanly-osei@spartaglobal.com, ylangue@spartaglobal.com (1399.0ms)
+Date: Thu, 28 Jun 2018 13:58:57 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com, 
+ ylangue@spartaglobal.com
+Message-ID: <5b34db91d39a6_1b713fdf1424e1f8139b9@MacBook-Air-3.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34db91d2169_1b713fdf1424e1f81381c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34db91d2169_1b713fdf1424e1f81381c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34db91d2169_1b713fdf1424e1f81381c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h2>Project Submitted</h2>
+
+<div>
+  <p>
+    <b>User:</b> Mimi Osei<br>
+    <b>Chapter Lead:</b> Tim Heard <br>
+  </p>
+</div>
+
+<div>
+  <h3>Business Idea</h3>
+  jy
+
+</div>
+<div>
+  <h2>Reason</h2>
+  nliuyn
+</div>
+<div>
+  <h2>Generate</h2>
+
+  ;oku
+</div>
+
+<div>
+  <p>
+    <b>The Circle of Young Intrapreneurs</b>
+  </p>
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b34db91d2169_1b713fdf1424e1f81381c--
+
+Redirected to http://localhost:3000/users/10/projects
+Completed 302 Found in 1738ms (ActiveRecord: 39.1ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:58:59 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (42.7ms)
+  Rendered partials/_nav.html.erb (3.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 149ms (Views: 131.7ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/users/10/projects/new" for 127.0.0.1 at 2018-06-28 13:59:34 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (4.5ms)
+  Rendered projects/new.html.erb within layouts/application (14.6ms)
+  Rendered partials/_nav.html.erb (4.2ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 186ms (Views: 169.5ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:59:37 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+/zye5mjnTp0YDDAd9+cOB1n9VXsewESW9W8WQ6IG51/D3yuUNkMlAyhQKeCnZ6vt5OgtNPsDZoDL5Pxfw2AUg==", "project"=>{"intro"=>"kiy", "impact"=>"iuyh", "businesscase"=>"iuy"}, "commit"=>"Create Project", "user_id"=>"10"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (2.4ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "kiy"], ["impact", "iuyh"], ["businesscase", "iuy"], ["user_id", 10], ["created_at", "2018-06-28 12:59:37.727753"], ["updated_at", "2018-06-28 12:59:37.727753"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  [1m[36mChapter Load (0.8ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/user_mailer/project_pitch.html.erb:6
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (5.2ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.3ms)
+UserMailer#project_pitch: processed outbound mail in 111.9ms
+Sent mail to mmanly-osei@spartaglobal.com, ylangue@spartaglobal.com (1424.2ms)
+Date: Thu, 28 Jun 2018 13:59:37 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com, 
+ ylangue@spartaglobal.com
+Message-ID: <5b34dbb9cff55_1b713fdf1424e3d81415c@MacBook-Air-3.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34dbb9cbb7b_1b713fdf1424e3d814065";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34dbb9cbb7b_1b713fdf1424e3d814065
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34dbb9cbb7b_1b713fdf1424e3d814065
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h2>Project Submitted</h2>
+
+<div>
+  <p>
+    <b>User:</b> Mimi Osei<br>
+    <b>Chapter Lead:</b> Tim Heard <br>
+  </p>
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  kiy
+
+</div>
+<div>
+  <h2>Reason</h2>
+  iuyh
+</div>
+<div>
+  <h2>Generate</h2>
+
+  iuy
+</div>
+
+<div>
+  <p>
+    <b>The Circle of Young Intrapreneurs</b>
+  </p>
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b34dbb9cbb7b_1b713fdf1424e3d814065--
+
+Redirected to http://localhost:3000/users/10/projects
+Completed 302 Found in 1560ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 13:59:39 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (48.6ms)
+  Rendered partials/_nav.html.erb (2.6ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 213ms (Views: 195.5ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/users/10/projects/new" for 127.0.0.1 at 2018-06-28 14:00:01 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (5.6ms)
+  Rendered projects/new.html.erb within layouts/application (13.3ms)
+  Rendered partials/_nav.html.erb (3.9ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 155ms (Views: 134.3ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/users/10/projects" for 127.0.0.1 at 2018-06-28 14:00:05 +0100
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"44yrnhWJIBwKeT65LS+sNyju+qjkT7zCQhE2tj0KoU1nfyVL3POxsnK4Tt7Yba6gghqvSdvYsEoa6xkeTI86gg==", "project"=>{"intro"=>"j", "impact"=>"j", "businesscase"=>"j"}, "commit"=>"Create Project", "user_id"=>"10"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:33
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[36mProject Create (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("intro", "impact", "businesscase", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["intro", "j"], ["impact", "j"], ["businesscase", "j"], ["user_id", 10], ["created_at", "2018-06-28 13:00:05.184234"], ["updated_at", "2018-06-28 13:00:05.184234"]]
+  ↳ app/controllers/projects_controller.rb:36
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:36
+  Rendering user_mailer/project_pitch.html.erb within layouts/mailer
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/user_mailer/project_pitch.html.erb:6
+  Rendered user_mailer/project_pitch.html.erb within layouts/mailer (2.5ms)
+  Rendering user_mailer/project_pitch.text.erb within layouts/mailer
+  Rendered user_mailer/project_pitch.text.erb within layouts/mailer (0.4ms)
+UserMailer#project_pitch: processed outbound mail in 131.6ms
+Sent mail to mmanly-osei@spartaglobal.com, ylangue@spartaglobal.com (1413.6ms)
+Date: Thu, 28 Jun 2018 14:00:05 +0100
+From: sendertestsparta@gmail.com
+To: mmanly-osei@spartaglobal.com, 
+ ylangue@spartaglobal.com
+Message-ID: <5b34dbd54ed2e_1b713fdf1424e3241438d@MacBook-Air-3.local.mail>
+Subject: Project
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b34dbd54b592_1b713fdf1424e3241425f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34dbd54b592_1b713fdf1424e3241425f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b34dbd54b592_1b713fdf1424e3241425f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Project Submitted</h1>
+
+<div>
+  <p>
+    <b>User:</b> Mimi Osei<br>
+    <b>Chapter Lead:</b> Tim Heard <br>
+  </p>
+</div>
+
+<div>
+  <h2>Business Idea</h2>
+  j
+
+</div>
+<div>
+  <h2>Reason</h2>
+  j
+</div>
+<div>
+  <h2>Generate</h2>
+
+  j
+</div>
+
+<div>
+  <p>
+    <b>The Circle of Young Intrapreneurs</b>
+  </p>
+</div>
+
+  </body>
+</html>
+
+----==_mimepart_5b34dbd54b592_1b713fdf1424e3241425f--
+
+Redirected to http://localhost:3000/users/10/projects
+Completed 302 Found in 1566ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/users/10/projects" for 127.0.0.1 at 2018-06-28 14:00:06 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"10"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/tech-a08/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (38.8ms)
+  Rendered partials/_nav.html.erb (3.4ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 157ms (Views: 143.5ms | ActiveRecord: 3.4ms)
+
+
