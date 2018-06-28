@@ -17,4 +17,6 @@ class User < ApplicationRecord
     chapter_email;
   end
 
+  has_one_attached :image
+
 end
