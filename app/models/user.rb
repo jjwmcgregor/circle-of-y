@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :projects 
+  has_many :projects
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
@@ -15,5 +15,7 @@ class User < ApplicationRecord
     welcome_email;
     chapter_email;
   end
+
+  validates :password, length: { maximum: 15 }
 
 end
