@@ -14,22 +14,28 @@
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
 
+      <div class="form-group">
+        <%= form.label :title, "Product Intro" %> <br>
+        <%= form.text_field :title, placeholder: "Enter your project title", class: "form-control projectText", rows:"3"%>
+        <small>What is the name of your project?</small>
+      </div>
+
     <div class="form-group">
-      <%= form.label :intro, "Product Intro" %> <br>
-      <%= form.text_area :intro, placeholder: "Enter your product introduction here", class: "form-control projectText", rows:"3"%>
-      <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quia deserunt mollitia soluta ratione pariatur dolorum totam et praesentium sequi esse ad possimus error.</small>
+      <%= form.label :intro, "Project Introduction" %> <br>
+      <%= form.text_area :intro, placeholder: "Enter your project introduction here", class: "form-control projectText", rows:"3"%>
+      <small>Give an overview of your project here. </small>
     </div>
 
     <div class="form-group">
       <%= form.label :impact, "Social Impact" %> <br>
       <%= form.text_area :impact, class: "form-control projectText",rows:"3", placeholder: "Enter your social impact(s) here"%>
-      <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quia deserunt mollitia soluta ratione pariatur dolorum totam et praesentium sequi esse ad possimus error.</small>
+      <small>Outline the social impacts from your project and the positive impacts it can bring.</small>
     </div>
 
     <div class="form-group">
       <%= form.label :businesscase, "Business Case" %> <br>
       <%= form.text_area :businesscase, class: "form-control projectText", rows:"3", placeholder: "Enter your business case here"%>
-      <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quia deserunt mollitia soluta ratione pariatur dolorum totam et praesentium sequi esse ad possimus error.</small>
+      <small>Justify the commercial impacts and benefits it can welcome</small>
     </div>
 
     <div class="actions text-center">

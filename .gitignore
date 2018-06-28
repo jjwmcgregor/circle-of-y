@@ -6,7 +6,11 @@
 
 
 *.log
+log
+./log
 *.tmp
+tmp
+./tmp
 !/log/.keep
 !/tmp/.keep
 
