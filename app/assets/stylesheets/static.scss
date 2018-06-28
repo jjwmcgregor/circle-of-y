@@ -3,14 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .navbar {
-
   .container-fluid {
-
     padding-left: 20px;
     padding-right: 20px;
-
   }
-
   .navbar-brand {
     .img-responsive {
       width:30px;
@@ -25,4 +21,19 @@
 
 .nav > li > a > img {
   width:20px;
+}
+
+// ==== RESPOSIVENESS ====
+// PITCH TO THE CIRCLE & STORIES FROM CLIENTS
+// when <= 991px, center align join/pitch to circle content
+@media screen and (max-width: 991px) {
+  .content-responsive {
+    text-align: center;
+  }
+}
+// when >= 992px, center align join/pitch to circle content
+@media screen and (min-width: 992px) {
+  .content-responsive {
+    text-align: justify;
+  }
 }
