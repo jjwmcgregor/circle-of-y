@@ -196,28 +196,12 @@ footer {
           line-height: 5px;
         }
       }
-
-      li:hover {
-        border: 3px solid black;
-      }
     }
-  }
-
-  .wrapper ul li:hover.facebook {
-    border: 5px solid #3b5998;
-    box-shadow: 0 0 15px #3b5998;
-    transition: all 0.5s ease;
   }
 
   .wrapper ul li:hover .fa-facebook {
     color: #3b5998;
     text-shadow: 0 0 15px #3b5998 ;
-    transition: all 0.5s ease;
-  }
-
-  .wrapper ul li:hover.twitter {
-    border: 5px solid #00aced;
-    box-shadow: 0 0 15px #00aced;
     transition: all 0.5s ease;
   }
 
@@ -227,21 +211,9 @@ footer {
     transition: all 0.5s ease;
   }
 
-    .wrapper ul li:hover.instagram {
-    border: 5px solid #bc2a8d;
-    box-shadow: 0 0 15px #bc2a8d;
-    transition: all 0.5s ease;
-  }
-
   .wrapper ul li:hover .fa-instagram {
     color: #bc2a8d;
     text-shadow: 0 0 15px #bc2a8d;
-    transition: all 0.5s ease;
-  }
-
-  .wrapper ul li:hover.youtube {
-    border: 5px solid #dd4b39;
-    box-shadow: 0 0 15px #dd4b39;
     transition: all 0.5s ease;
   }
 
@@ -251,21 +223,11 @@ footer {
     transition: all 0.5s ease;
   }
 
-  .wrapper ul li:hover.linkedin {
-    border: 5px solid #0077B5;
-    box-shadow: 0 0 15px #0077B5;
-    transition: all 0.5s ease;
-  }
-
   .wrapper ul li:hover .fa-linkedin {
     color: #0077B5;
     text-shadow: 0 0 15px #0077B5;
     transition: all 0.5s ease;
   }
-
-
-
-
 }
 
 // ========== FOOTER SECTION END ===========
@@ -303,7 +265,6 @@ footer {
       li {
         margin: 5px 2px;
       }
-
     }
   }
 }
