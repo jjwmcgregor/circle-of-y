@@ -1,8 +1,3 @@
-.form-container{
-  .container{
-    max-width: 60%;
-  }
-}
 body {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -14,7 +9,7 @@ body {
   margin: auto;
 }
 
-.form-recon{
+.form-recon, .form-password {
   max-width: 484px;
   padding: 15px;
   margin: 0 auto;
@@ -24,6 +19,7 @@ body {
 .form-signup,
 .form-recon,
 .form-signin {
+  height: 580px;
   ul {
     list-style: none;
     font-size: 15px;
