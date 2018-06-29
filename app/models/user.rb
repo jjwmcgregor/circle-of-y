@@ -17,6 +17,9 @@ class User < ApplicationRecord
     chapter_email;
   end
 
+  def full_name
+    ([first_name, last_name] - ['']).compact.join(' ')
+  end
 
   PASSWORD_FORMAT = /\A
     (?=.*\d)
@@ -25,10 +28,17 @@ class User < ApplicationRecord
     (?=.*[[:^alnum:]])
   /x
 
-  validates :password,
-  presence: true,
-  format: { with: PASSWORD_FORMAT, message: " must include at least one lower case letter, one upper case letter, one digit and one special character." }
+  # validates :password,
+  # presence: true,
+  # format: { with: PASSWORD_FORMAT, message: " must include at least one lower case letter, one upper case letter, one digit and one special character." }
 
+  has_one_attached :image
 
+  def image_filename
+    self.image.filename.to_s if self.image.attached?
+  end
 
+  def image_attached?
+    self.image.attached?
+  end
 end

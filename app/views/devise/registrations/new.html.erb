@@ -18,6 +18,11 @@
             </div>
 
             <div class="field form-group">
+              <%= f.label :image %>
+              <%= f.file_field :image, class:"form-control"%>
+            </div>
+
+            <div class="field form-group">
               <%= f.label :organisation %>
               <%= f.text_field :organisation, class:"form-control" %>
             </div>
@@ -33,7 +38,7 @@
             </div>
 
             <div class="field form-group">
-              <%= f.label :twitter_url %>
+              <%= f.label :twitter_url, "Twitter Handle" %>
               <%= f.text_field :twitter_url, class:"form-control" %>
             </div>
 
