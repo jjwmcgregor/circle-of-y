@@ -13,11 +13,11 @@
       </a>
 
         <ul class="collapse nav navbar-collapse navbar-nav">
-          <li><a href="https://www.facebook.com/groups/CircleofYoungIntrapreneurs/"><i class="fa fa-facebook fa-2x"></i></a></li>
-          <li><a href="https://twitter.com/circleofyi?lang=en"><i class="fa fa-twitter fa-2x"></i></a></li>
-          <li><a href="https://www.instagram.com/thecircleofyi/?hl=en"><i class="fa fa-instagram fa-2x"></i></a></li>
-          <li><a href="https://www.youtube.com/channel/UCtM8zWux6MF5CGAXcNqLuwg/videos"><i class="fa fa-youtube fa-2x"></i></a></li>
-          <li><a href="https://www.linkedin.com/company/circle-of-young-intrapreneurs"><i class="fa fa-linkedin fa-2x"></i></a></li>
+          <li><a href="https://www.facebook.com/groups/CircleofYoungIntrapreneurs/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+          <li><a href="https://twitter.com/circleofyi?lang=en" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+          <li><a href="https://www.instagram.com/thecircleofyi/?hl=en" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCtM8zWux6MF5CGAXcNqLuwg/videos" target="_blank"><i class="fa fa-youtube fa-2x"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/circle-of-young-intrapreneurs" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
         </ul>
       </div>
 
@@ -35,8 +35,15 @@
             <li><span class="navbar-text">Logged in as <strong><%=current_user.first_name %></strong></span></li>
             <li>
               <%= link_to edit_user_registration_path do %>
-                <%= image_tag 'profile-placeholder.jpg', class: "img-responsive img-circle" %>
+                <% if current_user.image_attached? %>
+                  <%= image_tag(current_user.image, :class => "img-responsive img-circle nav-pic") %>
+                <% else %>
+                  <%= image_tag 'profile-placeholder.jpg', :class => "img-responsive img-circle nav-pic" %>
+                <% end %>
               <% end %>
+            </li>
+            <li>
+              <%= link_to "My Profile", user_path(current_user), class:'nav-link' %>
             </li>
             <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class:'nav-link' %></li>
         <%else%>

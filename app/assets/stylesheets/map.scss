@@ -1,0 +1,25 @@
+// Map styles
+.info-window {
+
+  h1,h2,h3,h4,h5,h6 {
+    color: #dc3545 !important;
+  }
+
+  .info-icons {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    a {
+      i {
+        color: grey;
+        font-size: 1.5em;
+      }
+
+      &:hover {
+        background: none;
+      }
+    }
+
+  }
+}

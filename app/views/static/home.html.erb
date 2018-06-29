@@ -46,7 +46,7 @@
 <div id="stories" class="stories container container-space">
   <div class="row">
     <div class="content-responsive col-md-4">
-      <img class="stories_image" src="/barclays.jpg" alt="Barclays" width="140">
+      <%= image_tag "barclays.jpg", :class => "stories_image", :alt => "Thomson Reuters"%>
       <h4>Barclays RoundUp</h4>
       <p>
         RoundUp is a microdonation initiative conceived within Barclays by intrapreneurs Tim Heard
@@ -61,7 +61,7 @@
     </div><!-- 1st column end -->
 
     <div class="content-responsive col-md-4">
-      <img class="stories_image" src="/o2_telefonica.jpg" alt="O2" width="140">
+      <%= image_tag "o2_telefonica.jpg", :class => "stories_image", :alt => "Thomson Reuters"%>
       <h4>Connected Homeless</h4>
       <p>
         Connected Homeless is a digital platform created within O2 by intrapreneur Sal Mohammed.
@@ -75,7 +75,7 @@
     </div><!-- 2nd column end -->
 
     <div class="content-responsive col-md-4">
-      <img class="stories_image" src="/thomson_reuters.jpg" alt="Thomson Reuters" width="140">
+      <%= image_tag "thomson_reuters.jpg", :class => "stories_image", :alt => "Thomson Reuters"%>
       <h4>TicketAid</h4>
       <p>
         TicketAid is a corporate ticket allocation website designed to give employees access to exclusive
@@ -91,3 +91,12 @@
 </div><!-- stories end -->
 
 <div class="city-bg img-responsive"></div>
+
+<div class="row red-sections container-space hidden-sm hidden-xs">
+  <div class="container">
+      <div id="map-container" class="col-md-12">
+        <h1>Global Hubs</h1>
+        <div id="map"></div>
+      </div>
+  </div>
+</div>

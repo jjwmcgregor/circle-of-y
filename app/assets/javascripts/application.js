@@ -16,6 +16,7 @@
 //= require_tree .
 //= require jquery3
 //= require bootstrap
+//= require map
 
 
 // window.addEventListener("scroll", function() {

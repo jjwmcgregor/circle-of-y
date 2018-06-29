@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:200,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,400" rel="stylesheet">
-    <link href="/images/logo_100.png" rel="shortcut icon">
+    <%= favicon_link_tag '/images/logo_100.png' %>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
 
@@ -21,5 +21,8 @@
       <%= yield %>
     </div>
     <%= render 'partials/footer' %>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADaO5iByH2e2RNSfQX6mtWbQKP_oFdemw&callback=initMap"
+    async defer data-turbolinks-eval="false"></script>
   </body>
 </html>

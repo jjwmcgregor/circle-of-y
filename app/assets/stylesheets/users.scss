@@ -1,0 +1,26 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.profile-picture{
+  height: 200px;
+  width: 200px;
+  margin: 50px 0;
+  border-radius: 50%;
+}
+.text-info {
+  display: inline-block;
+  padding: 65px 0px 0px 0px;
+  height: 300px;
+  width: 370px;
+}
+
+// ==== RESPONSIVENESS ====
+@media screen and (max-width: 991px) {
+  .user-profile-pic, .text-info {
+    width: 100%;
+    text-align: center;
+  }
+  .text-info{
+    padding-top: 0px;
+  }
+}

@@ -23,11 +23,42 @@
   width:20px;
 }
 
+// ========== PARALLAX START ===========
+.city-lights {
+  background-image: url("/images/city_lights.jpeg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.city-bg {
+  background-image: url("/images/city_bg.jpeg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// ========== PARALLAX END ===========
+
+
 // ==== RESPOSIVENESS ====
-// PITCH TO THE CIRCLE & STORIES FROM CLIENTS
-// when <= 991px, center align join/pitch to circle content
+// WELCOME MESSAGE
+// when <= 767px, reduce welcome message font-size
+@media screen and (min-width: 574px) and (max-width: 767px) {
+  .welcome {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+}
+
+// PITCH TO THE CIRCLE & STORIES FROM CLIENTS and WELCOME
+// when <= 991px, center align welcome text join/pitch to circle content
 @media screen and (max-width: 991px) {
-  .content-responsive {
+  .content-responsive, .welcome h1 {
     text-align: center;
   }
 }
