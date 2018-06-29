@@ -16,10 +16,14 @@
 
 
         <h1><%= @project.title %> <small>by <%= @project.user.first_name %> <%= @project.user.last_name %></small></h1>
-        <p class="col-md-8 col-md-offset-2"><%= @project.intro %></p>
       </div>
 
       <br>
+
+      <div class="page-header">
+        <h1><small>Project Introduction</small></h1>
+        <p><%= @project.intro %></p>
+      </div>
 
       <div class="page-header">
         <h1><small>Project Impact</small></h1>

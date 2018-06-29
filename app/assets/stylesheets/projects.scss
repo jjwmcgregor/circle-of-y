@@ -9,3 +9,25 @@
 .newproject{
   text-align: center;
 }
+
+.projects-table {
+  tbody {
+    tr {
+      a {
+        &:hover {
+          background: none;
+          color: #dc3545;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.new-project {
+  color: white;
+
+  &:visited {
+    color: white;
+  }
+}

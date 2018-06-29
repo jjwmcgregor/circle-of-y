@@ -7,11 +7,13 @@
       <div class="col-md-12">
         <div class="row">
           <div class="col-md-6 text-center">
-            <% if current_user.image_attached? %>
-              <%= image_tag(current_user.image, :class => " img-circle profile-picture", :alt => "Your Profile Picture") %>
-            <% else %>
-              <%= image_tag 'profile-placeholder.jpg', :class => "img-responsive img-circle", :alt => "Profile Placeholder Image" %>
-            <% end %>
+            <div class="profile-pic-container">
+              <% if current_user.image_attached? %>
+              <%= image_tag(current_user.image, :class => "profile-picture ", :alt => "Your Profile Picture") %>
+              <% else %>
+              <%= image_tag 'profile-placeholder.jpg', :class => "profile-picture", :alt => "Profile Placeholder Image" %>
+              <% end %>
+            </div>
           </div>
           <div class="text-info col-md-6">
             <p><strong>Full Name: </strong> <%= @user.full_name %></p>
@@ -23,7 +25,9 @@
             <a target="_blank" href="https://www.twitter.com/<%= @user.twitter_url %>"><strong>Twitter Handle: </strong> <%= @user.twitter_url %></a>
             <br>
           </div>
-<hr>
+        </div>
+        <hr>
+        <div class="row">
           <div class="col-md-6 text-center">
             <img src="/images/no_profile.jpg" alt="Your Profile Picture" class="img-circle profile-picture">
           </div>
@@ -37,12 +41,13 @@
           </div>
         </div>
       </div>
-
-
-
-<hr>
-
-
     </div>
+
+
+
+    <hr>
+
+
   </div>
+</div>
 </div>
