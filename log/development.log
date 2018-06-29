@@ -55951,3 +55951,872 @@ puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
 puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-29 12:11:28 +0100
+Processing by StaticController#home as HTML
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.0ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 2786ms (Views: 2772.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-06-29 12:11:44 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/new.html.erb:32
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (67.6ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 210ms (Views: 141.6ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-29 12:11:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-06-29 12:12:24 +0100
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mwzhD+VReJJm2CB6Vv1gEPjZ0CEC43dTIZ7g3iiT/hJgoR70Y166kfN54kb9Oop32gBBHDlOvXcEGF5aBNJP2g==", "user"=>{"first_name"=>"Chris", "last_name"=>"Adeyemi", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fa13c8e0c08 @tempfile=#<Tempfile:/var/folders/9w/11wd_3ws16d3gsy008bxb6mw0000gn/T/RackMultipart20180629-80115-1nxh8sq.jpeg>, @original_filename="ProfilePic.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"ProfilePic.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "organisation"=>"ChrisCorp", "chapter_id"=>"1", "email"=>"akola-adeyemi@spartaglobal.com", "twitter_url"=>"mrgrapht", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[36m  Disk Storage (4.1ms) [0m[32mUploaded file to key: 9nkrJPYdc53u4JwdncZtr7mA (checksum: tcX2RXN4kinBAV8D/EWR0w==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Create (1.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "9nkrJPYdc53u4JwdncZtr7mA"], ["filename", "ProfilePic.jpeg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 5912], ["checksum", "tcX2RXN4kinBAV8D/EWR0w=="], ["created_at", "2018-06-29 11:12:24.889300"]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "akola-adeyemi@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "first_name", "last_name", "organisation", "twitter_url", "created_at", "updated_at", "chapter_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["email", "akola-adeyemi@spartaglobal.com"], ["encrypted_password", "$2a$11$C8P6KCCuSLDDbzLyv2yfu.FQMtfrIKiunHQXJEw6DrK8laKjXFdBW"], ["confirmation_token", "h4NyjSMN74xJ-qCSVyZr"], ["confirmation_sent_at", "2018-06-29 11:12:24.919626"], ["first_name", "Chris"], ["last_name", "Adeyemi"], ["organisation", "ChrisCorp"], ["twitter_url", "mrgrapht"], ["created_at", "2018-06-29 11:12:24.919257"], ["updated_at", "2018-06-29 11:12:24.919257"], ["chapter_id", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Create (1.7ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "User"], ["record_id", 1], ["blob_id", 1], ["created_at", "2018-06-29 11:12:24.924570"]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2[0m  [["updated_at", "2018-06-29 11:12:24.928343"], ["id", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.5ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 816.8ms
+Sent mail to akola-adeyemi@spartaglobal.com (1738.0ms)
+Date: Fri, 29 Jun 2018 12:12:26 +0100
+From: no-reply@example.com
+Reply-To: sendertestsparta@gmail.com
+To: akola-adeyemi@spartaglobal.com
+Message-ID: <5b36141a1829_138f33fd099df0c38569bc@Tech-A43s-MacBook-Air.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h3>Greetings, Chris</h3>
+
+<p>
+  Welcome to The Circle of Young Intrapreneurs!
+  <p>Thank you for your interest in joining the Circle of Young Intrapreneurs. You can confirm your account email through the link below:</p>
+  <p><a href="http://localhost:3000/users/confirmation?confirmation_token=h4NyjSMN74xJ-qCSVyZr">Confirm my account</a></p>
+  <br>Thanks for joining and have a great day!
+</p>
+
+<p>
+  <b>The Circle of Young Intrapreneurs</b>
+</p>
+
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 7c49fff1-c8bf-4d4a-b91a-15dc9871166d) to Async(default) with arguments: #<GlobalID:0x007fa13e930fd0 @uri=#<URI::GID gid://project-test1/ActiveStorage::Blob/1>>
+Redirected to http://localhost:3000/wait
+Completed 302 Found in 3153ms (ActiveRecord: 23.9ms)
+
+
+Started GET "/wait" for 127.0.0.1 at 2018-06-29 12:12:27 +0100
+Processing by WaitController#show as HTML
+  Rendering wait/wait.html.erb within layouts/application
+  Rendered wait/wait.html.erb within layouts/application (0.8ms)
+  [1m[36mActiveStorage::Blob Load (13.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c49fff1-c8bf-4d4a-b91a-15dc9871166d] Performing ActiveStorage::AnalyzeJob (Job ID: 7c49fff1-c8bf-4d4a-b91a-15dc9871166d) from Async(default) with arguments: #<GlobalID:0x007fa13e0515b8 @uri=#<URI::GID gid://project-test1/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c49fff1-c8bf-4d4a-b91a-15dc9871166d] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c49fff1-c8bf-4d4a-b91a-15dc9871166d]   [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c49fff1-c8bf-4d4a-b91a-15dc9871166d]   ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c49fff1-c8bf-4d4a-b91a-15dc9871166d]   [1m[36mActiveStorage::Blob Update (1.3ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c49fff1-c8bf-4d4a-b91a-15dc9871166d]   ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c49fff1-c8bf-4d4a-b91a-15dc9871166d]   [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c49fff1-c8bf-4d4a-b91a-15dc9871166d]   ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7c49fff1-c8bf-4d4a-b91a-15dc9871166d] Performed ActiveStorage::AnalyzeJob (Job ID: 7c49fff1-c8bf-4d4a-b91a-15dc9871166d) from Async(default) in 19.18ms
+  Rendered partials/_nav.html.erb (2.6ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 107ms (Views: 105.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=h4NyjSMN74xJ-qCSVyZr" for 127.0.0.1 at 2018-06-29 12:12:43 +0100
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"h4NyjSMN74xJ-qCSVyZr"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "h4NyjSMN74xJ-qCSVyZr"], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-06-29 11:12:43.352728"], ["updated_at", "2018-06-29 11:12:43.354804"], ["id", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.7ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.5ms)
+UserMailer#welcome_email: processed outbound mail in 156.5ms
+Sent mail to akola-adeyemi@spartaglobal.com (1688.8ms)
+Date: Fri, 29 Jun 2018 12:12:43 +0100
+From: sendertestsparta@gmail.com
+To: akola-adeyemi@spartaglobal.com
+Message-ID: <5b36142b82fc6_138f33fd099df0b20571bb@Tech-A43s-MacBook-Air.local.mail>
+Subject: Welcome to COYI
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36142b8202c_138f33fd099df0b2057094";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36142b8202c_138f33fd099df0b2057094
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to example.com, Chris
+===============================================
+Welcome to The Circle of Young Intrapreneurs!
+You have successfully signed up to our site and your username is: akola-adeyemi@spartaglobal.com.<br>
+Thanks for joining and have a great day!
+
+The Circle of Young Intrapreneurs
+
+
+----==_mimepart_5b36142b8202c_138f33fd099df0b2057094
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>Dear, Chris</h3>
+  <p>
+    Welcome to The Circle of Young Intrapreneurs!
+    You have successfully signed up to our site and your username is: akola-adeyemi@spartaglobal.com.<br>
+    <br>Thanks for joining and have a great day!
+  </p>
+<p>
+  <b>The Circle of Young Intrapreneurs</b>
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b36142b8202c_138f33fd099df0b2057094--
+
+  Rendering user_mailer/chapter_email.html.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.html.erb within layouts/mailer (0.5ms)
+  Rendering user_mailer/chapter_email.text.erb within layouts/mailer
+  Rendered user_mailer/chapter_email.text.erb within layouts/mailer (0.6ms)
+UserMailer#chapter_email: processed outbound mail in 82.5ms
+Sent mail to ylangue@spartaglobal.com (1143.1ms)
+Date: Fri, 29 Jun 2018 12:12:45 +0100
+From: sendertestsparta@gmail.com
+To: ylangue@spartaglobal.com
+Message-ID: <5b36142d4b687_138f33fd099df0b2057316@Tech-A43s-MacBook-Air.local.mail>
+Subject: New user: Chris Adeyemi
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b36142d4abd0_138f33fd099df0b20572ed";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b36142d4abd0_138f33fd099df0b20572ed
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Chapter Lead,
+===============================================
+This is to notify of a confirmed sign up for your chapter:
+First Name: Chris
+Last Name: Adeyemi
+
+Many Thanks,
+The Circle of Young Intrapreneurs
+
+
+----==_mimepart_5b36142d4abd0_138f33fd099df0b20572ed
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>Dear Chapter Lead</h3>
+  <p>
+    This is to notify of a confirmed sign up for your chapter:<br>
+    <ul>
+      <li>First name: <b>Chris</b>
+      <li>Last name: <b>Adeyemi</b>
+    </ul>
+    <br>Many thanks,
+  </p>
+<p>
+  <b>The Circle of Young Intrapreneurs</b>
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5b36142d4abd0_138f33fd099df0b20572ed--
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 3128ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-06-29 12:12:46 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.5ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 91ms (Views: 89.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-06-29 12:12:52 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IKApJkgqAvFi9nA6hMF7Xj1unERilDRvf8EfOq4KNfoNi1Yg4211Zin2m0CBVLajLi7GmV83dPv00+e9pC6nmg==", "user"=>{"email"=>"akola-adeyemi@spartaglobal.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "akola-adeyemi@spartaglobal.com"], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2018-06-29 11:12:52.651331"], ["last_sign_in_at", "2018-06-29 11:12:52.651331"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2018-06-29 11:12:52.652815"], ["id", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/resources
+Completed 302 Found in 184ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2018-06-29 12:12:52 +0100
+Processing by ResourcesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (248.2ms)
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  Rendered partials/_nav.html.erb (14.3ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 353ms (Views: 339.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--09a856e38185520037edc97ba6dba704269e0931/ProfilePic.jpeg" for 127.0.0.1 at 2018-06-29 12:12:53 +0100
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--09a856e38185520037edc97ba6dba704269e0931", "filename"=>"ProfilePic"}
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (1.3ms) [0m[34mGenerated URL for file at key: 9nkrJPYdc53u4JwdncZtr7mA (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1Ym10eVNsQlpaR00xTTNVMFNuZGtibU5hZEhJM2JVRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MTc6NTMuMTA3WiIsInB1ciI6ImJsb2Jfa2V5In19--6e49104fdac20740cae2d028159c214b256a4f9c/ProfilePic.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22ProfilePic.jpeg%22%3B+filename%2A%3DUTF-8%27%27ProfilePic.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1Ym10eVNsQlpaR00xTTNVMFNuZGtibU5hZEhJM2JVRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MTc6NTMuMTA3WiIsInB1ciI6ImJsb2Jfa2V5In19--6e49104fdac20740cae2d028159c214b256a4f9c/ProfilePic.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22ProfilePic.jpeg%22%3B+filename%2A%3DUTF-8%27%27ProfilePic.jpeg
+Completed 302 Found in 11ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1Ym10eVNsQlpaR00xTTNVMFNuZGtibU5hZEhJM2JVRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MTc6NTMuMTA3WiIsInB1ciI6ImJsb2Jfa2V5In19--6e49104fdac20740cae2d028159c214b256a4f9c/ProfilePic.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22ProfilePic.jpeg%22%3B+filename%2A%3DUTF-8%27%27ProfilePic.jpeg" for 127.0.0.1 at 2018-06-29 12:12:53 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"ProfilePic.jpeg\"; filename*=UTF-8''ProfilePic.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1Ym10eVNsQlpaR00xTTNVMFNuZGtibU5hZEhJM2JVRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MTc6NTMuMTA3WiIsInB1ciI6ImJsb2Jfa2V5In19--6e49104fdac20740cae2d028159c214b256a4f9c", "filename"=>"ProfilePic"}
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: 9nkrJPYdc53u4JwdncZtr7mA[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (6.0ms)
+Completed 200 OK in 21ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-06-29 12:12:55 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/tech-a43/Desktop/Sparta/Engineering-11/Core/server-side/ruby-framework/rails/sparta-client-project/circle-of-y/app/views/users/show.html.erb:11: syntax error, unexpected tSTRING_BEG, expecting =>
+ircle profile-picture", :alt "Your Profile Picture") );@outp
+                              ^
+/Users/tech-a43/Desktop/Sparta/Engineering-11/Core/server-side/ruby-framework/rails/sparta-client-project/circle-of-y/app/views/users/show.html.erb:11: syntax error, unexpected ')', expecting keyword_end
+:alt "Your Profile Picture") );@output_buffer.safe_append='
+                              ^):
+  
+app/views/users/show.html.erb:11: syntax error, unexpected tSTRING_BEG, expecting =>
+app/views/users/show.html.erb:11: syntax error, unexpected ')', expecting keyword_end
+Started GET "/users/1" for 127.0.0.1 at 2018-06-29 12:14:06 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mChapter Load (1.3ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:31
+  Rendered users/show.html.erb within layouts/application (33.8ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 138ms (Views: 124.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1Ym10eVNsQlpaR00xTTNVMFNuZGtibU5hZEhJM2JVRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MTc6NTMuMTA3WiIsInB1ciI6ImJsb2Jfa2V5In19--6e49104fdac20740cae2d028159c214b256a4f9c/ProfilePic.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22ProfilePic.jpeg%22%3B+filename%2A%3DUTF-8%27%27ProfilePic.jpeg" for 127.0.0.1 at 2018-06-29 12:14:06 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"ProfilePic.jpeg\"; filename*=UTF-8''ProfilePic.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1Ym10eVNsQlpaR00xTTNVMFNuZGtibU5hZEhJM2JVRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MTc6NTMuMTA3WiIsInB1ciI6ImJsb2Jfa2V5In19--6e49104fdac20740cae2d028159c214b256a4f9c", "filename"=>"ProfilePic"}
+[36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: 9nkrJPYdc53u4JwdncZtr7mA[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (1.3ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-06-29 12:14:27 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:31
+  Rendered users/show.html.erb within layouts/application (6.8ms)
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 95ms (Views: 83.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1Ym10eVNsQlpaR00xTTNVMFNuZGtibU5hZEhJM2JVRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MTc6NTMuMTA3WiIsInB1ciI6ImJsb2Jfa2V5In19--6e49104fdac20740cae2d028159c214b256a4f9c/ProfilePic.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22ProfilePic.jpeg%22%3B+filename%2A%3DUTF-8%27%27ProfilePic.jpeg" for 127.0.0.1 at 2018-06-29 12:14:27 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"ProfilePic.jpeg\"; filename*=UTF-8''ProfilePic.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1Ym10eVNsQlpaR00xTTNVMFNuZGtibU5hZEhJM2JVRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MTc6NTMuMTA3WiIsInB1ciI6ImJsb2Jfa2V5In19--6e49104fdac20740cae2d028159c214b256a4f9c", "filename"=>"ProfilePic"}
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: 9nkrJPYdc53u4JwdncZtr7mA[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (0.7ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-06-29 12:16:16 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:31
+  Rendered users/show.html.erb within layouts/application (6.7ms)
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 82ms (Views: 74.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1Ym10eVNsQlpaR00xTTNVMFNuZGtibU5hZEhJM2JVRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MTc6NTMuMTA3WiIsInB1ciI6ImJsb2Jfa2V5In19--6e49104fdac20740cae2d028159c214b256a4f9c/ProfilePic.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22ProfilePic.jpeg%22%3B+filename%2A%3DUTF-8%27%27ProfilePic.jpeg" for 127.0.0.1 at 2018-06-29 12:16:17 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"ProfilePic.jpeg\"; filename*=UTF-8''ProfilePic.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1Ym10eVNsQlpaR00xTTNVMFNuZGtibU5hZEhJM2JVRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MTc6NTMuMTA3WiIsInB1ciI6ImJsb2Jfa2V5In19--6e49104fdac20740cae2d028159c214b256a4f9c", "filename"=>"ProfilePic"}
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: 9nkrJPYdc53u4JwdncZtr7mA[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (1.2ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-06-29 12:17:10 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:31
+  Rendered users/show.html.erb within layouts/application (7.9ms)
+  Rendered partials/_nav.html.erb (3.0ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 100ms (Views: 90.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1Ym10eVNsQlpaR00xTTNVMFNuZGtibU5hZEhJM2JVRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MTc6NTMuMTA3WiIsInB1ciI6ImJsb2Jfa2V5In19--6e49104fdac20740cae2d028159c214b256a4f9c/ProfilePic.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22ProfilePic.jpeg%22%3B+filename%2A%3DUTF-8%27%27ProfilePic.jpeg" for 127.0.0.1 at 2018-06-29 12:17:10 +0100
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"ProfilePic.jpeg\"; filename*=UTF-8''ProfilePic.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1Ym10eVNsQlpaR00xTTNVMFNuZGtibU5hZEhJM2JVRUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MTc6NTMuMTA3WiIsInB1ciI6ImJsb2Jfa2V5In19--6e49104fdac20740cae2d028159c214b256a4f9c", "filename"=>"ProfilePic"}
+[36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: 9nkrJPYdc53u4JwdncZtr7mA[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (0.9ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-06-29 12:17:28 +0100
+Processing by RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  Rendered devise/registrations/edit.html.erb within layouts/application (35.3ms)
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  Rendered partials/_nav.html.erb (9.7ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 141ms (Views: 127.9ms | ActiveRecord: 7.3ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2018-06-29 12:17:52 +0100
+Processing by RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cGwRxsQQJqcd+v0MXjKDV8yS7SGDaTeGgEOX1pi43QkHyhSeN8WTkMP8DT2FzbPx8tyQPNAYJBpmz8r7tcmxHA==", "user"=>{"first_name"=>"Chris", "last_name"=>"Adeyemi", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fa134bae988 @tempfile=#<Tempfile:/var/folders/9w/11wd_3ws16d3gsy008bxb6mw0000gn/T/RackMultipart20180629-80115-3mbvr3.png>, @original_filename="SpartaLogo.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"SpartaLogo.png\"\r\nContent-Type: image/png\r\n">, "organisation"=>"ChrisCorp", "chapter_id"=>"2", "email"=>"akola-adeyemi@spartaglobal.com", "twitter_url"=>"mrgrapht", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (3.5ms) [0m[32mUploaded file to key: 9WrGPgiP8suScPBXuujX2Bs3 (checksum: K9MvIoMcpJzmVo/H/Dy/+w==)[0m
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "9WrGPgiP8suScPBXuujX2Bs3"], ["filename", "SpartaLogo.png"], ["content_type", "image/png"], ["metadata", "{\"identified\":true}"], ["byte_size", 5350], ["checksum", "K9MvIoMcpJzmVo/H/Dy/+w=="], ["created_at", "2018-06-29 11:17:52.523430"]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Destroy (0.5ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "User"], ["record_id", 1], ["blob_id", 2], ["created_at", "2018-06-29 11:17:52.528308"]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 5f00ae11-9b0f-44c3-b622-a55cbde9a195) to Async(default) with arguments: #<GlobalID:0x007fa13b4228c0 @uri=#<URI::GID gid://project-test1/ActiveStorage::Blob/1>>
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mChapter Load (0.7ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [5f00ae11-9b0f-44c3-b622-a55cbde9a195] Performing ActiveStorage::PurgeJob (Job ID: 5f00ae11-9b0f-44c3-b622-a55cbde9a195) from Async(default) with arguments: #<GlobalID:0x007fa13b3ec630 @uri=#<URI::GID gid://project-test1/ActiveStorage::Blob/1>>
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [5f00ae11-9b0f-44c3-b622-a55cbde9a195] [36m  Disk Storage (0.3ms) [0m[31mDeleted file from key: 9nkrJPYdc53u4JwdncZtr7mA[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [5f00ae11-9b0f-44c3-b622-a55cbde9a195] [36m  Disk Storage (0.3ms) [0m[31mDeleted files by key prefix: variants/9nkrJPYdc53u4JwdncZtr7mA/[0m
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "chapter_id" = $2 WHERE "users"."id" = $3[0m  [["updated_at", "2018-06-29 11:17:52.555803"], ["chapter_id", 2], ["id", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [5f00ae11-9b0f-44c3-b622-a55cbde9a195]   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [5f00ae11-9b0f-44c3-b622-a55cbde9a195]   ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2[0m  [["updated_at", "2018-06-29 11:17:52.530686"], ["id", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [5f00ae11-9b0f-44c3-b622-a55cbde9a195]   [1m[36mActiveStorage::Blob Destroy (0.9ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [5f00ae11-9b0f-44c3-b622-a55cbde9a195]   ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [5f00ae11-9b0f-44c3-b622-a55cbde9a195]   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [5f00ae11-9b0f-44c3-b622-a55cbde9a195]   ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 8c9ded50-d395-422a-b9d5-a17d8ecda769) to Async(default) with arguments: #<GlobalID:0x007fa13b15a818 @uri=#<URI::GID gid://project-test1/ActiveStorage::Blob/2>>
+Redirected to http://localhost:3000/
+Completed 302 Found in 239ms (ActiveRecord: 8.3ms)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [5f00ae11-9b0f-44c3-b622-a55cbde9a195]   [1m[36mActiveStorage::Attachment Load (24.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [5f00ae11-9b0f-44c3-b622-a55cbde9a195]   ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [5f00ae11-9b0f-44c3-b622-a55cbde9a195] Performed ActiveStorage::PurgeJob (Job ID: 5f00ae11-9b0f-44c3-b622-a55cbde9a195) from Async(default) in 44.86ms
+Started GET "/" for 127.0.0.1 at 2018-06-29 12:17:52 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (1.3ms)
+  [1m[36mActiveStorage::Blob Load (5.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8c9ded50-d395-422a-b9d5-a17d8ecda769] Performing ActiveStorage::AnalyzeJob (Job ID: 8c9ded50-d395-422a-b9d5-a17d8ecda769) from Async(default) with arguments: #<GlobalID:0x007fa13b13c188 @uri=#<URI::GID gid://project-test1/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8c9ded50-d395-422a-b9d5-a17d8ecda769] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8c9ded50-d395-422a-b9d5-a17d8ecda769]   [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8c9ded50-d395-422a-b9d5-a17d8ecda769]   ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8c9ded50-d395-422a-b9d5-a17d8ecda769]   [1m[36mActiveStorage::Blob Update (3.5ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 2]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8c9ded50-d395-422a-b9d5-a17d8ecda769]   ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8c9ded50-d395-422a-b9d5-a17d8ecda769]   [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8c9ded50-d395-422a-b9d5-a17d8ecda769]   ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8c9ded50-d395-422a-b9d5-a17d8ecda769] Performed ActiveStorage::AnalyzeJob (Job ID: 8c9ded50-d395-422a-b9d5-a17d8ecda769) from Async(default) in 37.24ms
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  Rendered partials/_nav.html.erb (8.8ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 122ms (Views: 109.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0936123eddbbab4972ea88e3b978d7e90eaa96af/SpartaLogo.png" for 127.0.0.1 at 2018-06-29 12:17:52 +0100
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0936123eddbbab4972ea88e3b978d7e90eaa96af", "filename"=>"SpartaLogo"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.8ms) [0m[34mGenerated URL for file at key: 9WrGPgiP8suScPBXuujX2Bs3 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1VjNKSFVHZHBVRGh6ZFZOalVFSllkWFZxV0RKQ2N6TUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MjI6NTIuNzkxWiIsInB1ciI6ImJsb2Jfa2V5In19--03738da8b6824c6235fdf08b8dd174b832a095bb/SpartaLogo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22SpartaLogo.png%22%3B+filename%2A%3DUTF-8%27%27SpartaLogo.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1VjNKSFVHZHBVRGh6ZFZOalVFSllkWFZxV0RKQ2N6TUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MjI6NTIuNzkxWiIsInB1ciI6ImJsb2Jfa2V5In19--03738da8b6824c6235fdf08b8dd174b832a095bb/SpartaLogo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22SpartaLogo.png%22%3B+filename%2A%3DUTF-8%27%27SpartaLogo.png
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1VjNKSFVHZHBVRGh6ZFZOalVFSllkWFZxV0RKQ2N6TUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MjI6NTIuNzkxWiIsInB1ciI6ImJsb2Jfa2V5In19--03738da8b6824c6235fdf08b8dd174b832a095bb/SpartaLogo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22SpartaLogo.png%22%3B+filename%2A%3DUTF-8%27%27SpartaLogo.png" for 127.0.0.1 at 2018-06-29 12:17:52 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"SpartaLogo.png\"; filename*=UTF-8''SpartaLogo.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1VjNKSFVHZHBVRGh6ZFZOalVFSllkWFZxV0RKQ2N6TUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6MjI6NTIuNzkxWiIsInB1ciI6ImJsb2Jfa2V5In19--03738da8b6824c6235fdf08b8dd174b832a095bb", "filename"=>"SpartaLogo"}
+[36m  Disk Storage (0.3ms) [0m[34mDownloaded file from key: 9WrGPgiP8suScPBXuujX2Bs3[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (3.5ms)
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-06-29 12:17:55 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:31
+  Rendered users/show.html.erb within layouts/application (7.4ms)
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 86ms (Views: 74.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/images/logo_200.png" for 127.0.0.1 at 2018-06-29 12:17:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo_200.png"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/edit" for 127.0.0.1 at 2018-06-29 12:19:05 +0100
+Processing by RegistrationsController#edit as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  Rendered devise/registrations/edit.html.erb within layouts/application (34.6ms)
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  Rendered partials/_nav.html.erb (24.4ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 158ms (Views: 144.5ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-06-29 12:23:41 +0100
+Processing by RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  Rendered devise/registrations/edit.html.erb within layouts/application (38.4ms)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  Rendered partials/_nav.html.erb (6.1ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 138ms (Views: 127.7ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0936123eddbbab4972ea88e3b978d7e90eaa96af/SpartaLogo.png" for 127.0.0.1 at 2018-06-29 12:23:41 +0100
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0936123eddbbab4972ea88e3b978d7e90eaa96af", "filename"=>"SpartaLogo"}
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: 9WrGPgiP8suScPBXuujX2Bs3 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1VjNKSFVHZHBVRGh6ZFZOalVFSllkWFZxV0RKQ2N6TUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6Mjg6NDEuODI4WiIsInB1ciI6ImJsb2Jfa2V5In19--a5a53a6cc4894fc9f330932a446dafe8637eb6ea/SpartaLogo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22SpartaLogo.png%22%3B+filename%2A%3DUTF-8%27%27SpartaLogo.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1VjNKSFVHZHBVRGh6ZFZOalVFSllkWFZxV0RKQ2N6TUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6Mjg6NDEuODI4WiIsInB1ciI6ImJsb2Jfa2V5In19--a5a53a6cc4894fc9f330932a446dafe8637eb6ea/SpartaLogo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22SpartaLogo.png%22%3B+filename%2A%3DUTF-8%27%27SpartaLogo.png
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1VjNKSFVHZHBVRGh6ZFZOalVFSllkWFZxV0RKQ2N6TUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6Mjg6NDEuODI4WiIsInB1ciI6ImJsb2Jfa2V5In19--a5a53a6cc4894fc9f330932a446dafe8637eb6ea/SpartaLogo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22SpartaLogo.png%22%3B+filename%2A%3DUTF-8%27%27SpartaLogo.png" for 127.0.0.1 at 2018-06-29 12:23:41 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"SpartaLogo.png\"; filename*=UTF-8''SpartaLogo.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1VjNKSFVHZHBVRGh6ZFZOalVFSllkWFZxV0RKQ2N6TUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6Mjg6NDEuODI4WiIsInB1ciI6ImJsb2Jfa2V5In19--a5a53a6cc4894fc9f330932a446dafe8637eb6ea", "filename"=>"SpartaLogo"}
+[36m  Disk Storage (0.3ms) [0m[34mDownloaded file from key: 9WrGPgiP8suScPBXuujX2Bs3[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data  (1.5ms)
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-06-29 12:24:40 +0100
+Processing by RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a43/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 2]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 3]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 4]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 5]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 6]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 7]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 8]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 9]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 10]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 11]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 12]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 13]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 14]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.8ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 15]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT "chapters".* FROM "chapters" WHERE "chapters"."country_id" = $1[0m  [["country_id", 16]]
+  ↳ app/views/devise/registrations/edit.html.erb:42
+  Rendered devise/registrations/edit.html.erb within layouts/application (51.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mActiveStorage::Blob Load (1.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  Rendered partials/_nav.html.erb (14.4ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 180ms (Views: 165.8ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1VjNKSFVHZHBVRGh6ZFZOalVFSllkWFZxV0RKQ2N6TUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6Mjg6NDEuODI4WiIsInB1ciI6ImJsb2Jfa2V5In19--a5a53a6cc4894fc9f330932a446dafe8637eb6ea/SpartaLogo.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%22SpartaLogo.png%22%3B+filename%2A%3DUTF-8%27%27SpartaLogo.png" for 127.0.0.1 at 2018-06-29 12:24:40 +0100
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"SpartaLogo.png\"; filename*=UTF-8''SpartaLogo.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDA1VjNKSFVHZHBVRGh6ZFZOalVFSllkWFZxV0RKQ2N6TUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDYtMjlUMTE6Mjg6NDEuODI4WiIsInB1ciI6ImJsb2Jfa2V5In19--a5a53a6cc4894fc9f330932a446dafe8637eb6ea", "filename"=>"SpartaLogo"}
+[36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: 9WrGPgiP8suScPBXuujX2Bs3[0m
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data  (1.0ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+

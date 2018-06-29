@@ -2,12 +2,16 @@
   <div class="row mt-2">
     <div class="col-md-8 col-md-offset-2">
 
-      <h1 class="text-center">Show profile page</h1>
+      <h1 class="text-center">My Profile</h1>
 
       <div class="col-md-12">
         <div class="row">
           <div class="col-md-6 text-center">
-            <img src="/images/no_profile.jpg" alt="Your Profile Picture" class="img-circle profile-picture">
+            <% if current_user.image_attached? %>
+              <%= image_tag(current_user.image, :class => " img-circle profile-picture", :alt => "Your Profile Picture") %>
+            <% else %>
+              <%= image_tag 'profile-placeholder.jpg', :class => "img-responsive img-circle", :alt => "Profile Placeholder Image" %>
+            <% end %>
           </div>
           <div class="text-info col-md-6">
             <p><strong>Full Name: </strong> <%= @user.full_name %></p>
@@ -16,7 +20,7 @@
             <br>
             <p><strong>Organisation: </strong> <%= @user.organisation %></p>
             <br>
-            <a target="_blank" href="https://www.twitter.com/<%= @user.twitter_url %>"><strong>Twitter Username: </strong> <%= @user.twitter_url %></a>
+            <a target="_blank" href="https://www.twitter.com/<%= @user.twitter_url %>"><strong>Twitter Handle: </strong> <%= @user.twitter_url %></a>
             <br>
           </div>
 <hr>
