@@ -23,6 +23,27 @@
   width:20px;
 }
 
+// ========== PARALLAX START ===========
+.city-lights {
+  background-image: url("/images/city_lights.jpeg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.city-bg {
+  background-image: url("/images/city_bg.jpeg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// ========== PARALLAX END ===========
+
+
 // ==== RESPOSIVENESS ====
 // WELCOME MESSAGE
 // when <= 767px, reduce welcome message font-size
