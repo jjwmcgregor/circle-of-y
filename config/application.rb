@@ -10,6 +10,7 @@ module ProjectTest1
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
+    config.assets.js_compressor = Uglifier.new(harmony: true)
     config.serve_static_assets = true
     config.assets.enabled = true
 
