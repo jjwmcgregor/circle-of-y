@@ -35,7 +35,11 @@
             <li><span class="navbar-text">Logged in as <strong><%=current_user.first_name %></strong></span></li>
             <li>
               <%= link_to edit_user_registration_path do %>
-                <%= image_tag 'profile-placeholder.jpg', class: "img-responsive img-circle" %>
+                <% if current_user.image_attached? %>
+                  <%= image_tag(current_user.image, :class => "img-responsive img-circle") %>
+                <% else %>
+                  <%= image_tag 'profile-placeholder.jpg', :class => "img-responsive img-circle" %>
+                <% end %>
               <% end %>
             </li>
             <li>
