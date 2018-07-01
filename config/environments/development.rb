@@ -78,7 +78,7 @@ port:                 587,
 domain:               'example.com',
 user_name:            'sendertestsparta@gmail.com',
 password:             'Sparta10',
-authentication:       'plain',
+authentication:       :plain,
 enable_starttls_auto: true  }
 
 end
