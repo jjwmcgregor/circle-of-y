@@ -15,7 +15,10 @@
 <div id="video" class="row">
   <div class="col-sm-8 col-sm-offset-2">
     <div class="embed-responsive embed-responsive-16by9 shadow-one">
-      <iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/r47ac_6I7-Y?rel=0&modestbranding=1&controls=0&showinfo=0&autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/277645964?color=dc3545&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <script src="https://player.vimeo.com/api/player.js"></script>
     </div>
   </div>
 </div>
@@ -26,12 +29,20 @@
       <img src="images/logo_200.png" alt="">
     </div>
     <div class="content-responsive col-md-8">
-      <h2>Pitch to the circle</h2>
+      <h2>Who are the Circle of Young Intrapreneurs?"</h2>
       <p>
-        Copy here about how you can pitch to the circle and get feedback and support for your project. Large call to action about joining the circle and pitching your first project.
+        A movement designed to inspire, guide, develop & deliver purpose-driven business ideas from social intrapreneurs inside corporate organisations globally.
       </p>
       <p>
-        <%= link_to "Join the circle", new_user_registration_path, class: "btn btn-primary" %>
+        We drive positive social change through business by creating a community of changemakers and supporting them to deliver their ideas, with tools, mentoring and advice from leading intrapreneurs.
+      </p>
+      <p>
+        Join us and together we can make business a force for good.
+      </p>
+      <p>
+        <%= link_to "Join the circle", new_user_registration_path, class: "btn btn-primary btn-pill" %>
+        <%= link_to "Download our Report", '10.03.2018 - Circle Whitepaper OYW Version.pdf', target: :_blank, class: "btn btn-primary btn-pill"  %>
+        <%= link_to "100 Day Challenge", 'https://circleofyi.us13.list-manage.com/subscribe?u=6ddfb2318958e6bd7e6d9f028&id=04cc3e3074', target: :_blank, class: "btn btn-primary btn-pill"  %>
       </p>
     </div>
   </div>
@@ -40,7 +51,7 @@
 <div class="city-lights img-responsive"></div>
 
 <header class="stories-header">
-  <h1>Stories from our clients</h1>
+  <h1>stories from our members</h1>
 </header>
 
 <div id="stories" class="stories container container-space">
