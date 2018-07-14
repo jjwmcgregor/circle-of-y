@@ -8,7 +8,7 @@
         <div class="row">
           <div class="col-md-6 text-center">
             <div class="profile-pic-container">
-              <% if current_user.image_attached? %>
+              <% if current_user.image_changed? %>
               <%= image_tag(current_user.image, :class => "profile-picture ", :alt => "Your Profile Picture") %>
               <% else %>
               <%= image_tag 'profile-placeholder.jpg', :class => "profile-picture", :alt => "Profile Placeholder Image" %>
