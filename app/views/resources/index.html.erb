@@ -32,60 +32,215 @@
       </div>
 
       <div class="row">
-        <div class="row">
-          <%= link_to "10.03.2018 - Circle Whitepaper OYW Version.pdf", target: :_blank do %>
-            <%= image_tag("Social_Intrapreneurship_Thumbnail.png", :width => "300") %>
-          <% end %>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4">
-            <h4>Social Entrepreneurship White Paper</h4>
-            <p>A document that discusses the importance of social entrepreneurship and how to implement it in organisations. It also touches on the history of The Circle of Young Intrapreneurs and the driving factors behind setting up the charity.</p>
-          </div>
-        </div>
-      </div>
+        <div class="col-md-12">
+          <div id="content">
+            <ul id="tabs" class="nav nav-tabs nav-justified" data-tabs="tabs">
+              <li class="active"><a href="#convert" data-toggle="tab">Convert</a></li>
+              <li><a href="#create" data-toggle="tab">Create</a></li>
+              <li><a href="#construct" data-toggle="tab">Construct</a></li>
+              <li><a href="#commit" data-toggle="tab">Commit</a></li>
+              <li><a href="#control" data-toggle="tab">Control</a></li>
+            </ul>
+            <div id="my-tab-content" class="tab-content">
+              <!-- CONVERT -->
+              <div class="tab-pane active" id="convert">
+                <div class="toggleButtons mb-2">
+                  <button type="button" class="btn btn-primary btn-pill" data-toggle="collapse" data-target="#introToIP">Intro to Intrapreneurship</button>
+                  <button type="button" class="btn btn-primary btn-pill" data-toggle="collapse" data-target="#socintDef">Socint Definition</button>
+                </div>
+                <!-- CAROUSEL - INTRO TO INTP. -->
+                <div id="introToIP" class="carousel slide collapse" data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#introToIP" data-slide-to="0" class="active"></li>
+                    <li data-target="#introToIP" data-slide-to="1"></li>
+                  </ol>
 
-      <br>
-      <br>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
 
-      <div class="row">
-        <div class="row">
-          <%= link_to "the-intrapreneur.pdf", target: :_blank do %>
-            <%= image_tag("The_Intrapreneur_Thumbnail.png", :width => "300") %>
-          <% end %>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4">
-            <h4>The Intrapreneur: Confessions of a Corporate Insurgent</h4>
-            <p>Gib Bulloch is an award-winning social intrapreneur who consults, writes and speaks on topics relating to the role of business in society. Gib believes passionately in the power of business to change the world and in the power of the individual to change the world of business.</p>
-          </div>
-        </div>
-      </div>
+                    <div class="item active">
+                      <%= image_tag("slides/convert/Intrapreneurship-Intro-Slides/Slide1.jpeg") %>
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
 
-      <br>
-      <br>
+                    <div class="item">
+                      <%= image_tag("slides/convert/Intrapreneurship-Intro-Slides/Slide2.jpeg") %>
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
 
-      <div class="row">
-        <%= link_to "RUPitch.jpeg", target: :_blank do %>
-          <%= image_tag("RUPitch_Thumbnail.jpeg", :width => "300") %>
-        <% end %>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4">
-            <h4>Learn how to write a pitch with our example</h4>
-          </div>
-        </div>
-      </div>
+                  </div>
 
-      <br>
-      <br>
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#introToIP" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#introToIP" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <div id="socintDef" class="collapse">
+                  <%= image_tag("slides/convert/Socint Definition.jpeg") %>
+                </div>
+              </div>
+              <!-- CREATE -->
+              <div class="tab-pane fade" id="create">
+                <div class="toggleButtons mb-2">
+                  <button type="button" class="btn btn-primary btn-pill" data-toggle="collapse" data-target="#socintTriangle">Intro to Intrapreneurship</button>
+                </div>
+                <div id="socintTriangle" class="collapse">
+                  <%= image_tag("slides/create/Socint Triangle.jpeg") %>
+                </div>
+              </div>
+              <!-- CONSTRUCT -->
+              <div class="tab-pane fade" id="construct">
+                <div class="toggleButtons mb-2">
+                  <button type="button" class="btn btn-primary btn-pill" data-toggle="collapse" data-target="#roundupPitch">Roundup Original Pitch</button>
+                  <button type="button" class="btn btn-primary btn-pill" data-toggle="collapse" data-target="#roundupPitchSummary">Roundup Summary</button>
+                </div>
+                <div id="roundupPitch" class="carousel slide collapse" data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#roundupPitch" data-slide-to="0" class="active"></li>
+                    <li data-target="#roundupPitch" data-slide-to="1"></li>
+                    <li data-target="#roundupPitch" data-slide-to="2"></li>
+                    <li data-target="#roundupPitch" data-slide-to="3"></li>
+                    <li data-target="#roundupPitch" data-slide-to="4"></li>
+                    <li data-target="#roundupPitch" data-slide-to="5"></li>
+                    <li data-target="#roundupPitch" data-slide-to="6"></li>
+                    <li data-target="#roundupPitch" data-slide-to="7"></li>
+                    <li data-target="#roundupPitch" data-slide-to="8"></li>
+                    <li data-target="#roundupPitch" data-slide-to="9"></li>
+                    <li data-target="#roundupPitch" data-slide-to="10"></li>
+                    <li data-target="#roundupPitch" data-slide-to="11"></li>
+                    <li data-target="#roundupPitch" data-slide-to="12"></li>
+                    <li data-target="#roundupPitch" data-slide-to="13"></li>
+                    <li data-target="#roundupPitch" data-slide-to="14"></li>
+                    <li data-target="#roundupPitch" data-slide-to="15"></li>
+                    <li data-target="#roundupPitch" data-slide-to="16"></li>
+                    <li data-target="#roundupPitch" data-slide-to="17"></li>
+                  </ol>
 
-      <div class="row">
-        <%= link_to "Circle Story.PDF", target: :_blank do %>
-          <%= image_tag("Our_Vision_Thumbnail.jpeg", :width => "300") %>
-        <% end %>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4">
-            <h4>Our Vision</h4>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+
+                    <div class="item active">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide01.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide02.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide03.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide04.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide05.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide06.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide07.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide08.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide09.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide10.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide11.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide12.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide13.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide14.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide15.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide16.jpeg") %>
+                    </div>
+                    <div class="item">
+                      <%= image_tag("slides/construct/roundup/Original Pitch/Slide17.jpeg") %>
+                    </div>
+                  </div>
+
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#roundupPitch" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#roundupPitch" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <div id="roundupPitchSummary" class="collapse">
+                  <%= image_tag("slides/construct/roundup/RU Pitch.jpeg") %>
+                </div>
+              </div>
+              <!-- COMMIT -->
+              <div class="tab-pane fade" id="commit">
+                <div class="toggleButtons mb-2">
+                  <%= link_to "How to approach a senior person", "approaching a senior person - email.pdf", target: :_blank, :class => "btn btn-primary btn-pill" %>
+                </div>
+              </div>
+              <!-- CONTROL -->
+              <div class="tab-pane fade" id="control">
+                <div class="toggleButtons mb-2">
+                  <button type="button" class="btn btn-primary btn-pill" data-toggle="collapse" data-target="#roundupPilot">Roundup Pilot Review</button>
+                </div>
+                <div id="roundupPilot" class="carousel slide collapse" data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#roundupPilot" data-slide-to="0" class="active"></li>
+                    <% for i in 1..12 %>
+                      <li data-target="#roundupPilot" data-slide-to="<%= i %>"></li>
+                    <% end %>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <%= image_tag("slides/control/Barclays Roundup Pilot/Slide1.jpeg") %>
+                    </div>
+                    <% for i in 2..13 %>
+                      <div class="item">
+                        <%= image_tag("slides/control/Barclays Roundup Pilot/Slide#{i}.jpeg") %>
+                      </div>
+                    <% end %>
+
+
+                  </div>
+
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#roundupPilot" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#roundupPilot" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

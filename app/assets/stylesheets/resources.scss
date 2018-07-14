@@ -6,6 +6,58 @@
   margin: 30px auto;
 }
 
+.nav-tabs {
+  li.active {
+    a {
+      background: none;
+    }
+  }
+}
+
+.toggleButtons {
+  .btn-pill {
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin: 20px 5px 0;
+    border: 1px solid white;
+    transition: .2s;
+    outline:none;
+
+    &:hover {
+      background: #dc3545;
+      color:white !important;
+      border: 1px solid white;
+    }
+  }
+}
+
+.carousel {
+  img {
+    width:100% !important;
+  }
+
+  .right.carousel-control {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 100%);
+    transition:.2s;
+    &:hover {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 20%, rgba(0, 0, 0, 1.5) 100%);
+    }
+  }
+
+  .left.carousel-control {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 100%);
+    transition: .2s;
+
+    &:hover {
+      background: linear-gradient(to left, rgba(0, 0, 0, 0.0001) 20%, rgba(0, 0, 0, 1.5) 100%);
+    }
+  }
+}
+
+.resource-thumbnail {
+  width:300px !important;
+}
+
 // ==== RESPOSIVENESS ====
 // RESOURCE PAGE
 // MOBILE: when <= 767px, font size is 1.5 * root font-size (root = 14px)
