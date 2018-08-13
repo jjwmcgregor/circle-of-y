@@ -23,6 +23,13 @@
   width:20px;
 }
 
+// ========== CENTRAL LOGO ===========
+#movement img {
+  width:80%;
+}
+
+
+
 // ========== PARALLAX START ===========
 .city-lights {
   background-image: url("/images/city_lights.jpeg");
@@ -58,6 +65,17 @@
 // PITCH TO THE CIRCLE & STORIES FROM CLIENTS and WELCOME
 // when <= 991px, center align welcome text join/pitch to circle content
 @media screen and (max-width: 991px) {
+
+  #movement img {
+    width:50%;
+  }
+
+  .container-space {
+    p {
+      font-size: 1em;
+    }
+  }
+
   .content-responsive, .welcome h1 {
     text-align: center;
   }
