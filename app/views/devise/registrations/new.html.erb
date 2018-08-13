@@ -33,13 +33,40 @@
             </div>
 
             <div class="field form-group">
-              <%= f.label :email %><br />
-              <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+              <input type="checkbox" data-toggle="collapse" data-target="#demo">  I'm not near any of these locations</input>
+              <br>
+              <div id="demo" class="collapse">
+                <br>
+                <div class="field">
+                  <!-- Country -->
+                  <select id="states-of-country" name="project[state]">
+                    <option value="" selected="">Select Your Country</option>
+
+                  </select>
+
+                  <select id="cities-of-state" name="project[city]">
+                    <option value="" selected="">Select Your City</option>
+                  </select>
+
+                  <script>
+                  $('select[name="state"]').change(function () {
+                    var input_state = $(this);
+                    $.getJSON('/cities/' + $(this).val(), function (data) {
+                      input_state.empty();
+                      $.each(data, function (i) {
+                        var opt = '<option value='+ i +'>' + i + '</option>';
+                        input_state.append(opt);
+                      });
+                    });
+                  });
+                  </script>
+                </div>
+              </div>
             </div>
 
             <div class="field form-group">
-              <%= f.label :twitter_url, "Twitter Handle" %>
-              <%= f.text_field :twitter_url, class:"form-control" %>
+              <%= f.label :email %><br />
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
             </div>
 
             <div class="field form-group">

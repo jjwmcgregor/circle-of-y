@@ -1271,3 +1271,597 @@ Completed 200 OK in 615ms (Views: 573.4ms | ActiveRecord: 1.3ms)
 
 >>>>>>> dev
 >>>>>>> 1ce07220119bc11ed6fbd87de3ff6769c5203128
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mChapter Load (4.4ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 13:38:50 +0100
+  [1m[35m (13.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (5683.5ms)
+  Rendered partials/_nav.html.erb (2.6ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 6224ms (Views: 6108.8ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/users/2/projects" for 127.0.0.1 at 2018-08-13 13:39:01 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:19
+  Rendered projects/index.html.erb within layouts/application (52.8ms)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 16.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    16: 
+    17:         <tbody>
+    18:           <% @projects.each do |project| %>
+    19:             <% if project.user.id == @user.id %>
+    20:               <tr>
+    21:                 <td>
+    22:                   <%= link_to user_project_path(@user,project) do %>
+  
+app/views/projects/index.html.erb:19:in `block in _app_views_projects_index_html_erb___803238856981701946_70291519872340'
+app/views/projects/index.html.erb:18:in `_app_views_projects_index_html_erb___803238856981701946_70291519872340'
+Started PUT "/__web_console/repl_sessions/27d77acf2cc90729529e0f5eea93b450" for 127.0.0.1 at 2018-08-13 13:41:26 +0100
+Started PUT "/__web_console/repl_sessions/27d77acf2cc90729529e0f5eea93b450" for 127.0.0.1 at 2018-08-13 13:41:34 +0100
+  [1m[36mChapter Load (0.9ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Started PUT "/__web_console/repl_sessions/27d77acf2cc90729529e0f5eea93b450" for 127.0.0.1 at 2018-08-13 13:41:44 +0100
+Started PUT "/__web_console/repl_sessions/27d77acf2cc90729529e0f5eea93b450" for 127.0.0.1 at 2018-08-13 13:41:44 +0100
+Started PUT "/__web_console/repl_sessions/27d77acf2cc90729529e0f5eea93b450" for 127.0.0.1 at 2018-08-13 13:42:32 +0100
+Started PUT "/__web_console/repl_sessions/27d77acf2cc90729529e0f5eea93b450" for 127.0.0.1 at 2018-08-13 13:42:34 +0100
+Started GET "/users/2/projects" for 127.0.0.1 at 2018-08-13 13:43:40 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  Rendered projects/index.html.erb within layouts/application (2.4ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 132ms (Views: 123.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/2/projects" for 127.0.0.1 at 2018-08-13 13:44:29 +0100
+Processing by ProjectsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:9
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:18
+  Rendered projects/index.html.erb within layouts/application (2.3ms)
+  Rendered partials/_nav.html.erb (2.8ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 86ms (Views: 77.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/2/projects/new" for 127.0.0.1 at 2018-08-13 13:44:34 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (10.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (81.5ms)
+  Rendered projects/new.html.erb within layouts/application (86.9ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 203ms (Views: 181.1ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/users/2/projects/new" for 127.0.0.1 at 2018-08-13 13:45:22 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (2.8ms)
+  Rendered projects/new.html.erb within layouts/application (6.9ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 101ms (Views: 88.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/users/2/projects/new" for 127.0.0.1 at 2018-08-13 13:48:00 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (2.4ms)
+  Rendered projects/new.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.0ms)
+
+
+  
+SyntaxError (/Users/tech-a22/Development/coyi-website/app/views/projects/_form.html.erb:1: syntax error, unexpected '}', expecting =>
+rue, style: {'padding:0 30px'}) do |form| @output_buffer.saf
+                              ^
+/Users/tech-a22/Development/coyi-website/app/views/projects/_form.html.erb:48: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/projects/_form.html.erb:1: syntax error, unexpected '}', expecting =>
+app/views/projects/_form.html.erb:48: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/projects/new.html.erb:5:in `_app_views_projects_new_html_erb__75909353550896713_70291504248100'
+Started GET "/users/2/projects/new" for 127.0.0.1 at 2018-08-13 13:48:58 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.0ms)
+  Rendered projects/new.html.erb within layouts/application (7.0ms)
+  Rendered partials/_nav.html.erb (1.7ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 214ms (Views: 207.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/2/projects/new" for 127.0.0.1 at 2018-08-13 13:50:38 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (2.3ms)
+  Rendered projects/new.html.erb within layouts/application (5.7ms)
+  Rendered partials/_nav.html.erb (2.8ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 3385ms (Views: 3377.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/2/projects/new" for 127.0.0.1 at 2018-08-13 13:51:02 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (2.2ms)
+  Rendered projects/new.html.erb within layouts/application (5.3ms)
+  Rendered partials/_nav.html.erb (2.9ms)
+  Rendered partials/_footer.html.erb (1.4ms)
+Completed 200 OK in 106ms (Views: 97.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/2/projects/new" for 127.0.0.1 at 2018-08-13 13:51:37 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (2.3ms)
+  Rendered projects/new.html.erb within layouts/application (4.9ms)
+  Rendered partials/_nav.html.erb (4.2ms)
+  Rendered partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 92ms (Views: 84.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/2/projects/new" for 127.0.0.1 at 2018-08-13 13:52:10 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.8ms)
+  Rendered projects/new.html.erb within layouts/application (6.8ms)
+  Rendered partials/_nav.html.erb (3.5ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 133ms (Views: 125.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/2/projects/new" for 127.0.0.1 at 2018-08-13 13:52:14 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.2ms)
+  Rendered projects/new.html.erb within layouts/application (6.4ms)
+  Rendered partials/_nav.html.erb (10.8ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 93ms (Views: 84.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/2/projects/new" for 127.0.0.1 at 2018-08-13 13:52:55 +0100
+Processing by ProjectsController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:21
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.6ms)
+  Rendered projects/new.html.erb within layouts/application (9.5ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 207ms (Views: 199.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 13:53:14 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (684.5ms)
+  Rendered partials/_nav.html.erb (2.7ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 959ms (Views: 924.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 13:53:38 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (822.7ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 1151ms (Views: 1112.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 13:55:28 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (749.2ms)
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 1024ms (Views: 991.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 13:55:48 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (594.9ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 884ms (Views: 851.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-13 13:56:02 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (13.4ms)
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 201ms (Views: 190.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 13:56:29 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (617.3ms)
+  Rendered partials/_nav.html.erb (1.8ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 893ms (Views: 860.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 13:57:04 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (432.4ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 743ms (Views: 709.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 13:57:15 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (460.5ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 720ms (Views: 678.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-13 14:00:03 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (14.6ms)
+  Rendered partials/_nav.html.erb (6.4ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 9183ms (Views: 9174.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:01:03 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (918.8ms)
+  Rendered partials/_nav.html.erb (2.7ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 1317ms (Views: 1279.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-13 14:01:28 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (15.0ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 120ms (Views: 115.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:02:30 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (694.6ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 889ms (Views: 854.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:03:41 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (490.1ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 814ms (Views: 778.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:05:31 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (8411.9ms)
+  Rendered partials/_nav.html.erb (6.8ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 12973ms (Views: 12937.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:06:09 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (560.9ms)
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 856ms (Views: 820.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:07:00 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (624.4ms)
+  Rendered partials/_nav.html.erb (2.9ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 924ms (Views: 890.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:07:12 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (427.0ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 659ms (Views: 628.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:07:35 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (542.8ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 767ms (Views: 736.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:07:45 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (758.7ms)
+  Rendered partials/_nav.html.erb (3.4ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 1056ms (Views: 1024.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:07:52 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (576.6ms)
+  Rendered partials/_nav.html.erb (1.8ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 794ms (Views: 763.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:08:09 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (356.8ms)
+  Rendered partials/_nav.html.erb (3.0ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 583ms (Views: 551.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:08:25 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (317.5ms)
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 524ms (Views: 490.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:08:44 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (532.6ms)
+  Rendered partials/_nav.html.erb (1.7ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 804ms (Views: 769.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:09:01 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (339.2ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 518ms (Views: 487.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:09:07 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (313.5ms)
+  Rendered partials/_nav.html.erb (1.8ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 500ms (Views: 469.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:13:06 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (753.9ms)
+  Rendered partials/_nav.html.erb (3.8ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 1155ms (Views: 1085.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:14:09 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (806.6ms)
+  Rendered partials/_nav.html.erb (3.2ms)
+  Rendered partials/_footer.html.erb (1.1ms)
+Completed 200 OK in 1163ms (Views: 1130.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:14:18 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (538.2ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 817ms (Views: 785.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:15:10 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (686.7ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 1017ms (Views: 984.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/resources.2" for 127.0.0.1 at 2018-08-13 14:15:53 +0100
+Processing by ResourcesController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  Rendering resources/index.html.erb within layouts/application
+  Rendered resources/index.html.erb within layouts/application (767.7ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 1088ms (Views: 1055.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-13 14:29:07 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (32.1ms)
+  Rendered partials/_nav.html.erb (2.7ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 339ms (Views: 310.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-13 14:30:59 +0100
+Processing by StaticController#home as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/static_controller.rb:3
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (5.0ms)
+  Rendered partials/_nav.html.erb (1.7ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 134ms (Views: 128.3ms | ActiveRecord: 1.0ms)
+
+

@@ -1,9 +1,17 @@
+<div id="video" class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <div class="embed-responsive embed-responsive-16by9 shadow-one">
+      <%= get_vimeo_iframe('https://vimeo.com/277653853', width="100%", height="auto") %>
+    </div>
+  </div>
+</div>
+
 <div class="row red-sections container-space">
   <div class="container">
     <div id="welcome" class="welcome jumbotron jumbotron-fluid red-sections">
       <h1>
         <span class="title">
-          Resources
+          Welcome to The Circle!
         </span>
       </h1>
       <p class="p-responsive">
@@ -13,19 +21,29 @@
   </div>
 </div>
 
-
-<div id="video" class="row">
+<div class="row" style="height:400px;color:#dc3545">
   <div class="col-sm-8 col-sm-offset-2">
-    <div class="embed-responsive embed-responsive-16by9 shadow-one">
-      <%= get_vimeo_iframe('https://vimeo.com/277653853', width="100%", height="auto") %>
+    <div class="text-center">
+      <h1>Podcasts</h1>
     </div>
   </div>
 </div>
 
+<div class="row red-sections container-space">
+  <div class="container">
+    <div class="welcome jumbotron jumbotron-fluid red-sections">
+      <h1>
+        <span class="title">
+          Project LifeCycle
+        </span>
+      </h1>
+      <%= image_tag "Intra Life Cycle.jpg", :class => "img-responsive", :alt => "projectLifeCycle", data: { toggle: 'modal', target: '#lifeCycle' } %>
+    </div>
+  </div>
+</div>
 
 <div id="movement" class="row red-sections container-space">
   <div class="container">
-
     <div class="col-md-12 text-center documents">
       <div class="row">
         <h2>Documents</h2>
@@ -56,12 +74,29 @@
                     <tr>
                       <td class="col-md-3"><h4 data-toggle="modal" data-target="#introToIP">Intro to Intrapreneurship</h4></td>
                       <td class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                      <td class="col-md-3"><i class="fas fa-download"></i></td>
+                      <td class="col-md-3">
+                        <%= link_to 'images/slides/convert/Intrapreneurship-Intro-Slides.zip', target: :_blank, class: "btn " do %>
+                          <i class="fas fa-download"></i>
+                        <% end %>
+                      </td>
                     </tr>
                     <tr>
                       <td class="col-md-3"><h4 data-toggle="modal" data-target="#socintDef">Socint Definition</h4></td>
                       <td class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                      <td class="col-md-3"><i class="fas fa-download"></i></td>
+                      <td class="col-md-3">
+                        <%= link_to 'images/slides/convert/Socint Definition.jpeg.zip', target: :_blank, class: "btn " do %>
+                          <i class="fas fa-download"></i>
+                        <% end %>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col-md-3"><h4 data-toggle="modal" data-target="#painPoints">Intrapreneur Pain Points</h4></td>
+                      <td class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                      <td class="col-md-3">
+                        <%= link_to 'images/slides/convert/COYI Intra Pain Points.jpeg.zip', target: :_blank, class: "btn " do %>
+                          <i class="fas fa-download"></i>
+                        <% end %>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -79,14 +114,35 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="col-md-3"><h4 data-toggle="modal" data-target="#socintTriangle">Soccint Triangle</h4></td>
+                      <td class="col-md-3"><h4 data-toggle="modal" data-target="#socintTriangle">Socint Triangle</h4></td>
                       <td class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                      <td class="col-md-3"><i class="fas fa-download"></i></td>
+                      <td class="col-md-3">
+                        <%= link_to 'images/slides/create/Socint Triangle.jpeg.zip', target: :_blank, class: "btn " do %>
+                          <i class="fas fa-download"></i>
+                        <% end %>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col-md-3"><h4 data-toggle="modal" data-target="#elevatorPitch">Email Elevator Pitching</h4></td>
+                      <td class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                      <td class="col-md-3">
+                        <%= link_to 'images/slides/create/Email Elevator Pitching.jpg.zip', target: :_blank, class: "btn " do %>
+                          <i class="fas fa-download"></i>
+                        <% end %>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col-md-3"><h4 data-toggle="modal" data-target="#productDefinition">Product Definition</h4></td>
+                      <td class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                      <td class="col-md-3">
+                        <%= link_to 'images/slides/create/Product Definition Canvas.jpg.zip', target: :_blank, class: "btn " do %>
+                          <i class="fas fa-download"></i>
+                        <% end %>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-
 
               <!-- CONSTRUCT -->
               <div class="tab-pane fade" id="construct">
@@ -102,17 +158,24 @@
                     <tr>
                       <td class="col-md-3"><h4 data-toggle="modal" data-target="#roundupPitch">Roundup Original Pitch</h4></td>
                       <td class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                      <td class="col-md-3"><i class="fas fa-download"></i></td>
+                      <td class="col-md-3">
+                        <%= link_to 'images/slides/construct/roundup/Original Pitch Deck Mar 2015.pptx.zip', target: :_blank, class: "btn " do %>
+                          <i class="fas fa-download"></i>
+                        <% end %>
+                      </td>
                     </tr>
                     <tr>
                       <td class="col-md-3"><h4 data-toggle="modal" data-target="#roundupPitchSummary">Roundup Summary</h4></td>
                       <td class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                      <td class="col-md-3"><i class="fas fa-download"></i></td>
+                      <td class="col-md-3">
+                        <%= link_to 'images/slides/construct/roundup/RU Pitch.jpeg.zip', target: :_blank, class: "btn " do %>
+                          <i class="fas fa-download"></i>
+                        <% end %>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-
 
               <!-- COMMIT -->
               <div class="tab-pane fade" id="commit">
@@ -128,11 +191,24 @@
                     <tr>
                       <td class="col-md-3">
                         <%= link_to "approaching a senior person - email.pdf", target: :_blank do %>
-                        <h4>Roundup Original Pitch</h4>
+                        <h4>Approaching a Senior Person</h4>
                         <% end %>
                       </td>
                       <td class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                      <td class="col-md-3"><i class="fas fa-download"></i></td>
+                      <td class="col-md-3">
+                        <%= link_to 'images/slides/commit/approaching a senior person - email.docx.zip', target: :_blank, class: "btn " do %>
+                          <i class="fas fa-download"></i>
+                        <% end %>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col-md-3"><h4 data-toggle="modal" data-target="#pitchOutcomes">Pitch Outcomes</h4></td>
+                      <td class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                      <td class="col-md-3">
+                        <%= link_to 'images/slides/commit/Pitch Outcomes.jpg.zip', target: :_blank, class: "btn " do %>
+                          <i class="fas fa-download"></i>
+                        <% end %>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -152,7 +228,11 @@
                     <tr>
                       <td class="col-md-3"><h4 data-toggle="modal" data-target="#roundupPilot">Roundup Pilot Review</h4></td>
                       <td class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                      <td class="col-md-3"><i class="fas fa-download"></i></td>
+                      <td class="col-md-3">
+                        <%= link_to 'images/slides/control/Barclays Roundup Pilot.zip', target: :_blank, class: "btn " do %>
+                          <i class="fas fa-download"></i>
+                        <% end %>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -160,6 +240,18 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Project Life-Cycle Modal -->
+<div class="modal fade" id="lifeCycle" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="slide">
+        <%= image_tag("Intra Life Cycle.jpg") %>
       </div>
     </div>
   </div>
@@ -204,12 +296,57 @@
   </div>
 </div>
 
+
+<!-- Pain Points Modal -->
+<div class="modal fade" id="painPoints" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="slide">
+        <%= image_tag("slides/convert/COYI Intra Pain Points.jpeg") %>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Socint Triangle Modal -->
 <div class="modal fade" id="socintTriangle" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="slide">
         <%= image_tag("slides/create/Socint Triangle.jpeg") %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Elevator Pitch Modal -->
+<div class="modal fade" id="elevatorPitch" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="slide">
+        <%= image_tag("slides/create/Email Elevator Pitching.jpg") %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product Definition Modal -->
+<div class="modal fade" id="productDefinition" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="slide">
+        <%= image_tag("slides/create/Product Definition Canvas.jpg") %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pitch Outcomes Modal -->
+<div class="modal fade" id="pitchOutcomes" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="slide">
+        <%= image_tag("slides/commit/Pitch Outcomes.jpg") %>
       </div>
     </div>
   </div>

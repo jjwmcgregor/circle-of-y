@@ -16,7 +16,8 @@
 
         <tbody>
           <% @projects.each do |project| %>
-            <% if project.user.id == @user.id %>
+            <!-- below line was originall project.user.id which breaks in dev -->
+            <% if project.user_id == @user.id %>
               <tr>
                 <td>
                   <%= link_to user_project_path(@user,project) do %>

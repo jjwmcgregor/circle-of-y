@@ -50,6 +50,32 @@
 }
 // ========== PARALLAX END ===========
 
+// ========== CASE STUDIES START ===========
+.stories {
+  a {
+    color:#337ab7;
+    &:hover {
+      background: none;
+      color:#666;
+      text-decoration: none;
+    }
+  }
+
+  .btn.btn-pill {
+    color: #337ab7;
+    background: white;
+    border: 1px solid #337ab7 !important;
+    outline:none;
+    &:hover {
+      color: white;
+      background: #337ab7;
+      border: 1px solid white !important;
+    }
+  }
+}
+// ========== CASE STUDIES END ===========
+
+
 
 // ==== RESPOSIVENESS ====
 // WELCOME MESSAGE
