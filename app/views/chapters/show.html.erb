@@ -13,10 +13,10 @@
       <%= link_to 'Edit', edit_chapter_path(@chapter) %>
     </div>
   </div>
-  <div class="row text-center">
-    <div class="col-xs-6 col-xs-offset-3">
-      <h5>Lead(s)</h5>
-      <%= @chapter.lead %>
-    </div>
+  <div class="row text-center" style="margin:30px 0">
+    <h4>Lead(s)</h4>
+    <% @chapter.users.each do |chap_user| %>
+    <h5><%= chap_user.first_name %> <%= chap_user.last_name %></h5>
+    <% end %>
   </div>
 </div>

@@ -30,7 +30,15 @@
                   <%= chapter.city %>
                 <% end %>
               </td>
-              <td><%= chapter.lead %></td>
+              <td>
+                <% chapter.users.each_with_index do |lead, index| %>
+                  <% if index != (chapter.users.length[-1] + 1 ) %>
+                    <%= lead.first_name %> <%= lead.last_name %>,
+                  <% else %>
+                    <%= lead.first_name %> <%= lead.last_name %>
+                  <% end %>
+                <% end %>
+              </td>
               <td><%= link_to 'Edit', edit_chapter_path(chapter) %></td>
               <td><%= link_to 'X', chapter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>

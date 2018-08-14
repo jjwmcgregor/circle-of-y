@@ -37,3 +37,7 @@ Chapter.create(city: 'Toronto', country_id: Country.find_by(name: 'Canada').id, 
 Chapter.create(city: 'Stockholm', country_id: Country.find_by(name: 'Sweden').id, lead: 'Jacob Larsson', email: '')
 Chapter.create(city: 'Santiago', country_id: Country.find_by(name: 'Chile').id, lead: 'Cristian Guerrero', email: '')
 Chapter.create(city: 'Brussels', country_id: Country.find_by(name: 'Belgium').id, lead: 'Jason Stamm', email: '')
+
+# EXISTING USERS
+User.create(first_name:'Jack', last_name: 'McGregor', chapter_id:1, email:'jmcgregor@spartaglobal.com', password:'Password1!')
+User.create(first_name:'Steely', last_name: 'Dan', chapter_id:1, email:'jmcgregor@spartaglobal.com', password:'Password1!')

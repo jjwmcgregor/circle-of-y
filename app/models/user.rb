@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   has_many :projects
-  belongs_to :chapter
+  has_and_belongs_to_many :chapters
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
