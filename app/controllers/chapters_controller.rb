@@ -4,7 +4,7 @@ class ChaptersController < ApplicationController
   # GET /chapters
   # GET /chapters.json
   def index
-    @chapters = Chapter.all
+    @chapters = Chapter.all.order("city ASC")
   end
 
   # GET /chapters/1
@@ -70,5 +70,6 @@ class ChaptersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def chapter_params
       params.fetch(:chapter, {})
+      params.require(:chapter).permit(:city, :country_id, :lead, :email)
     end
 end
