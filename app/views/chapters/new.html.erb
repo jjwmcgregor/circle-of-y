@@ -1,5 +1,13 @@
-<h1>New Chapter</h1>
-
-<%= render 'form', chapter: @chapter %>
-
-<%= link_to 'Back', chapters_path %>
+<div class="row text-center chapters mt-1">
+  <div class="col-xs-4">
+    <%= link_to 'Back', chapters_path %>
+  </div>
+  <div class="col-xs-4">
+    <h2 class="title">New Chapter</h2>
+  </div>
+  <div class="col-xs-4">
+  </div>
+</div>
+<div class="row text-center">
+  <%= render 'form', chapter: @chapter %>
+</div>
