@@ -1,0 +1,51 @@
+<div class="container chapters">
+  <p id="notice"><%= notice %></p>
+  <heder class="d-flex">
+    <%= link_to 'New Chapter', new_chapter_path, class: 'btn' %>
+    <h1 class="text-center">Chapters</h1>
+
+  </heder>
+  <table class="table table-striped projects-table table-sm">
+    <thead>
+      <tr>
+        <th colspan="1">City</th>
+        <th colspan="1">Country</th>
+        <th colspan="1">Leads</th>
+        <th colspan="2"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @chapters.each do |chapter| %>
+        <tr>
+          <td>
+            <%= link_to chapter do %>
+              <%= chapter.city %>
+            <% end %>
+          </td>
+          <td>
+            <%= chapter.country.name %>
+          </td>
+          <td>
+            <% if chapter.lead.length > 1 %>
+              <% chapter.lead.each do |chapter_lead| %>
+                <%= chapter_lead %>
+              <% end %>
+            <% else %>
+              <%= chapter.lead.first %>
+            <% end %>
+          </td>
+
+          <td><%= link_to 'Edit', edit_chapter_path(chapter) %></td>
+          <td><%= link_to 'X', chapter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+
+
+  <br>
+
+
+</div>

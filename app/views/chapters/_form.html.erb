@@ -1,0 +1,43 @@
+<%= form_with(model: chapter, local: true) do |form| %>
+  <% if chapter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(chapter.errors.count, "error") %> prohibited this chapter from being saved:</h2>
+
+      <ul>
+      <% chapter.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="field form-group col-md-6">
+      <%= form.label 'Country' %> <br>
+      <%= collection_select(:chapter, :country_id, Country.all, :id, :name, prompt: 'Please choose a city', class: "select-form-control") %>
+    </div>
+
+    <div class="field form-group col-md-6">
+      <%= form.label :city %>
+      <%= form.text_field :city, class:"form-control" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field form-group col-md-6">
+      <%= form.fields_for @chapter, :lead do |lead_i| %>
+        <%= form.label :lead %>
+        <%= lead_i.text_field :lead, class:"form-control" %>
+      <% end %>
+    </div>
+
+    <div class="field form-group col-md-6">
+      <%= form.label :email %>
+      <%= form.email_field :email, class:"form-control" %>
+    </div>
+  </div>
+
+  <div class="actions text-center">
+    <%= form.submit class: "btn btn-danger"%>
+  </div>
+<% end %>

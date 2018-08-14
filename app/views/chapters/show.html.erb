@@ -1,0 +1,47 @@
+<!-- <div class="container mt-2">
+  <p id="notice"><%= notice %></p>
+</div> -->
+
+<div class="container chapterShow">
+  <div class="row mt-2 text-center">
+    <div class="col-sm-2">
+      <%= link_to 'Back', chapters_path %>
+    </div>
+    <div class="col-sm-8">
+      <div class="title text-center">
+        <h1><%= @chapter.city %></h1>
+        <h3><small><%= @chapter.country.name %></small></h3>
+      </div>
+
+      <div class="page-header text-center">
+        <% if @chapter.lead.length > 1 %>
+          <% @chapter.lead.each do |chapterLead| %>
+            <h4>Leads</h4>
+            <h3><%= chapterLead %></h3>
+          <% end %>
+        <% else %>
+          <h4>Lead</h4>
+          <h5><%= @chapter.lead.first %></h5>
+        <% end %>
+      </div>
+
+    </div>
+    <div class="col-sm-2">
+      <%= link_to 'Edit', edit_chapter_path(@chapter) %>
+    </div>
+  </div>
+
+  <table class="table table-striped col-sm-6">
+    <thead>
+      <tr>
+        <th>Members</th>
+        <th>Status</th>
+        <th>Joined</th>
+        <th colspan="2"></th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+</div>
