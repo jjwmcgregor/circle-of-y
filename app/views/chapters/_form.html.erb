@@ -26,26 +26,36 @@
   </div>
 </div>
 
-<% @chapter.users.each_with_index do |chap_user, i| %>
-  <%= chap_user.first_name %> <%= chap_user.last_name %>
-  <% form.fields_for :users, chap_user do |user_fields| %>
+<div class="row">
+  <div class="col-md-4 col-md-offset-4  col-xs-8 col-xs-offset-2">
+    <div class="field form-group">
+      <%= form.label 'Lead' %>
+      <%= collection_select(:users, :user_id, User.all, :id, :full_name, prompt: 'Select a lead', class:'form-control') %>
+    </div>
+    <small>Add another user + </small>
+  </div>
+</div>
+
+<!-- <%# @chapter.users.each_with_index do |chap_user, i| %>
+  <%#= chap_user.first_name %> <%#= chap_user.last_name %>
+  <%# form.fields_for :users, chap_user do |user_fields| %>
     <div class="row">
       <div class="col-md-4 col-md-offset-4  col-xs-8 col-xs-offset-2">
-        <small>User <%= i + 1 %></small>
+        <small>User <%#= i + 1 %></small>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-2 col-md-offset-4  col-xs-8 col-xs-offset-2">
         <div class="field form-group">
-          <%= user_fields.label 'First Name' %>
-          <%= user_fields.text_field :first_name, value: chap_user.first_name,class:"form-control"%>
+          <%#= user_fields.label 'First Name' %>
+          <%#= user_fields.text_field :first_name, value: chap_user.first_name,class:"form-control"%>
         </div>
       </div>
       <div class="col-md-2 col-md-offset-0 col-xs-8 col-xs-offset-2">
         <div class="field form-group">
-          <%= user_fields.label 'Last Name' %>
-          <%= user_fields.text_field :last_name, value: chap_user.last_name, class:"form-control"%>
+          <%#= user_fields.label 'Last Name' %>
+          <%#= user_fields.text_field :last_name, value: chap_user.last_name, class:"form-control"%>
         </div>
       </div>
     </div>
@@ -53,13 +63,13 @@
     <div class="row">
       <div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
         <div class="field form-group">
-          <%= user_fields.label :email %>
-          <%= user_fields.text_field :email, value: chap_user.email, class:"form-control"%>
+          <%#= user_fields.label :email %>
+          <%#= user_fields.text_field :email, value: chap_user.email, class:"form-control"%>
         </div>
       </div>
     </div>
-  <% end %>
-<% end %>
+  <%# end %>
+<%# end %> -->
 
 <div class="row">
   <div class="col-xs-12 text-center">

@@ -21231,3 +21231,312 @@ Processing by ChaptersController#edit as HTML
 Completed 200 OK in 97ms (Views: 90.6ms | ActiveRecord: 1.8ms)
 
 
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 09:45:17 +0100
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (1.2ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:68
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "chapters_users" ON "users"."id" = "chapters_users"."user_id" WHERE "chapters_users"."chapter_id" = $1[0m  [["chapter_id", 12]]
+  ↳ app/views/chapters/_form.html.erb:29
+  Rendered chapters/_form.html.erb (10.6ms)
+  Rendered chapters/edit.html.erb within layouts/application (13.5ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 98ms (Views: 90.6ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 10:26:55 +0100
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tech-a22/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (6.9ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:68
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (1.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  [1m[36mUser Load (9.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chapters/_form.html.erb:29
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "chapters_users" ON "users"."id" = "chapters_users"."user_id" WHERE "chapters_users"."chapter_id" = $1[0m  [["chapter_id", 12]]
+  ↳ app/views/chapters/_form.html.erb:31
+  Rendered chapters/_form.html.erb (229.1ms)
+  Rendered chapters/edit.html.erb within layouts/application (237.7ms)
+  Rendered partials/_nav.html.erb (6.1ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 2211ms (Views: 2050.5ms | ActiveRecord: 92.3ms)
+
+
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 10:27:35 +0100
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:68
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chapters/_form.html.erb:29
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "chapters_users" ON "users"."id" = "chapters_users"."user_id" WHERE "chapters_users"."chapter_id" = $1[0m  [["chapter_id", 12]]
+  ↳ app/views/chapters/_form.html.erb:31
+  Rendered chapters/_form.html.erb (10.4ms)
+  Rendered chapters/edit.html.erb within layouts/application (13.3ms)
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 94ms (Views: 88.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 10:29:11 +0100
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:67
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chapters/_form.html.erb:29
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "chapters_users" ON "users"."id" = "chapters_users"."user_id" WHERE "chapters_users"."chapter_id" = $1[0m  [["chapter_id", 12]]
+  ↳ app/views/chapters/_form.html.erb:31
+  Rendered chapters/_form.html.erb (75.8ms)
+  Rendered chapters/edit.html.erb within layouts/application (81.5ms)
+  Rendered partials/_nav.html.erb (2.9ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 4384ms (Views: 4325.5ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 10:29:55 +0100
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (1.5ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:67
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chapters/_form.html.erb:32
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "chapters_users" ON "users"."id" = "chapters_users"."user_id" WHERE "chapters_users"."chapter_id" = $1[0m  [["chapter_id", 12]]
+  ↳ app/views/chapters/_form.html.erb:37
+  Rendered chapters/_form.html.erb (14.9ms)
+  Rendered chapters/edit.html.erb within layouts/application (18.1ms)
+  Rendered partials/_nav.html.erb (2.7ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 126ms (Views: 114.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 10:30:27 +0100
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (0.5ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:67
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chapters/_form.html.erb:32
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "chapters_users" ON "users"."id" = "chapters_users"."user_id" WHERE "chapters_users"."chapter_id" = $1[0m  [["chapter_id", 12]]
+  ↳ app/views/chapters/_form.html.erb:37
+  Rendered chapters/_form.html.erb (14.8ms)
+  Rendered chapters/edit.html.erb within layouts/application (18.1ms)
+  Rendered partials/_nav.html.erb (4.8ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 2748ms (Views: 2738.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 10:31:55 +0100
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:67
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  Rendered chapters/_form.html.erb (446.9ms)
+  Rendered chapters/edit.html.erb within layouts/application (450.4ms)
+Completed 500 Internal Server Error in 465ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_fields' for #<#<Class:0x007fbdb2b9a948>:0x007fbdb4dd0850>
+Did you mean?  user_url):
+    29: <div class="row">
+    30:   <div class="col-md-2 col-md-offset-4  col-xs-8 col-xs-offset-2">
+    31:     <div class="field form-group">
+    32:       <%= user_fields.label 'Name' %>
+    33:       <%= collection_select(:users, :user_id, User.all, :id, `#{:first_name} #{:last_name}`, prompt: 'Select a lead', class:'form-control') %>
+    34:     </div>
+    35:   </div>
+  
+app/views/chapters/_form.html.erb:32:in `block in _app_views_chapters__form_html_erb___3426385946739598240_70226380115340'
+app/views/chapters/_form.html.erb:1:in `_app_views_chapters__form_html_erb___3426385946739598240_70226380115340'
+app/views/chapters/edit.html.erb:13:in `_app_views_chapters_edit_html_erb__4195071879059163327_70226379970840'
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 10:32:08 +0100
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:67
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chapters/_form.html.erb:33
+  Rendered chapters/_form.html.erb (16.8ms)
+  Rendered chapters/edit.html.erb within layouts/application (21.4ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (nil is not a symbol nor a string):
+    30:   <div class="col-md-2 col-md-offset-4  col-xs-8 col-xs-offset-2">
+    31:     <div class="field form-group">
+    32:       <%= form.label 'Name' %>
+    33:       <%= collection_select(:users, :user_id, User.all, :id, `#{:first_name} #{:last_name}`, prompt: 'Select a lead', class:'form-control') %>
+    34:     </div>
+    35:   </div>
+    36: </div>
+  
+app/views/chapters/_form.html.erb:33:in `block in _app_views_chapters__form_html_erb___3426385946739598240_70226392349560'
+app/views/chapters/_form.html.erb:1:in `_app_views_chapters__form_html_erb___3426385946739598240_70226392349560'
+app/views/chapters/edit.html.erb:13:in `_app_views_chapters_edit_html_erb__4195071879059163327_70226398180580'
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 10:33:04 +0100
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:67
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chapters/_form.html.erb:33
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "chapters_users" ON "users"."id" = "chapters_users"."user_id" WHERE "chapters_users"."chapter_id" = $1[0m  [["chapter_id", 12]]
+  ↳ app/views/chapters/_form.html.erb:38
+  Rendered chapters/_form.html.erb (13.0ms)
+  Rendered chapters/edit.html.erb within layouts/application (15.9ms)
+  Rendered partials/_nav.html.erb (2.7ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 109ms (Views: 101.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 10:34:52 +0100
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (0.8ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:67
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chapters/_form.html.erb:33
+  Rendered chapters/_form.html.erb (16.9ms)
+  Rendered chapters/edit.html.erb within layouts/application (19.7ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 2.3ms)
+
+
+  
+ActionView::Template::Error (nil is not a symbol nor a string):
+    30:   <div class="col-md-2 col-md-offset-4  col-xs-8 col-xs-offset-2">
+    31:     <div class="field form-group">
+    32:       <%= form.label 'Name' %>
+    33:       <%= collection_select(:users, :user_id, User.all, :id, `#{:first_name}`, prompt: 'Select a lead', class:'form-control') %>
+    34:     </div>
+    35:   </div>
+    36: </div>
+  
+app/views/chapters/_form.html.erb:33:in `block in _app_views_chapters__form_html_erb___3426385946739598240_70226407860960'
+app/views/chapters/_form.html.erb:1:in `_app_views_chapters__form_html_erb___3426385946739598240_70226407860960'
+app/views/chapters/edit.html.erb:13:in `_app_views_chapters_edit_html_erb__4195071879059163327_70226407810200'
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 10:36:19 +0100
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:67
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chapters/_form.html.erb:33
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "chapters_users" ON "users"."id" = "chapters_users"."user_id" WHERE "chapters_users"."chapter_id" = $1[0m  [["chapter_id", 12]]
+  ↳ app/views/chapters/_form.html.erb:38
+  Rendered chapters/_form.html.erb (65.0ms)
+  Rendered chapters/edit.html.erb within layouts/application (68.7ms)
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 189ms (Views: 133.0ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 10:36:57 +0100
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (0.4ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:67
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chapters/_form.html.erb:33
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "chapters_users" ON "users"."id" = "chapters_users"."user_id" WHERE "chapters_users"."chapter_id" = $1[0m  [["chapter_id", 12]]
+  ↳ app/views/chapters/_form.html.erb:38
+  Rendered chapters/_form.html.erb (12.2ms)
+  Rendered chapters/edit.html.erb within layouts/application (15.0ms)
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 98ms (Views: 90.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 10:37:55 +0100
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:67
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chapters/_form.html.erb:33
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "chapters_users" ON "users"."id" = "chapters_users"."user_id" WHERE "chapters_users"."chapter_id" = $1[0m  [["chapter_id", 12]]
+  ↳ app/views/chapters/_form.html.erb:38
+  Rendered chapters/_form.html.erb (10.4ms)
+  Rendered chapters/edit.html.erb within layouts/application (14.0ms)
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 92ms (Views: 85.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 10:38:25 +0100
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (0.3ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:67
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chapters/_form.html.erb:33
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "chapters_users" ON "users"."id" = "chapters_users"."user_id" WHERE "chapters_users"."chapter_id" = $1[0m  [["chapter_id", 12]]
+  ↳ app/views/chapters/_form.html.erb:39
+  Rendered chapters/_form.html.erb (12.2ms)
+  Rendered chapters/edit.html.erb within layouts/application (15.1ms)
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 109ms (Views: 103.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/chapters/12/edit" for 127.0.0.1 at 2018-08-15 10:39:02 +0100
+Processing by ChaptersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mChapter Load (0.6ms)[0m  [1m[34mSELECT  "chapters".* FROM "chapters" WHERE "chapters"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/chapters_controller.rb:67
+  Rendering chapters/edit.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/chapters/_form.html.erb:24
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chapters/_form.html.erb:33
+  Rendered chapters/_form.html.erb (8.3ms)
+  Rendered chapters/edit.html.erb within layouts/application (11.5ms)
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 123ms (Views: 115.6ms | ActiveRecord: 1.6ms)
+
+
