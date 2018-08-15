@@ -27,37 +27,38 @@
 </div>
 
 <% @chapter.users.each_with_index do |chap_user, i| %>
-  <div class="row">
-    <div class="col-md-4 col-md-offset-4  col-xs-8 col-xs-offset-2">
-      <small>User <%= i + 1 %></small>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-2 col-md-offset-4  col-xs-8 col-xs-offset-2">
-
-      <div class="field form-group">
-        <%= form.label 'First Name' %>
-        <%= form.text_field :users, value: chap_user.first_name,class:"form-control"%>
+  <%= chap_user.first_name %> <%= chap_user.last_name %>
+  <% form.fields_for :users, chap_user do |user_fields| %>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4  col-xs-8 col-xs-offset-2">
+        <small>User <%= i + 1 %></small>
       </div>
     </div>
-    <div class="col-md-2 col-md-offset-0 col-xs-8 col-xs-offset-2">
-      <div class="field form-group">
-        <%= form.label 'Last Name' %>
-        <%= form.text_field :users, value: chap_user.last_name, class:"form-control"%>
-      </div>
 
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
-      <div class="field form-group">
-        <%= form.label :email %>
-        <%= form.text_field :email, value: chap_user.email, class:"form-control"%>
+    <div class="row">
+      <div class="col-md-2 col-md-offset-4  col-xs-8 col-xs-offset-2">
+        <div class="field form-group">
+          <%= user_fields.label 'First Name' %>
+          <%= user_fields.text_field :first_name, value: chap_user.first_name,class:"form-control"%>
+        </div>
       </div>
-
+      <div class="col-md-2 col-md-offset-0 col-xs-8 col-xs-offset-2">
+        <div class="field form-group">
+          <%= user_fields.label 'Last Name' %>
+          <%= user_fields.text_field :last_name, value: chap_user.last_name, class:"form-control"%>
+        </div>
+      </div>
     </div>
-  </div>
+
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
+        <div class="field form-group">
+          <%= user_fields.label :email %>
+          <%= user_fields.text_field :email, value: chap_user.email, class:"form-control"%>
+        </div>
+      </div>
+    </div>
+  <% end %>
 <% end %>
 
 <div class="row">

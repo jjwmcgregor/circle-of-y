@@ -40,6 +40,7 @@ class ChaptersController < ApplicationController
   # PATCH/PUT /chapters/1
   # PATCH/PUT /chapters/1.json
   def update
+    binding.pry
     respond_to do |format|
       if @chapter.update(chapter_params)
         format.html { redirect_to @chapter, notice: 'Chapter was successfully updated.' }
@@ -70,6 +71,6 @@ class ChaptersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def chapter_params
       params.fetch(:chapter, {})
-      params.require(:chapter).permit(:city, :country_id, :lead, :email)
+      params.require(:chapter).permit(:city, :country_id, user_attributes: [:first_name,:last_name,:email])
     end
 end
